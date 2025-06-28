@@ -1,9 +1,11 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
+// Shared Layout
 import Navbar from "./ShareIngComp/Navbar/Navbar";
 import Footer from "./ShareIngComp/Footer/Footer";
-// Home Page
+
+// Home Page Components
 import Heading from "./Components/HomePageComp/Heading/Heading";
 import WelcomeText from "./Components/HomePageComp/WelcomText/WelcomeText";
 import Ayurveda from "./Components/HomePageComp/Ayurveda/Ayurveda";
@@ -13,6 +15,8 @@ import Certifications from "./Components/HomePageComp/Certifications/Certificati
 import WhyChoose from "./Components/HomePageComp/WhyChoose/WhyChoose";
 import Testimonial from "./Components/HomePageComp/Testimonial/Testimonial";
 import ContactUs from "./Components/HomePageComp/ContactUs/ContactUs";
+
+// About Page Components
 import AbHeader from "./Components/AboutPageComp/AbHeader/AbHeader";
 import Modern from "./Components/AboutPageComp/Modern/Modern";
 import Philosophy from "./Components/AboutPageComp/Philosophy/Philosophy";
@@ -22,10 +26,10 @@ const App = () => {
   return (
     <div className="font-sans">
       <Navbar />
-      <main className="">
-        {" "}
-        {/* Adjust based on your Navbar height */}
+
+      <main className="min-h-screen">
         <Routes>
+          {/* Home Route */}
           <Route
             path="/"
             element={
@@ -42,21 +46,23 @@ const App = () => {
               </>
             }
           />
+
+          {/* About Page Route */}
           <Route
-            path="/About"
+            path="/about"
             element={
               <>
                 <AbHeader />
                 <Modern />
-                <Philosophy/>
-                <Accreditations/>
+                <Philosophy />
+                <Accreditations />
                 <ContactUs />
-
               </>
             }
           />
         </Routes>
       </main>
+
       <Footer />
     </div>
   );
