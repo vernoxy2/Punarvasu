@@ -10,7 +10,7 @@ import Heading from "./Components/HomePageComp/Heading/Heading";
 import WelcomeText from "./Components/HomePageComp/WelcomText/WelcomeText";
 import Ayurveda from "./Components/HomePageComp/Ayurveda/Ayurveda";
 import CoreServices from "./Components/HomePageComp/CoreServices/CoreServices";
-import Experts from "./Components/HomePageComp/Experts/Experts.JSX";
+import Experts from "./Components/HomePageComp/Experts/Experts";
 import Certifications from "./Components/HomePageComp/Certifications/Certifications";
 import WhyChoose from "./Components/HomePageComp/WhyChoose/WhyChoose";
 import Testimonial from "./Components/HomePageComp/Testimonial/Testimonial";
