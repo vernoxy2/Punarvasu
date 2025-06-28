@@ -6,10 +6,10 @@ import Img3 from "../../../assets/HomeAssets/Choose/Img3.png";
 import Img4 from "../../../assets/HomeAssets/Choose/Img4.png";
 import Img5 from "../../../assets/HomeAssets/Choose/Img5.png";
 import Icon1 from "../../../assets/HomeAssets/Choose/Icons/icon1.svg";
-import Icon2 from "../../../assets/HomeAssets/Choose/Icons/icon2.svg";
-import Icon3 from "../../../assets/HomeAssets/Choose/Icons/icon3.svg";
-import Icon4 from "../../../assets/HomeAssets/Choose/Icons/icon4.svg";
-import Icon5 from "../../../assets/HomeAssets/Choose/Icons/icon5.svg";
+import Icon2 from "../../../assets/HomeAssets/Choose/Icons/Icon2.svg";
+import Icon3 from "../../../assets/HomeAssets/Choose/Icons/Icon3.svg";
+import Icon4 from "../../../assets/HomeAssets/Choose/Icons/Icon4.svg";
+import Icon5 from "../../../assets/HomeAssets/Choose/Icons/Icon5.svg";
 import Bg1 from "../../../assets/HomeAssets/Choose/Bg1.svg"
 import Bg2 from "../../../assets/HomeAssets/Choose/Bg2.svg"
 
