@@ -26,7 +26,7 @@ import Accreditations from "./Components/AboutPageComp/Accreditations/Accreditat
 import SerHeader from "./Components/ServicePageComp/SerHeader/SerHeader";
 import Treatments from "./Components/ServicePageComp/Treatments/Treatments";
 import Therapies from "./Components/ServicePageComp/Therapies/Therapies";
-import Procedures from "./Components/ServicePageComp/Procedures/Procedures";
+import Procedure from "./Components/ServicePageComp/Procedures/Procedures";
 import Shlok from "./Components/ServicePageComp/Shlok/Shlok";
 
 // Contact Us page Components 
@@ -83,7 +83,7 @@ const App = () => {
                 <SerHeader />
                 <Treatments />
                 <Therapies />
-                <Procedures/>
+                <Procedure/>
                 <Shlok />
                 <ContactUs/>
               </>
