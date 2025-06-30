@@ -1,7 +1,7 @@
 import React from "react";
 import PrimaryBtn from "../../../ShareIngComp/PrimaryBtn/PrimaryBtn";
 import right from "../../../assets/ContactUsAssets/Conatform/RightSaid.svg";
-import left from "../../../assets/ContactUsAssets/Conatform/left.webp";
+import left from "../../../assets/ContactUsAssets/Conatform/Left.webp";
 
 const ContForm = () => {
   return (
