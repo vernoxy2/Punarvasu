@@ -1,6 +1,5 @@
 import React from 'react';
-import ShlokImg from "../../../assets/shlok.webp";
-
+import ShlokImg from "../../../assets/Shlok.webp";
 const Shlok = () => {
   return (
     <section className="container py-12 mx-auto">
