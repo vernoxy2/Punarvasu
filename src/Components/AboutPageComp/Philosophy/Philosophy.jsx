@@ -28,9 +28,9 @@ const Philosophy = () => {
   return (
     <section className="py-12 space-y-10">
       {/* Heading */}
-      <h1 className="text-5xl text-center font-bold text-secondary leading-tight relative">
-        <span className="absolute top-[-20px] left-1/2 transform -translate-x-1/2 w-32 h-[4px] bg-primary" />
+      <h1 className="flex items-center justify-center text-5xl text-center font-bold text-secondary leading-tight relative">
         Our Philosophy
+        <span className="absolute top-[-20px] left-1/2 transform -translate-x-1/2 w-32 h-[4px] bg-primary" />
       </h1>
 
       {/* Subtext */}
@@ -40,7 +40,7 @@ const Philosophy = () => {
       </p>
 
       {/* Cards */}
-      <div className="container grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-16">
+      <div className="container grid grid-cols-1 md:grid-cols-3 gap-8 ">
         {dataList.map((item) => (
           <div
             key={item.id}

@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="w-full  bg-white shadow-sm  top-0 z-50">
       <div className=" mx-auto flex justify-between items-center sm:h-32 px-4">
         {/* Right Div */}
-        <div className=" hidden md:block w-full max-w-[160px] h-12 bg-gradient-to-l from-[#F29014] to-white ml-6 mr-6 " />
+        <div className=" hidden lg:block w-full max-w-[160px] h-12 bg-gradient-to-l from-[#F29014] to-white ml-6 mr-6 " />
 
         {/* Logo Section */}
         <div className="flex items-center space-x-4">
@@ -28,7 +28,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu: Full Width */}
-        <div className="hidden md:flex flex-grow  items-center space-x-12 bg-gradient-to-r from-primary via-primary/70  to-white px-10 ml-6 ">
+        <div className="hidden lg:flex flex-grow  items-center space-x-12 bg-gradient-to-r from-primary via-primary/70  to-white px-10 ml-6 ">
           {navItems.map((item) => (
             <Link
               key={item.name}
@@ -45,7 +45,7 @@ const Navbar = () => {
         </div>
 
          {/* Mobile Menu Button */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl text-gray-800">
             {menuOpen ? <FiX /> : <FiMenu />}
           </button>
@@ -54,7 +54,7 @@ const Navbar = () => {
 
        {/* Mobile Menu Dropdown */}
        {menuOpen && (
-        <div className="md:hidden px-4 pb-4">
+        <div className="lg:hidden px-4 pb-4">
           <div className="flex flex-col space-y-3">
             {navItems.map((item) => (
               <Link

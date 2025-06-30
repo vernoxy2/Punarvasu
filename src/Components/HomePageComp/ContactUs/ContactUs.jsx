@@ -5,9 +5,9 @@ import PrimaryBtn from "../../../ShareIngComp/PrimaryBtn/PrimaryBtn";
 const ContactUs = () => {
   return (
     <section style={{ backgroundImage: `url(${Bg})` }} className="py-20 my-12 ">
-      <div className=" bg-white/40 rounded-2xl border border-white py-12 w-7/12 mx-auto text-center text-white space-y-8">
+      <div className="container bg-white/40 rounded-2xl border border-white py-12 w-11/12 lg:w-7/12 mx-auto text-center text-white space-y-8">
         <h1 className="text-4xl font-bold">Contact Us</h1>
-        <h1 className="text-2xl font-semibold">
+        <h1 className="text-xl md:text-2xl font-semibold">
           "Discover Natural Healing — Request Your Ayurvedic Treatment Estimate
           Today."
         </h1>

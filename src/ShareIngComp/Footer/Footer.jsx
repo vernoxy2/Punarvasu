@@ -44,7 +44,7 @@ const Footer = () => {
 
           
             {/* Shortcut links */}
-            <div className="md:w-2/12 text-white">
+            <div className="lg:w-2/12 text-white">
               <h1 className="flex flex-col gap-y-3 text-2xl font-bold">
                 Shortcut links
                 <span className="bg-white h-[3px] w-[60%]"></span>
@@ -62,7 +62,7 @@ const Footer = () => {
             </div>
 
             {/* Services */}
-            <div className="md:w-2/12 text-white">
+            <div className="lg:w-2/12 text-white">
               <h1 className="flex flex-col gap-y-3 text-2xl font-bold">
                 Services
                 <span className="bg-white h-[3px] w-[35%]"></span>

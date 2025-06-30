@@ -5,7 +5,7 @@ import Coener from "../../../assets/HomeAssets/corner.png";
 const style = {
   backgroundImage: `url(${HeroBg})`,
   backgroundSize: "cover",
-  backgroundPosition: "start",
+  backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   height: "800px",
 };
