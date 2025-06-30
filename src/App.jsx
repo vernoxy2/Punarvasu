@@ -21,15 +21,20 @@ import AbHeader from "./Components/AboutPageComp/AbHeader/AbHeader";
 import Modern from "./Components/AboutPageComp/Modern/Modern";
 import Philosophy from "./Components/AboutPageComp/Philosophy/Philosophy";
 import Accreditations from "./Components/AboutPageComp/Accreditations/Accreditations";
+
+// Service Page Componet 
+import SerHeader from "./Components/ServicePageComp/SerHeader/SerHeader";
+import Treatments from "./Components/ServicePageComp/Treatments/Treatments";
+import Therapies from "./Components/ServicePageComp/Therapies/Therapies";
+import Procedures from "./Components/ServicePageComp/Procedures/Procedures";
+import Shlok from "./Components/ServicePageComp/Shlok/Shlok";
+
+// Contact Us page Components 
 import ConHeader from "./Components/ConatactUsPageComp/ConHeader/ConHeader";
 import Help from "./Components/ConatactUsPageComp/Help/Help";
 import ContForm from "./Components/ConatactUsPageComp/ContForm/ContForm";
 import ContMap from "./Components/ConatactUsPageComp/ContMap/ContMap";
-import SerHeader from "./Components/ServicePageComp/SerHeader/SerHeader";
-import Shlok from "./Components/ServicePageComp/Shlok/Shlok";
-import Therapies from "./Components/ServicePageComp/Therapies/Therapies";
-import Treatments from "./Components/ServicePageComp/Treatments/Treatments";
-import Procedures from "./Components/ServicePageComp/procedures/procedures";
+
 
 const App = () => {
   return (
