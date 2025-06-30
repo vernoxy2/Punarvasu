@@ -29,7 +29,7 @@ import SerHeader from "./Components/ServicePageComp/SerHeader/SerHeader";
 import Shlok from "./Components/ServicePageComp/Shlok/Shlok";
 import Therapies from "./Components/ServicePageComp/Therapies/Therapies";
 import Treatments from "./Components/ServicePageComp/Treatments/Treatments";
-import Procedures from "./Components/ServicePageComp/procedures/procedures";
+import Procedures from "./Components/ServicePageComp/Procedures/Procedures";
 
 const App = () => {
   return (
