@@ -1,5 +1,5 @@
 import React from "react";
-import Docters from "../../../assets/AboutUsAssets/docters.webp";
+import Docters from "../../../assets/AboutUsAssets/Docters.webp";
 
 const Story = () => {
   return (
