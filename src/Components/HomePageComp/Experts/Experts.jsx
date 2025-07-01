@@ -6,56 +6,62 @@ import ExpertBg from "../../../assets/HomeAssets/Experts/ExpertBg.png";
 
 const style = {
   backgroundImage: `url(${ExpertBg})`,
-  backgroundSize: "",
+  backgroundSize: "cover",
   backgroundPosition: "bottom",
   backgroundRepeat: "no-repeat",
-  //   height: "800px",
 };
 
 const Experts = () => {
   return (
     <section className="pt-14 space-y-12">
-      <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-secondary ">
+      {/* Heading */}
+      <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-secondary">
         Meet Our Experts
       </h1>
-      <div  className="bg-primary/20 pt-5 border-y border-spacing-x-2 border-black shadow-xl ">
-        <div className="container md:flex gap-5 px-4">
-          <div style={style} className="w-full sm:w-8/12 md:w-6/12 lg:w-5/12 relative px-4 ">
+
+      {/* Content Wrapper */}
+      <div className="bg-primary/20 border-y border-black/30 shadow-xl">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-10">
+          {/* Expert 1 */}
+          <div style={style} className="w-full  lg:w-5/12 relative ">
             <img
               src={Expert1}
               alt="Dr. Rajeev Patil"
-              className="flex h-[500px] mx-auto pointer-events-none"
+              className="h-[500px] mx-auto object-contain pointer-events-none"
             />
-
             <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-white/80 text-center w-11/12 sm:w-3/4 md:w-3/5 p-4 rounded shadow">
-              <h1 className="text-lg sm:text-xl md:text-2xl font-semibold text-primary">
+              <h2 className="text-xl md:text-2xl font-semibold text-primary">
                 Dr. Rajeev Patil
-              </h1>
-              <p className="text-sm sm:text-base text-gray-700 mt-1">
+              </h2>
+              <p className="text-sm md:text-base text-gray-700 ">
                 Pediatric & Preventive Ayurveda Expert <br />
                 <span className="italic">
-                  "Early care leads to lifelong health."
+                  “Early care leads to lifelong health.”
                 </span>
               </p>
             </div>
           </div>
 
-          <PrimaryBtn className="h-1/2 my-auto mx-auto text-white ">Leron More</PrimaryBtn>
-          <div style={style} className="w-full sm:w-8/12 md:w-6/12 lg:w-5/12 relative px-4 ">
+          {/* CTA Button */}
+          <div className="my-auto">
+            <PrimaryBtn className="text-white">Learn More</PrimaryBtn>
+          </div>
+
+          {/* Expert 2 */}
+          <div style={style} className="w-full lg:w-5/12 relative ">
             <img
               src={Expert2}
-              alt="Dr. Rajeev Patil"
-              className=" h-[500px] mx-auto pointer-events-none"
+              alt="Dr. Sneha Joshi"
+              className="h-[500px] mx-auto object-contain pointer-events-none"
             />
-
             <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-white/80 text-center w-11/12 sm:w-3/4 md:w-3/5 p-4 rounded shadow">
-              <h1 className="text-lg sm:text-xl md:text-2xl font-semibold text-primary">
-                Dr. Rajeev Patil
-              </h1>
-              <p className="text-sm sm:text-base text-gray-700 mt-1">
-                Pediatric & Preventive Ayurveda Expert <br />
+              <h2 className="text-xl md:text-2xl font-semibold text-primary">
+                Dr. Sneha Joshi
+              </h2>
+              <p className="text-sm md:text-base text-gray-700 ">
+                Women's Wellness & Panchakarma Specialist <br />
                 <span className="italic">
-                  "Early care leads to lifelong health."
+                  “Harmony through healing and balance.”
                 </span>
               </p>
             </div>
