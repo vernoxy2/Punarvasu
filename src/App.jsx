@@ -21,31 +21,32 @@ import AbHeader from "./Components/AboutPageComp/AbHeader/AbHeader";
 import Modern from "./Components/AboutPageComp/Modern/Modern";
 import Philosophy from "./Components/AboutPageComp/Philosophy/Philosophy";
 import Accreditations from "./Components/AboutPageComp/Accreditations/Accreditations";
+import Founders from "./Components/AboutPageComp/Founders/Founders";
+import Story from "./Components/AboutPageComp/Story/Story";
 
-// Service Page Componet 
+// Service Page Components
 import SerHeader from "./Components/ServicePageComp/SerHeader/SerHeader";
 import Treatments from "./Components/ServicePageComp/Treatments/Treatments";
 import Therapies from "./Components/ServicePageComp/Therapies/Therapies";
 import Procedure from "./Components/ServicePageComp/Procedures/Procedures";
 import Shlok from "./Components/ServicePageComp/Shlok/Shlok";
 
-// Contact Us page Components 
+// Contact Us Page Components (spelling fixed)
 import ConHeader from "./Components/ConatactUsPageComp/ConHeader/ConHeader";
 import Help from "./Components/ConatactUsPageComp/Help/Help";
 import ContForm from "./Components/ConatactUsPageComp/ContForm/ContForm";
 import ContMap from "./Components/ConatactUsPageComp/ContMap/ContMap";
-import Founders from "./Components/AboutPageComp/Founders/Founders";
-import Story from "./Components/AboutPageComp/Story/Story";
-
+import ScrollToTop from "./ScrollToTop";
+import Doctors from "./Components/AboutPageComp/Doctors/Doctors";
 
 const App = () => {
   return (
     <div className="font-sans bg-[#F3F3F3]">
       <Navbar />
-
+      <ScrollToTop />
       <main className="min-h-screen">
         <Routes>
-          {/* Home Route */}
+          {/* Home Page */}
           <Route
             path="/"
             element={
@@ -63,7 +64,7 @@ const App = () => {
             }
           />
 
-          {/* About Page Route */}
+          {/* About Page */}
           <Route
             path="/about"
             element={
@@ -71,15 +72,16 @@ const App = () => {
                 <AbHeader />
                 <Modern />
                 <Philosophy />
-                <Story/>
+                <Story />
+                <Doctors/>
                 <Accreditations />
-                <Founders/>
+                <Founders />
                 <ContactUs />
               </>
             }
           />
 
-          {/* Service Page Routes */}
+          {/* Services Page */}
           <Route
             path="/services"
             element={
@@ -87,14 +89,14 @@ const App = () => {
                 <SerHeader />
                 <Treatments />
                 <Therapies />
-                <Procedure/>
+                <Procedure />
                 <Shlok />
-                <ContactUs/>
+                <ContactUs />
               </>
             }
           />
 
-          {/* Contact Us Page Route */}
+          {/* Contact Page */}
           <Route
             path="/contact"
             element={

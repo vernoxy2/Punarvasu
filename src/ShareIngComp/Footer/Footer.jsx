@@ -27,11 +27,11 @@ const Footer = () => {
         <div className="container lg:flex items-start gap-10 mb-56 space-y-9">
           {/*  */}
           <div className="lg:w-4/12  space-y-10">
-            <div className="h-40 w-40 bg-white  rounded-full">
+            <div className="w-32 h-32 lg:w-40 lg:h-40 bg-white  rounded-full">
               <img
                 src={Logo}
                 alt=""
-                className="object-cover h-full mx-auto p-6 pointer-events-none"
+                className="object-cover h-full mx-auto p-6 "
               />
             </div>
             <p className="text-white">

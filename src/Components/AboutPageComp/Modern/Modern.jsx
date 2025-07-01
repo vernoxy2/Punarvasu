@@ -10,25 +10,25 @@ const Modern = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Side with Image */}
-        <div className="bg-primary/10 rounded-md shadow-inner flex justify-center p-6">
+        <div className="bg-primary/10 rounded-md shadow-inner flex justify-center lg:justify-end p-6">
           <img
             src={ModernImg}
             alt="Modern Ayurveda"
-            className="max-w-full h-auto object-contain pointer-events-none"
+            className="lg:me-14"
           />
         </div>
 
         {/* Right Side with Text */}
-        <div className="text-textColor space-y-6">
-          <h2 className="text-3xl lg:text-4xl font-bold leading-snug">
-            At Punarvasu Ayurved Chikitsalayam
+        <div className="text-textColor space-y-10 text-center lg:text-start px-10">
+          <h2 className="text-3xl lg:text-5xl font-black leading-snug">
+            At Punarvasu Ayurved <br className="hidden md:block"/> Chikitsalayam
           </h2>
-          <p className="text-lg lg:text-xl text-justify">
-            We believe Ayurveda is not merely a system of medicine — it is a
-            profound science of life. Founded with the vision of bringing
-            authentic, classical Ayurvedic healing into the hands of every
-            individual, our center offers a space where tradition, compassion,
-            and science come together to restore balance and vitality.
+          <p className="text-lg lg:text-2xl font-medium ">
+            We believe Ayurveda is not merely a system of medicine <br className="hidden lg:block"/> — it is a
+            profound science of life. Founded with the <br className="hidden lg:block"/> vision of bringing 
+            <span className="font-black"> authentic, classical Ayurvedic healing</span> <br className="hidden lg:block"/> into the hands of every
+            individual, our center offers a <br className="hidden lg:block"/> space where tradition, compassion,
+            and science <br className="hidden lg:block"/> come together to restore balance and vitality.
           </p>
         </div>
       </div>

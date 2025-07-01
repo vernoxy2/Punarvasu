@@ -42,7 +42,7 @@ const Philosophy = () => {
       </p>
 
       {/* Cards */}
-      <div className="container grid grid-cols-1 md:grid-cols-3 gap-8 pt-20 z-10">
+      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-20 z-10 gap-y-16">
         {dataList.map((item) => (
           <div
             key={item.id}
