@@ -59,8 +59,8 @@ const WhyChoose = () => {
       
       {/* Title Section */}
       <div className="w-full md:w-3/4 lg:w-1/2 relative z-10">
-        <div className="bg-primary py-3 pr-6 sm:pr-10 flex items-center justify-end gap-4 sm:gap-6">
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-white text-right">
+        <div className="bg-primary py-3 pr-6 sm:pr-10 flex items-center justify-center md:justify-end gap-4 sm:gap-6">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-white text-center lg:text-right">
             Why Choose Punavasu?
           </h1>
           <img src={leaf} alt="Leaf Icon" className="w-10 h-10" />

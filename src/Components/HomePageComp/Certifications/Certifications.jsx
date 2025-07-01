@@ -48,7 +48,7 @@ const Certifications = () => {
         {DataList.map((item) => (
           <div className="flex">
             <div className="bg-primary px-1 md:px-[6px] h-[70px] lg:h-24 rounded-s-xl my-auto"></div>
-            <div className="flex w-full items-center justify-between gap-4 py-4 px-6 bg-white shadow-md hover:shadow-lg transition relative">
+            <div className="flex w-full items-center  gap-4 py-4 px-6 bg-white shadow-md hover:shadow-lg transition relative">
               <img src={item.icon} alt="icon" className="h-14 lg:h-full pointer-events-none" />
               <p className="text-sm text-gray-800">{item.text}</p>
               <img src={Leaf} alt="" className="absolute -right-1 -bottom-2 pointer-events-none" />
