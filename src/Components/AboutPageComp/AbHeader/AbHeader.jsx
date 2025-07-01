@@ -12,7 +12,7 @@ const AbHeader = () => {
       <img
         src={Corner}
         alt="Decorative Corner"
-        className="hidden lg:block absolute bottom-0 right-0 w-20 md:w-40 lg:w-80"
+        className="hidden lg:block absolute bottom-0 right-0 w-20 md:w-40 lg:w-80 pointer-events-none"
       />
 
       {/* Text Content */}

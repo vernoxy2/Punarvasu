@@ -4,7 +4,7 @@ import Suvarnaprashan from "../../../assets/HomeAssets/CoreServices/Suvarnaprash
 import Cosmetic from "../../../assets/HomeAssets/CoreServices/cosmetic.png";
 import GarbhSanskar from "../../../assets/HomeAssets/CoreServices/GarbhSanskar.png";
 import PrimaryBtn from "../../../ShareIngComp/PrimaryBtn/PrimaryBtn";
-import SerBg from "../../../assets/HomeAssets/CoreServices/ServicesBg.png"
+import SerBg from "../../../assets/HomeAssets/CoreServices/ServicesBg.png";
 
 const Services = [
   {
@@ -35,39 +35,45 @@ const Services = [
 
 const CoreServices = () => {
   return (
-    <section className="py-16 text-center">
-      <div className="absolute right-0 -z-10">
-        <img src={SerBg } alt="" className=""/>
-      </div>
-        {/* Heading */}
-      <h1 className="text-5xl font-bold text-secondary ">
-        Our Core Services
-      </h1>
-      {/* Cards */}
-      <div className="container my-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-4">
-        {Services.map((service) => (
-          <div
-            key={service.id}
-            className="bg-white shadow-md group flex flex-col text-left hover:shadow-lg transition"
-          >
-            <div className="w-full">
-              <img
-                src={service.img}
-                alt={service.SerName}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="p-4 group-hover:bg-primary text-primary group-hover:text-white duration-300 w-full space-y-1">
-                <h1 className="text-2xl font-bold">{service.SerName}</h1>
-                <p>{service.dec}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-      {/* Button */}
-      <PrimaryBtn>Explore All Services</PrimaryBtn>
+   <section className="py-16 text-center relative z-10">
+  {/* Background Image */}
+  <div className="absolute right-0 bottom-0 lg:top-0 z-0">
+    <img src={SerBg} alt="" className="w-full h-auto pointer-events-none" />
+  </div>
 
-    </section>
+  {/* Heading */}
+  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary relative z-10">Our Core Services</h1>
+
+  {/* Cards */}
+  <div className="container mx-auto relative z-10">
+    <div className="my-12 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 px-4">
+      {Services.map((service) => (
+        <div
+          key={service.id}
+          className="bg-white shadow-md group flex flex-col text-left hover:shadow-lg transition-all hover:-translate-y-3 duration-300"
+        >
+          <div className="w-full">
+            <img
+              src={service.img}
+              alt={service.SerName}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="p-4 group-hover:bg-primary text-primary group-hover:text-white duration-300 h-full transition-colors w-full space-y-2">
+            <h2 className="text-xl lg:text-2xl font-bold">{service.SerName}</h2>
+            <p className="text-sm leading-tight lg:text-base">{service.dec}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  {/* Button */}
+  <div className="relative z-10 mt-4">
+    <PrimaryBtn className="text-white">Explore All Services</PrimaryBtn>
+  </div>
+</section>
+
   );
 };
 

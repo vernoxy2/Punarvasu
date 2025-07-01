@@ -10,8 +10,8 @@ import Icon2 from "../../../assets/HomeAssets/Choose/Icons/Icon2.svg";
 import Icon3 from "../../../assets/HomeAssets/Choose/Icons/Icon3.svg";
 import Icon4 from "../../../assets/HomeAssets/Choose/Icons/Icon4.svg";
 import Icon5 from "../../../assets/HomeAssets/Choose/Icons/Icon5.svg";
-import Bg1 from "../../../assets/HomeAssets/Choose/Bg1.svg"
-import Bg2 from "../../../assets/HomeAssets/Choose/Bg2.svg"
+import Bg1 from "../../../assets/HomeAssets/Choose/Bg1.svg";
+import Bg2 from "../../../assets/HomeAssets/Choose/Bg2.svg";
 
 // ChooseData Array
 const ChooseData = [
@@ -50,17 +50,25 @@ const ChooseData = [
 const WhyChoose = () => {
   return (
     <section className="py-12 space-y-12 relative">
-      <img src={Bg1} alt="" className="absolute top-1/3" />
-      <img src={Bg2} alt="" className="absolute right-0 bottom-0 z-0" />
-      <div className="w-1/2 bg-primary py-4 text-right text-white flex items-center justify-end gap-6 pr-10">
-        <h1 className="text-5xl font-bold">Why Choose Punavasu?</h1>
-        <img src={leaf} alt="" />
+      <img src={Bg1} alt="" className="absolute top-1/3 pointer-events-none" />
+      <img
+        src={Bg2}
+        alt=""
+        className="absolute right-0 bottom-0 z-0 pointer-events-none"
+      />
+      
+      {/* Title Section */}
+      <div className="w-full md:w-3/4 lg:w-1/2 relative z-10">
+        <div className="bg-primary py-3 pr-6 sm:pr-10 flex items-center justify-end gap-4 sm:gap-6">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-white text-right">
+            Why Choose Punavasu?
+          </h1>
+          <img src={leaf} alt="Leaf Icon" className="w-10 h-10" />
+        </div>
+        <div className="bg-secondary py-1 ml-4 sm:ml-0 mr-4"></div>
       </div>
-      <span className="mr-5 ">
-        {" "}
-        <div className="py-2 bg-secondary w-1/2 pr-5"></div>
-      </span>
-     {/* Cards Grid */}
+       
+      {/* Cards Grid */}
       <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {ChooseData.map(({ id, img, icon, text }) => (
           <div
@@ -71,12 +79,16 @@ const WhyChoose = () => {
             <img
               src={img}
               alt={`Choose ${id}`}
-              className="w-full h-[305px] object-cover rounded-md mb-8"
+              className="w-full h-[305px] object-cover rounded-md mb-8 pointer-events-none"
             />
 
             {/* Icon box (positioned on image) */}
             <div className="absolute bottom-[80px] left-0 bg-white p-6 rounded-full ">
-              <img src={icon} alt={`Icon ${id}`} className="w-16 h-16" />
+              <img
+                src={icon}
+                alt={`Icon ${id}`}
+                className="w-16 h-16 pointer-events-none"
+              />
             </div>
 
             {/* Text */}

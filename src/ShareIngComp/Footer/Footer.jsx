@@ -31,7 +31,7 @@ const Footer = () => {
               <img
                 src={Logo}
                 alt=""
-                className="object-cover h-full mx-auto p-6"
+                className="object-cover h-full mx-auto p-6 pointer-events-none"
               />
             </div>
             <p className="text-white">

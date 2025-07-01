@@ -7,30 +7,34 @@ const style = {
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
-  height: "800px",
 };
 
 const Heading = () => {
   return (
-    <section style={style} className="relative py-12 md:py-32 lg:rounded-br-[400px]">
+    <section
+      style={style}
+      className="relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px] lg:rounded-br-[400px]"
+    >
       {/* Corner image positioned bottom-right */}
       <img
         src={Coener}
         alt="Decorative Corner"
-        className="hidden lg:block absolute bottom-0 right-0 w-24 md:w-80"
+        className="hidden lg:block absolute bottom-0 right-0 w-20 md:w-40 lg:w-80"
       />
 
       {/* Text content */}
-      <div className="container mx-auto h-full flex justify-end items-center text-white px-4">
-        <div className="w-full md:w-1/2 space-y-12 text-right pb-28">
+      <div className="container mx-auto h-full flex justify-end text-center items-center lg:text-end text-white px-4">
+        <div className="w-full lg:w-1/2 space-y-4 lg:space-y-12 lg:pb-28">
           <h1 className="text-3xl md:text-6xl font-bold ">
             Ancient Remedies, Timeless Wellness.
           </h1>
-          <p className="text-base md:text-2xl font-medium leading-relaxed">
-            Discover the power of Ayurveda with natural herbs, oils,<br /> and powders
-            crafted for holistic healing. Embrace traditional <br /> remedies that
-            promote wellness, balance, and a healthier <br /> lifestyle—rooted in
-            ancient Indian wisdom.
+          <p className="text-base md:text-2xl px-2 font-medium leading-relaxed">
+            Discover the power of Ayurveda with natural herbs, oils,{" "}
+            <br className="hidden lg:block" /> and powders crafted for holistic
+            healing. Embrace traditional <br className="hidden lg:block" />{" "}
+            remedies that romote wellness, balance, and a healthier{" "}
+            <br className="hidden lg:block" /> lifestyle—rooted in ancient
+            Indian wisdom.
           </p>
         </div>
       </div>

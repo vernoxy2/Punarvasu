@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router";
+import { Link, useLocation } from "react-router-dom"; // ✅ Correct import
 import { FiMenu, FiX } from "react-icons/fi";
 import Logo from "../../assets/NavbarAssets/Punarvasu_logo.png";
 
@@ -12,23 +12,28 @@ const navItems = [
 ];
 
 const Navbar = () => {
-  const Location = useLocation();
+  const location = useLocation(); // ✅ Correct casing
   const currentPath = location.pathname;
 
   const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <nav className="w-full  bg-white shadow-sm  top-0 z-50">
-      <div className=" mx-auto flex justify-between items-center sm:h-32 px-4">
-        {/* Right Div */}
-        <div className=" hidden lg:block w-full max-w-[160px] h-12 bg-gradient-to-l from-[#F29014] to-white ml-6 mr-6 " />
+    <nav className="w-full bg-transparent lg:bg-white shadow-sm top-0 z-50">
+      <div className="mx-auto flex justify-between items-center sm:h-32 px-4">
+        {/* Left Accent Bar (optional) */}
+        <div className="hidden lg:block w-full max-w-[160px] h-12 bg-gradient-to-l from-[#F29014] to-white ml-6 mr-6" />
 
         {/* Logo Section */}
         <div className="flex items-center space-x-4">
-          <img src={Logo} alt="logo" className="h-14 bg-blaxk" />
+          <img
+            src={Logo}
+            alt="Punarvasu Logo"
+            className="h-16 p-3 lg:h-full  w-auto object-contain pointer-events-none"
+          />
         </div>
 
-        {/* Desktop Menu: Full Width */}
-        <div className="hidden lg:flex flex-grow  items-center space-x-12 bg-gradient-to-r from-primary via-primary/70  to-white px-10 ml-6 ">
+        {/* Desktop Menu */}
+        <div className="hidden lg:flex flex-grow items-center space-x-12 bg-gradient-to-r from-primary via-primary/95 to-white px-10 ml-6">
           {navItems.map((item) => (
             <Link
               key={item.name}
@@ -44,16 +49,19 @@ const Navbar = () => {
           ))}
         </div>
 
-         {/* Mobile Menu Button */}
+        {/* Mobile Menu Button */}
         <div className="lg:hidden">
-          <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl text-gray-800">
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="text-2xl text-gray-800"
+          >
             {menuOpen ? <FiX /> : <FiMenu />}
           </button>
         </div>
       </div>
 
-       {/* Mobile Menu Dropdown */}
-       {menuOpen && (
+      {/* Mobile Menu Dropdown */}
+      {menuOpen && (
         <div className="lg:hidden px-4 pb-4">
           <div className="flex flex-col space-y-3">
             {navItems.map((item) => (
@@ -72,11 +80,8 @@ const Navbar = () => {
             ))}
           </div>
         </div>
-       )}
-
-
+      )}
     </nav>
-    
   );
 };
 

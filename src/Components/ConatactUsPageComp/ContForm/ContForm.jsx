@@ -79,7 +79,7 @@ const ContForm = () => {
 
           {/* Submit Button */}
           <div className="text-center">
-            <PrimaryBtn className="rounded-md w-full flex justify-center items-center py-4 lg:text-2xl font-semibold">
+            <PrimaryBtn className="text-white rounded-md w-full flex justify-center items-center py-4 lg:text-2xl font-semibold">
               Send Message
             </PrimaryBtn>
           </div>

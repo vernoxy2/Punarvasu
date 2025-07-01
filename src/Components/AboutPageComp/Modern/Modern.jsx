@@ -4,17 +4,17 @@ import ModernImg from "../../../assets/AboutUsAssets/Modern.webp";
 const Modern = () => {
   return (
     <section className="py-12 space-y-12">
-      <h1 className="text-5xl text-center font-bold text-secondary leading-tight">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-secondary leading-tight">
         Reviving Classical Ayurveda <br /> for Modern Lives
       </h1>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center px-6 lg:px-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Side with Image */}
         <div className="bg-primary/10 rounded-md shadow-inner flex justify-center p-6">
           <img
             src={ModernImg}
             alt="Modern Ayurveda"
-            className="max-w-full h-auto object-contain"
+            className="max-w-full h-auto object-contain pointer-events-none"
           />
         </div>
 

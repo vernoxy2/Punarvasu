@@ -4,7 +4,8 @@ import Heart from "../../../assets/HomeAssets/Certifications/Heart.svg";
 import Date from "../../../assets/HomeAssets/Certifications/Date.svg";
 import Contact from "../../../assets/HomeAssets/Certifications/Contact.svg";
 import Helth from "../../../assets/HomeAssets/Certifications/Helth.svg";
-import BG from "../../../assets/HomeAssets/Certifications/Bg.png"
+import BG from "../../../assets/HomeAssets/Certifications/Bg.png";
+import Leaf from "../../../assets/HomeAssets/Certifications/leaf.svg";
 
 const DataList = [
   {
@@ -36,21 +37,22 @@ const DataList = [
 
 const Certifications = () => {
   return (
-    <section className="py-12 space-y-12">
-      <img src={BG} alt="" className="absolute right-0"/>
+    <section className="py-12 space-y-12 relative">
+      <img src={BG} alt="" className="absolute right-0 pointer-events-none " />
 
-      <h1 className="text-5xl text-center font-bold text-secondary">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-secondary">
         Our Credentials & Certifications
       </h1>
 
-      <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20">
+      <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-16 gap-y-4 sm:gap-8">
         {DataList.map((item) => (
-          <div
-            
-            className="flex items-start gap-4 p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition"
-          >
-            <img src={item.icon} alt="icon" className="w-12 h-12" />
-            <p className="text-base font-medium text-gray-800">{item.text}</p>
+          <div className="flex">
+            <div className="bg-primary px-1 md:px-[6px] h-[70px] lg:h-24 rounded-s-xl my-auto"></div>
+            <div className="flex w-full items-center justify-between gap-4 py-4 px-6 bg-white shadow-md hover:shadow-lg transition relative">
+              <img src={item.icon} alt="icon" className="h-14 lg:h-full pointer-events-none" />
+              <p className="text-sm text-gray-800">{item.text}</p>
+              <img src={Leaf} alt="" className="absolute -right-1 -bottom-2 pointer-events-none" />
+            </div>
           </div>
         ))}
       </div>

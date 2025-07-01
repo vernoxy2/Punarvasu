@@ -2,7 +2,7 @@ import React from "react";
 import Nishit from "../../../assets/HomeAssets/Testimonial/NishitShah.png";
 import Manisha from "../../../assets/HomeAssets/Testimonial/ManishaPatel.png";
 import Ayush from "../../../assets/HomeAssets/Testimonial/AyusBhandari.png";
-import TestBg from "../../../assets/HomeAssets/Testimonial/TestBg.svg"
+import TestBg from "../../../assets/HomeAssets/Testimonial/TestBg.svg";
 
 const TestData = [
   {
@@ -31,36 +31,37 @@ const TestData = [
 const Testimonial = () => {
   return (
     <section className="py-12 space-y-12 relative">
-        <img src={TestBg} alt="" className="absolute bottom-0" />
-      <h1 className="text-5xl text-center font-bold text-secondary">
-        Testimonials
+      <img
+        src={TestBg}
+        alt=""
+        className="absolute bottom-0 pointer-events-none"
+      />
+      <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-secondary">
+        Testimonial
       </h1>
-      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="container pt-12 lg:pt-28 pb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 gap-y-20">
         {TestData.map(({ id, img, name, text, rate }) => (
-          <div
-            key={id}
-            className="relative p-6 shadow hover:shadow-lg transition-all duration-300 space-y-4"
-          >
-           <div className="absolute right-0 p-3 bg-white border rounded-full -mt-20">
-             <img
-              src={img}
-              alt={name}
-              className="w-28 h-28 rounded-full object-cover mx-auto "
-            />
-           </div>
-            <div className="flex flex-col justify-start items-start">
-                <h3 className="text-xl text-center font-semibold text-primary">
-              {name}
-            </h3>
-            <div className="flex justify-center gap-1">
-              {[...Array(5)].map((_, i) => (
-                  <span key={i}>
-                  {i < rate ? "⭐" : "☆"}
-                </span>
-              ))}
+          <div key={id} className=" relative felx items-start">
+            <div className="bg-white p-5 space-y-4 shadow-lg">
+              <div className="flex flex-col gap-y-2 justify-start items-start ">
+                <div className="absolute right-0 p-3 bg-white  rounded-full -mt-20 lg:-mt-28">
+                  <img
+                    src={img}
+                    alt={name}
+                    className="h-[120px]  lg:h-36 rounded-full object-cover mx-auto pointer-events-none"
+                  />
+                </div>
+                <h3 className="text-lg md:text-xl lg:text-2xl text-center font-bold text-primary">
+                  {name}
+                </h3>
+                <div className="flex justify-center gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <span key={i}>{i < rate ? "⭐" : "☆"}</span>
+                  ))}
+                </div>
+              </div>
+              <p className=" text-gray-700 leading-tight">{text}</p>
             </div>
-            </div>
-              <p className="text-sm text-gray-700">{text}</p>
           </div>
         ))}
       </div>

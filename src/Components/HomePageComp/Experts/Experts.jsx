@@ -15,7 +15,7 @@ const style = {
 const Experts = () => {
   return (
     <section className="pt-14 space-y-12">
-      <h1 className="text-5xl text-center font-bold text-secondary ">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-secondary ">
         Meet Our Experts
       </h1>
       <div  className="bg-primary/20 pt-5 border-y border-spacing-x-2 border-black shadow-xl ">
@@ -24,7 +24,7 @@ const Experts = () => {
             <img
               src={Expert1}
               alt="Dr. Rajeev Patil"
-              className=" h-[500px] mx-auto"
+              className="flex h-[500px] mx-auto pointer-events-none"
             />
 
             <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-white/80 text-center w-11/12 sm:w-3/4 md:w-3/5 p-4 rounded shadow">
@@ -40,12 +40,12 @@ const Experts = () => {
             </div>
           </div>
 
-          <PrimaryBtn className="h-1/2 my-auto mx-auto  ">Leron More</PrimaryBtn>
+          <PrimaryBtn className="h-1/2 my-auto mx-auto text-white ">Leron More</PrimaryBtn>
           <div style={style} className="w-full sm:w-8/12 md:w-6/12 lg:w-5/12 relative px-4 ">
             <img
               src={Expert2}
               alt="Dr. Rajeev Patil"
-              className=" h-[500px] mx-auto"
+              className=" h-[500px] mx-auto pointer-events-none"
             />
 
             <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-white/80 text-center w-11/12 sm:w-3/4 md:w-3/5 p-4 rounded shadow">

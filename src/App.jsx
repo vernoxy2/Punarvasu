@@ -34,6 +34,8 @@ import ConHeader from "./Components/ConatactUsPageComp/ConHeader/ConHeader";
 import Help from "./Components/ConatactUsPageComp/Help/Help";
 import ContForm from "./Components/ConatactUsPageComp/ContForm/ContForm";
 import ContMap from "./Components/ConatactUsPageComp/ContMap/ContMap";
+import Founders from "./Components/AboutPageComp/Founders/Founders";
+import Story from "./Components/AboutPageComp/Story/Story";
 
 
 const App = () => {
@@ -69,7 +71,9 @@ const App = () => {
                 <AbHeader />
                 <Modern />
                 <Philosophy />
+                <Story/>
                 <Accreditations />
+                <Founders/>
                 <ContactUs />
               </>
             }
