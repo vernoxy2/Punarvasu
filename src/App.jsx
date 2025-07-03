@@ -29,7 +29,7 @@ import Doctors from "./Components/AboutPageComp/Doctors/Doctors";
 import SerHeader from "./Components/ServicePageComp/SerHeader/SerHeader";
 import Treatments from "./Components/ServicePageComp/Treatments/Treatments";
 import Therapies from "./Components/ServicePageComp/Therapies/Therapies";
-import Procedure from "./Components/ServicePageComp/Procedures/Procedures";
+import Procedure from "./Components/ServicePageComp/procedures/procedures";
 import Shlok from "./Components/ServicePageComp/Shlok/Shlok";
 
 import ConHeader from "./Components/ConatactUsPageComp/ConHeader/ConHeader";
