@@ -1,8 +1,8 @@
 import React from "react";
 import { IoMdCheckmark } from "react-icons/io";
 import DoctorsImg from "../../../assets/AboutUsAssets/Doctors/DocBg.svg";
-import drAnjali from "../../../assets/AboutUsAssets/Doctors/drAnjali.svg";
-import drRajeev from "../../../assets/AboutUsAssets/Doctors/drRajeev.svg";
+import drAnjali from "../../../assets/AboutUsAssets/Doctors/DrAnjali.svg";
+import drRajeev from "../../../assets/AboutUsAssets/Doctors/DrRajeev.svg";
 
 const Doctors = () => {
   return (
