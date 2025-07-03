@@ -4,11 +4,11 @@ import leaf from "../../../assets/HomeAssets/leaf.png";
 const Ayurveda = () => {
   return (
     <section className="py-12 relative bg-primary/20 text-textColor">
-      <div className="absolute top-0">
+      <div className="absolute -bottom-8">
         <img
           src={leaf}
           alt=""
-          className="hidden lg:block pointer-events-none"
+          className=" pointer-events-none h-52"
         />
       </div>
 

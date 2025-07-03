@@ -42,42 +42,47 @@ const Footer = () => {
             </p>
           </div>
 
-          
-            {/* Shortcut links */}
-            <div className="lg:w-2/12 text-white">
-              <h1 className="flex flex-col gap-y-3 text-2xl font-bold">
-                Shortcut links
-                <span className="bg-white h-[3px] w-[60%]"></span>
-              </h1>
+          {/* Shortcut links */}
+          <div className="lg:w-2/12 text-white">
+            <h1 className="flex flex-col gap-y-3 text-2xl font-bold">
+              Shortcut links
+              <span className="bg-white h-[3px] w-[60%]"></span>
+            </h1>
 
-              <ul className="text-white font-semibold mt-4 space-y-2">
-                {FooterLink.map((item, index) => (
-                  <li key={index}>
-                    <Link to={item.path} className="hover:underline">
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <ul className="text-white font-semibold mt-4 space-y-2">
+              {FooterLink.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    to={item.path}
+                    onClick={() =>
+                      window.scrollTo({ top: 0, behavior: "smooth" })
+                    }
+                    className="hover:underline"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-            {/* Services */}
-            <div className="lg:w-2/12 text-white">
-              <h1 className="flex flex-col gap-y-3 text-2xl font-bold">
-                Services
-                <span className="bg-white h-[3px] w-[35%]"></span>
-              </h1>
+          {/* Services */}
+          <div className="lg:w-2/12 text-white">
+            <h1 className="flex flex-col gap-y-3 text-2xl font-bold">
+              Services
+              <span className="bg-white h-[3px] w-[35%]"></span>
+            </h1>
 
-              <ul className="text-white font-semibold mt-4 space-y-3">
-                {ServicesLink.map((item, index) => (
-                  <li key={index}>
-                    <Link to={item.path} className="hover:underline">
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <ul className="text-white font-semibold mt-4 space-y-3">
+              {ServicesLink.map((item, index) => (
+                <li key={index}>
+                  <Link to={item.path} className="hover:underline">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
           {/* COntact US */}
           <div className=" sm:w-1/2 lg:w-4/12 text-white space-y-8">
@@ -114,14 +119,23 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <button className="bg-white w-9/12 text-primary text-start py-2 px-4 font-bold">
-              Enquiry Now
-            </button>
+            <Link
+              to="/contact"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
+              <button className="mt-5 bg-white text-primary text-start px-4 py-2 w-full sm:w-9/12 font-bold hover:bg-gray-100 transition duration-300">
+                Enquiry Now
+              </button>
+            </Link>
           </div>
         </div>
         <div className="bg-white h-1  w-2/12 mx-auto"></div>
       </div>
-      <img src={leaf} alt="" className="h-60 md:h-auto ms-auto absolute right-0 bottom-0 " />
+      <img
+        src={leaf}
+        alt=""
+        className="h-60 md:h-auto ms-auto absolute right-0 bottom-0 "
+      />
     </footer>
   );
 };

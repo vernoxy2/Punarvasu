@@ -28,8 +28,8 @@ const ContactData = [
 const Help = () => {
   return (
     <section className="py-12 space-y-12">
-      {/* Heading Text */}
-      <div className="text-center space-y-6">
+      {/* Heading */}
+      <div className="text-center space-y-6 px-4">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary">
           Need Any Help?
         </h1>
@@ -38,36 +38,32 @@ const Help = () => {
         </p>
       </div>
 
-      {/* Contact Cards */}
-     <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-  {ContactData.map((item) => (
-    <div
-      key={item.id}
-      className="relative text-center p-12 space-y-12 rounded-3xl bg-cover bg-no-repeat bg-center"
-      style={{ backgroundImage: `url(${HelpBg})` }}
-    >
-      {/* Icon */}
-      <div>
-        <img
-          src={item.Icon}
-          alt={`${item.title} icon`}
-          className="mx-auto h-20 w-20"
-        />
+      {/* Cards */}
+      <div className="container mx-auto px-4 grid gap-10 sm:grid-cols-2 xl:grid-cols-3">
+        {ContactData.map((item) => (
+          <div
+            key={item.id}
+            className="text-center bg-cover bg-no-repeat bg-center rounded-3xl p-6 sm:p-6 lg:p-10 flex flex-col justify-center items-center w-full h-auto min-h-[300px] sm:min-h-[305px] lg:min-h-[400px]"
+            style={{ backgroundImage: `url(${HelpBg})` }}
+          >
+            <div>
+              <img
+                src={item.Icon}
+                alt={`${item.title} icon`}
+                className="mx-auto h-16 w-16 sm:h-20 sm:w-20"
+              />
+            </div>
+            <div className="mt-8 space-y-3">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary">
+                {item.title}
+              </h3>
+              <p className="text-textColor text-base sm:text-lg font-medium leading-relaxed">
+                {item.dec}
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
-
-      {/* Text Content */}
-      <div className="space-y-2">
-        <h3 className="text-2xl lg:text-3xl font-bold text-primary">
-          {item.title}
-        </h3>
-        <p className="text-textColor text-base lg:text-lg font-medium leading-relaxed">
-          {item.dec}
-        </p>
-      </div>
-    </div>
-  ))}
-</div>
-
     </section>
   );
 };

@@ -46,7 +46,7 @@ const Certifications = () => {
 
       <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-16 gap-y-4 sm:gap-8">
         {DataList.map((item) => (
-          <div className="flex">
+          <div className="flex px-2 sm:px-0 py-[2px] sm:py-0">
             <div className="bg-primary px-1 md:px-[6px] h-[70px] lg:h-24 rounded-s-xl my-auto"></div>
             <div className="flex w-full items-center  gap-4 py-4 px-6 bg-white shadow-md hover:shadow-lg transition relative">
               <img src={item.icon} alt="icon" className="h-14 lg:h-full pointer-events-none" />

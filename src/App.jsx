@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect, Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-// Shared Layout
-import Navbar from "./ShareIngComp/Navbar/Navbar";
-import Footer from "./ShareIngComp/Footer/Footer";
+// Shared Layout (Lazy Loaded)
+const Navbar = lazy(() => import("./ShareIngComp/Navbar/Navbar"));
+const Footer = lazy(() => import("./ShareIngComp/Footer/Footer"));
 
-// Home Page Components
+// Home Page Components (Not yet lazy loaded — we'll optimize this later)
 import Heading from "./Components/HomePageComp/Heading/Heading";
 import WelcomeText from "./Components/HomePageComp/WelcomText/WelcomeText";
 import Ayurveda from "./Components/HomePageComp/Ayurveda/Ayurveda";
@@ -23,6 +25,7 @@ import Philosophy from "./Components/AboutPageComp/Philosophy/Philosophy";
 import Accreditations from "./Components/AboutPageComp/Accreditations/Accreditations";
 import Founders from "./Components/AboutPageComp/Founders/Founders";
 import Story from "./Components/AboutPageComp/Story/Story";
+import Doctors from "./Components/AboutPageComp/Doctors/Doctors";
 
 // Service Page Components
 import SerHeader from "./Components/ServicePageComp/SerHeader/SerHeader";
@@ -31,21 +34,34 @@ import Therapies from "./Components/ServicePageComp/Therapies/Therapies";
 import Procedure from "./Components/ServicePageComp/Procedures/Procedures";
 import Shlok from "./Components/ServicePageComp/Shlok/Shlok";
 
-// Contact Us Page Components (spelling fixed)
+// Contact Us Page Components
 import ConHeader from "./Components/ConatactUsPageComp/ConHeader/ConHeader";
 import Help from "./Components/ConatactUsPageComp/Help/Help";
 import ContForm from "./Components/ConatactUsPageComp/ContForm/ContForm";
 import ContMap from "./Components/ConatactUsPageComp/ContMap/ContMap";
-import ScrollToTop from "./ScrollToTop";
-import Doctors from "./Components/AboutPageComp/Doctors/Doctors";
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true, easing: "ease-in-out" });
+    AOS.refresh();
+  }, []);
+
   return (
     <div className="font-sans bg-[#F3F3F3]">
-      <Navbar />
-      <ScrollToTop />
+        <Navbar />
+
       <main className="min-h-screen">
         <Routes>
+          {/* 404 Route */}
+          <Route
+            path="*"
+            element={
+              <div className="text-center py-20 text-xl font-bold">
+                404 - Page Not Found
+              </div>
+            }
+          />
+
           {/* Home Page */}
           <Route
             path="/"
@@ -73,7 +89,7 @@ const App = () => {
                 <Modern />
                 <Philosophy />
                 <Story />
-                <Doctors/>
+                <Doctors />
                 <Accreditations />
                 <Founders />
                 <ContactUs />
@@ -111,7 +127,7 @@ const App = () => {
         </Routes>
       </main>
 
-      <Footer />
+        <Footer />
     </div>
   );
 };

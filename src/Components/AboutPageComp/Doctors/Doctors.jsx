@@ -1,5 +1,12 @@
 import React from "react";
 
+const doctersData = [
+  {
+    id: 1,
+    
+  },
+];
+
 const Doctors = () => {
   return (
     <section className="py-12 space-y-10 relative z-10 overflow-hidden">
@@ -10,7 +17,7 @@ const Doctors = () => {
 
       {/* Subtext */}
       <p className="text-center w-full max-w-3xl text-2xl mx-auto text-textColor z-10">
-       Experienced practitioners dedicated to authentic Ayurvedic healing
+        Experienced practitioners dedicated to authentic Ayurvedic healing
       </p>
     </section>
   );

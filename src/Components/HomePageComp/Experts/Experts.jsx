@@ -44,7 +44,7 @@ const Experts = () => {
 
           {/* CTA Button */}
           <div className="my-auto">
-            <PrimaryBtn className="text-white">Learn More</PrimaryBtn>
+            <PrimaryBtn className="text-white ">Learn More</PrimaryBtn>
           </div>
 
           {/* Expert 2 */}

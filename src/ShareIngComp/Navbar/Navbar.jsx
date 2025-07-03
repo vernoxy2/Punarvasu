@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom"; // ✅ Correct import
+import { Link, useLocation } from "react-router-dom"; 
 import { FiMenu, FiX } from "react-icons/fi";
 import Logo from "../../assets/NavbarAssets/Punarvasu_logo.png";
 
@@ -12,7 +12,7 @@ const navItems = [
 ];
 
 const Navbar = () => {
-  const location = useLocation(); // ✅ Correct casing
+  const location = useLocation(); 
   const currentPath = location.pathname;
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,11 +25,13 @@ const Navbar = () => {
 
         {/* Logo Section */}
         <div className="flex items-center space-x-4">
+          <Link to={"/"} className="">
           <img
             src={Logo}
             alt="Punarvasu Logo"
             className="h-16 p-3 lg:h-full  w-auto object-contain pointer-events-none"
           />
+          </Link>
         </div>
 
         {/* Desktop Menu */}
