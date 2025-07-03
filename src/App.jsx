@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// Lazy Load Shared Layout
+// Lazy loaded layout components
 const Navbar = lazy(() => import("./ShareIngComp/Navbar/Navbar"));
 const Footer = lazy(() => import("./ShareIngComp/Footer/Footer"));
 
@@ -37,6 +37,18 @@ import Help from "./Components/ConatactUsPageComp/Help/Help";
 import ContForm from "./Components/ConatactUsPageComp/ContForm/ContForm";
 import ContMap from "./Components/ConatactUsPageComp/ContMap/ContMap";
 
+const MainLayout = ({ children }) => (
+  <>
+    <Suspense fallback={<div className="text-center py-4">Loading Navbar...</div>}>
+      <Navbar />
+    </Suspense>
+    <main className="min-h-screen">{children}</main>
+    <Suspense fallback={<div className="text-center py-4">Loading Footer...</div>}>
+      <Footer />
+    </Suspense>
+  </>
+);
+
 const App = () => {
   useEffect(() => {
     AOS.init({ duration: 800, once: true, easing: "ease-in-out" });
@@ -45,87 +57,80 @@ const App = () => {
 
   return (
     <div className="font-sans bg-[#F3F3F3]">
-      {/* Wrap Navbar in Suspense */}
-      <Suspense fallback={<div className="text-center py-4">Loading Navbar...</div>}>
-        <Navbar />
-      </Suspense>
+      <Routes>
+        {/* Home Page */}
+        <Route
+          path="/"
+          element={
+            <MainLayout>
+              <Heading />
+              <WelcomeText />
+              <Ayurveda />
+              <CoreServices />
+              <Experts />
+              <Certifications />
+              <WhyChoose />
+              <Testimonial />
+              <ContactUs />
+            </MainLayout>
+          }
+        />
 
-      <main className="min-h-screen">
-        <Routes>
-          <Route
-            path="*"
-            element={
-              <div className="text-center py-20 text-xl font-bold">
-                404 - Page Not Found
-              </div>
-            }
-          />
+        {/* About Page */}
+        <Route
+          path="/about"
+          element={
+            <MainLayout>
+              <AbHeader />
+              <Modern />
+              <Philosophy />
+              <Story />
+              <Doctors />
+              <Accreditations />
+              <Founders />
+              <ContactUs />
+            </MainLayout>
+          }
+        />
 
-          <Route
-            path="/"
-            element={
-              <>
-                <Heading />
-                <WelcomeText />
-                <Ayurveda />
-                <CoreServices />
-                <Experts />
-                <Certifications />
-                <WhyChoose />
-                <Testimonial />
-                <ContactUs />
-              </>
-            }
-          />
+        {/* Services Page */}
+        <Route
+          path="/services"
+          element={
+            <MainLayout>
+              <SerHeader />
+              <Treatments />
+              <Therapies />
+              <Procedures />
+              <Shlok />
+              <ContactUs />
+            </MainLayout>
+          }
+        />
 
-          <Route
-            path="/about"
-            element={
-              <>
-                <AbHeader />
-                <Modern />
-                <Philosophy />
-                <Story />
-                <Doctors />
-                <Accreditations />
-                <Founders />
-                <ContactUs />
-              </>
-            }
-          />
+        {/* Contact Page */}
+        <Route
+          path="/contact"
+          element={
+            <MainLayout>
+              <ConHeader />
+              <Help />
+              <ContForm />
+              <ContMap />
+            </MainLayout>
+          }
+        />
 
-          <Route
-            path="/services"
-            element={
-              <>
-                <SerHeader />
-                <Treatments />
-                <Therapies />
-                <Procedures />
-                <Shlok />
-                <ContactUs />
-              </>
-            }
-          />
-
-          <Route
-            path="/contact"
-            element={
-              <>
-                <ConHeader />
-                <Help />
-                <ContForm />
-                <ContMap />
-              </>
-            }
-          />
-        </Routes>
-      </main>
-
-      {/* Wrap Footer in Suspense */}
-      <Suspense fallback={<div className="text-center py-4">Loading Footer...</div>}>
-        <Footer />
-      </Suspense>
+        {/* 404 Page — No Navbar/Footer */}
+        <Route
+          path="*"
+          element={
+            <div className="text-center py-40 text-5xl font-bold bg-white">
+              404 - Page Not Found
+            </div>
+          }
+        />
+      </Routes>
     </div>
   );
 };
