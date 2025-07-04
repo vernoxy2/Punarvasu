@@ -7,7 +7,7 @@ import BgImg from "../../../assets/AboutUsAssets/Philosophy/BgImg.svg";
 import ShadowLight from "../../../assets/AboutUsAssets/Doctors/ShadowLight.svg";
 import ShadowDark from "../../../assets/AboutUsAssets/Doctors/shadowDark.svg";
 import vision from "../../../assets/AboutUsAssets/Doctors/Vision.svg";
-import mission from "../../../assets/AboutUsAssets/Doctors/Mission.svg";
+// import mission from "../../../assets/AboutUsAssets/Doctors/Mission.svg";
 
 const Doctors = () => {
   return (
@@ -172,11 +172,11 @@ const Doctors = () => {
         >
           {/* Mission Icon */}
           <div className="absolute -top-16 sm:-top-40">
-            <img
+            {/* <img
               src={mission}
               alt="Mission Icon"
               className="w-44 sm:w-auto mx-auto"
-            />
+            /> */}
           </div>
 
           {/* Background swap */}
