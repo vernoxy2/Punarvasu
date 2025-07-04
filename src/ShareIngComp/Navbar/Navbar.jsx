@@ -18,7 +18,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-transparent lg:bg-white shadow-sm top-0 z-50">
+    <nav data-aos="fade" className="w-full bg-transparent lg:bg-white shadow-sm top-0 z-50">
       <div className="mx-auto flex justify-between items-center sm:h-32 px-4">
         {/* Left Accent Bar (optional) */}
         <div className="hidden lg:block w-full max-w-[160px] h-12 bg-gradient-to-l from-[#F29014] to-white ml-6 mr-6" />

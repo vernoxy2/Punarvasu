@@ -3,6 +3,7 @@ import PrimaryBtn from "../../../ShareIngComp/PrimaryBtn/PrimaryBtn";
 import Expert1 from "../../../assets/HomeAssets/Experts/doctor1.png";
 import Expert2 from "../../../assets/HomeAssets/Experts/doctor2.png";
 import ExpertBg from "../../../assets/HomeAssets/Experts/ExpertBg.png";
+import {Link} from "react-router-dom";
 
 const style = {
   backgroundImage: `url(${ExpertBg})`,
@@ -15,7 +16,10 @@ const Experts = () => {
   return (
     <section className="pt-14 space-y-12">
       {/* Heading */}
-      <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-secondary">
+      <h1
+        data-aos="fade-up"
+        className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-secondary"
+      >
         Meet Our Experts
       </h1>
 
@@ -23,7 +27,11 @@ const Experts = () => {
       <div className="bg-primary/20 border-y border-black/30 shadow-xl">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-10">
           {/* Expert 1 */}
-          <div style={style} className="w-full  lg:w-5/12 relative ">
+          <div
+            data-aos="zoom-in"
+            style={style}
+            className="w-full lg:w-5/12 relative "
+          >
             <img
               src={Expert1}
               alt="Dr. Rajeev Patil"
@@ -41,14 +49,18 @@ const Experts = () => {
               </p>
             </div>
           </div>
-
           {/* CTA Button */}
           <div className="my-auto">
-            <PrimaryBtn className="text-white ">Learn More</PrimaryBtn>
+            <Link to="/about#doctors-heading">
+              <PrimaryBtn className="text-white">Learn More</PrimaryBtn>
+            </Link>
           </div>
-
           {/* Expert 2 */}
-          <div style={style} className="w-full lg:w-5/12 relative ">
+          <div
+            data-aos="zoom-in"
+            style={style}
+            className="w-full lg:w-5/12 relative "
+          >
             <img
               src={Expert2}
               alt="Dr. Sneha Joshi"

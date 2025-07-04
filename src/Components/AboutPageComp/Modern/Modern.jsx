@@ -3,8 +3,8 @@ import ModernImg from "../../../assets/AboutUsAssets/Modern.webp";
 
 const Modern = () => {
   return (
-    <section className="py-12 space-y-12">
-      <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-secondary leading-tight">
+    <section className="py-12 space-y-12 overflow-x-hidden">
+      <h1 data-aos="fade-up" className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-secondary leading-tight">
         Reviving Classical Ayurveda <br /> for Modern Lives
       </h1>
 
@@ -12,6 +12,7 @@ const Modern = () => {
         {/* Left Side with Image */}
         <div className="bg-primary/10 rounded-md shadow-inner flex justify-center lg:justify-end p-6">
           <img
+          data-aos='zoom-out'
             src={ModernImg}
             alt="Modern Ayurveda"
             className="lg:me-14"
@@ -19,7 +20,7 @@ const Modern = () => {
         </div>
 
         {/* Right Side with Text */}
-        <div className="text-textColor space-y-10 text-center lg:text-start px-10">
+        <div data-aos="fade-right" className="text-textColor space-y-10 text-center lg:text-start px-10">
           <h2 className="text-3xl lg:text-5xl font-black leading-snug">
             At Punarvasu Ayurved <br className="hidden md:block"/> Chikitsalayam
           </h2>

@@ -39,24 +39,25 @@ import ContMap from "./Components/ConatactUsPageComp/ContMap/ContMap";
 
 const MainLayout = ({ children }) => (
   <>
-    <Suspense fallback={<div className="text-center py-4">Loading Navbar...</div>}>
-      <Navbar />
-    </Suspense>
+    <Navbar />
     <main className="min-h-screen">{children}</main>
-    <Suspense fallback={<div className="text-center py-4">Loading Footer...</div>}>
-      <Footer />
-    </Suspense>
+    <Footer />
   </>
 );
 
 const App = () => {
   useEffect(() => {
-    AOS.init({ duration: 800, once: true, easing: "ease-in-out" });
+    AOS.init({
+      duration: 700,
+      delay: 100, // 👈 Delay added here
+      once: false,
+      easing: "ease-in-out",
+    });
     AOS.refresh();
   }, []);
 
   return (
-    <div className="font-sans bg-[#F3F3F3]">
+    <div className="font-sans bg-[#F3F3F3] overflow-hidden">
       <Routes>
         {/* Home Page */}
         <Route
@@ -100,10 +101,9 @@ const App = () => {
             <MainLayout>
               <SerHeader />
               <Treatments />
-              <Therapies />
               <Procedures />
+              <Therapies />
               <Shlok />
-              <ContactUs />
             </MainLayout>
           }
         />
@@ -121,13 +121,15 @@ const App = () => {
           }
         />
 
-        {/* 404 Page — No Navbar/Footer */}
+        {/* ✅ 404 Page with Navbar & Footer */}
         <Route
           path="*"
           element={
-            <div className="text-center py-40 text-5xl font-bold bg-white">
-              404 - Page Not Found
-            </div>
+            <MainLayout>
+              <div className="text-center py-40 text-5xl font-bold ">
+                404 - Page Not Found
+              </div>
+            </MainLayout>
           }
         />
       </Routes>

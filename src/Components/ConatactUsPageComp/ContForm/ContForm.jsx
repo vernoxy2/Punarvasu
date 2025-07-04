@@ -8,11 +8,15 @@ const ContForm = () => {
     <section className="py-12 space-y-12 relative overflow-hidden">
       {/* Background Image */}
       <img
+      data-aos="fade-right"
+      data-aos-duration="2000"
         src={right}
         alt=""
         className="absolute top-1/3 left-0 z-0 hidden md:block pointer-events-none  h-1/3 lg:h-auto"
       />
       <img
+      data-aos="fade-down"
+      data-aos-duration="2000"
         src={left}
         alt=""
         className="absolute top-1/3 right-0 z-0 hidden md:block pointer-events-none w-1/2 lg:w-auto"
@@ -20,15 +24,15 @@ const ContForm = () => {
 
       {/* Heading */}
       <div className="text-center space-y-6 relative z-10">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary">Contact With Us</h1>
-        <p className="lg:text-2xl text-textColor font-medium">
+        <h1 data-aos="fade-up" className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary">Contact With Us</h1>
+        <p data-aos="fade-up" className="lg:text-2xl text-textColor font-medium">
           Here to Help, Anytime You Need Us!
         </p>
       </div>
 
       {/* Contact Form */}
       <div className="container relative z-10">
-        <form className="space-y-8">
+        <form data-aos="fade-up" className="space-y-8">
           {/* First and Last Name */}
           <div className="flex flex-col md:flex-row justify-between gap-8">
             <input

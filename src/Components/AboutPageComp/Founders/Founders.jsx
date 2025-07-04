@@ -8,14 +8,15 @@ import BgImg from '../../../assets/AboutUsAssets/Founders/BgImg.svg'
 const Founders = () => {
   return (
     <section className="py-16 space-y-12 relative">
-      <img src={BgImg} alt="" className="absolute -bottom-10 pointer-events-none" />
+      <img data-aos="fade-up"         data-aos-duration="3000"
+       src={BgImg} alt="" className="absolute -bottom-10 pointer-events-none" />
       <div className="flex flex-col gap-y-12 items-center">
-        <img src={Namaste} alt="" className="pointer-events-none"/>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-primary leading-tight">
+        <img data-aos="fade" src={Namaste} alt="" className="pointer-events-none"/>
+        <h1 data-aos="fade-up" className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-primary leading-tight">
           A Note from the Founders
         </h1>
       </div>
-      <div className="container w-10/12 bg-primary/10 py-10 space-y-14 rounded-3xl relative">
+      <div data-aos="fade-up" className="container w-10/12 bg-primary/10 py-10 space-y-14 rounded-3xl relative">
       <img src={comma} alt="" className="absolute top-10 left-10"/>
       <img src={comma} alt="" className="absolute bottom-10 right-10 scale-x-[-1] scale-y-[-1]"/>
         <p className="text-textColor text-2xl font-medium text-center">

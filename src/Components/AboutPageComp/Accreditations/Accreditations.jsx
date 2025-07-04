@@ -7,7 +7,7 @@ import { FaShieldAlt } from "react-icons/fa";
 import { SiCodefresh } from "react-icons/si";
 import { FaBook } from "react-icons/fa6";
 import { TiGroup } from "react-icons/ti";
-import BgImg from '../../../assets/AboutUsAssets/leaf.svg'
+import BgImg from "../../../assets/AboutUsAssets/leaf.svg";
 
 const data = [
   {
@@ -44,26 +44,46 @@ const data = [
 
 const Accreditations = () => {
   return (
-    <section className="py-12 space-y-14 bg-primary/20 shadow-inner relative ">
-      <img src={BgImg} alt="" className="absolute right-0 top-4 z-0"/>
+    <section className="py-12 space-y-14 bg-primary/20 shadow-inner relative overflow-x-hidden">
+      <img
+        data-aos="fade-left"
+        data-aos-duration="3000"
+        src={BgImg}
+        alt=""
+        className="absolute right-0 top-4 z-0"
+      />
 
-      <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-primary leading-tight z-10">
+      <h1
+        data-aos="fade-up"
+        className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-primary leading-tight z-10"
+      >
         Certifications & Accreditations
       </h1>
-      <div className="container  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 z-10">
         {data.map((item) => (
           <div
-          key={item.id}
-          className="group z-10 flex flex-col gap-5 items-center justify-start text-primary hover:text-white bg-white hover:bg-primary duration-300 px-6 py-5 shadow transition-all "
+            data-aos="fade"
+            data-aos-duration="800"
+            key={item.id}
+            className="group flex flex-col gap-4 items-center text-center text-primary hover:text-white bg-white hover:bg-primary transition-all duration-500 px-6 py-8 rounded-md shadow-md"
           >
-            <div className="text-5xl group-hover:scale-110 transition-transform duration-300 pointer-events-none">
+            <div className="text-4xl sm:text-5xl group-hover:scale-110 transition-transform duration-300 pointer-events-none">
               {item.icon}
             </div>
-            <p className="text-center text-lg font-medium">{item.text}</p>
+            <p className="text-base sm:text-lg font-medium leading-snug max-w-xs">
+              {item.text}
+            </p>
           </div>
         ))}
       </div>
-        <img src={BgImg} alt="" className="absolute -left-10 bottom-0  scale-x-[-1] z-0"/>
+
+      <img
+        data-aos="fade-right"
+        data-aos-duration="3000"
+        src={BgImg}
+        alt=""
+        className="absolute -left-10 bottom-0  scale-x-[-1] z-0"
+      />
     </section>
   );
 };

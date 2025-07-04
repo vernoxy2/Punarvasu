@@ -37,16 +37,16 @@ const DataList = [
 
 const Certifications = () => {
   return (
-    <section className="py-12 space-y-12 relative">
-      <img src={BG} alt="" className="absolute right-0 pointer-events-none " />
+    <section className="py-12 space-y-12 relative overflow-hidden">
+      <img data-aos="fade-left" data-aos-duration="2000" src={BG} alt="" className="absolute right-0 pointer-events-none " />
 
-      <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-secondary">
+      <h1 data-aos="fade-up" className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-secondary">
         Our Credentials & Certifications
       </h1>
 
       <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-16 gap-y-4 sm:gap-8">
         {DataList.map((item) => (
-          <div className="flex px-2 sm:px-0 py-[2px] sm:py-0">
+          <div data-aos="fade-left" className="flex px-2 sm:px-0 py-[2px] sm:py-0">
             <div className="bg-primary px-1 md:px-[6px] h-[70px] lg:h-24 rounded-s-xl my-auto"></div>
             <div className="flex w-full items-center  gap-4 py-4 px-6 bg-white shadow-md hover:shadow-lg transition relative">
               <img src={item.icon} alt="icon" className="h-14 lg:h-full pointer-events-none" />

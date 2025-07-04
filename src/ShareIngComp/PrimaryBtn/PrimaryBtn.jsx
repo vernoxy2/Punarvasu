@@ -1,8 +1,8 @@
 import React from 'react';
 
-const PrimaryBtn = ({ children, className = "" }) => {
+const PrimaryBtn = ({ children, className = "", onClick }) => {
   return (
-    <button className={`bg-primary text-sm sm:text-base lg:text-2xl font-bold px-6 py-3 hover:bg-primary/80 transition ${className}`}>
+    <button onClick={onClick} data-aos="fade-up" data-aos-duration="1000" className={`bg-primary text-sm sm:text-base lg:text-2xl font-bold px-6 py-3 hover:bg-primary/80 transition ${className}`}>
       {children}
     </button>
   );

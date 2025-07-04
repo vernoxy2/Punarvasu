@@ -35,20 +35,21 @@ const Services = [
 
 const CoreServices = () => {
   return (
-   <section className="py-16 text-center relative z-10">
+   <section className="py-16 text-center relative z-10 overflow-hidden">
   {/* Background Image */}
-  <div className="absolute right-0 bottom-0 lg:top-0 z-0">
+  <div data-aos="fade-left" data-aos-duration="2000" className="absolute right-0 bottom-0 lg:top-0 z-0">
     <img src={SerBg} alt="" className="w-full h-auto pointer-events-none" />
   </div>
 
   {/* Heading */}
-  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary relative z-10">Our Core Services</h1>
+  <h1 data-aos="fade-up" className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary relative z-10">Our Core Services</h1>
 
   {/* Cards */}
   <div className="container mx-auto relative z-10">
     <div className="my-12 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 px-4">
       {Services.map((service) => (
         <div
+        data-aos="zoom-in"
           key={service.id}
           className="bg-white shadow-md group flex flex-col text-left hover:shadow-lg transition-all hover:-translate-y-3 duration-300"
         >

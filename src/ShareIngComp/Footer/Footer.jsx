@@ -23,7 +23,7 @@ const ServicesLink = [
 const Footer = () => {
   return (
     <footer className="bg-primary relative">
-      <div className="pt-20  ">
+      <div data-aos="fade" data-aos-duration="1200" className="pt-20  ">
         <div className="container lg:flex items-start gap-10 mb-56 space-y-9">
           {/*  */}
           <div className="lg:w-4/12  space-y-10">
@@ -91,33 +91,44 @@ const Footer = () => {
               <span className="bg-white h-[3px] w-[35%]"></span>
             </h1>
             <div className="flex flex-col gap-y-5">
-              <div className="flex gap-x-4">
-                <div className="h-12 w-12">
-                  {" "}
-                  <FaLocationDot className="text-6xl mx-auto my-auto p-2" />
+              <a
+                href="https://www.google.com/maps?q=PUNARVASU+AYURVEDA+CHIKITSALAYAM,+Shop+No+1,+BDCA+Building,+BHIDBHANJAN+MAHADEV+MANDIR,+KAPADIA+CHAL,+Abrama-396002"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="flex gap-x-4 items-center">
+                  <div className="h-12 w-12">
+                    <FaLocationDot className="text-6xl mx-auto my-auto p-2" />
+                  </div>
+                  <p className="lg:me-16">
+                    Shop No 1, BDCA Building, BHIDBHANJAN MAHADEV MANDIR,
+                    <br />
+                    KAPADIA CHAL, Abrama-396002
+                  </p>
                 </div>
-                <p className="lg:me-16">
-                  Shop No 1,BDCA Building, BHIDBHANJAN MAHADEV MANDIR, KAPADIA
-                  CHAL, Abrama-396002
-                </p>
-              </div>
-              <div className="flex items-center gap-x-4">
-                <div className="h-12 w-12">
-                  {" "}
-                  <MdAddIcCall className="text-5xl p-1 mx-auto my-auto" />
+              </a>
+
+              <a href="tel:+917947112761">
+                <div className="flex items-center gap-x-4">
+                  <div className="h-12 w-12">
+                    {" "}
+                    <MdAddIcCall className="text-5xl p-1 mx-auto my-auto" />
+                  </div>
+                  <p className="my-auto">
+                    call Us: <br />
+                    +91 07947112761
+                  </p>
                 </div>
-                <p className="my-auto">
-                  call Us: <br />
-                  +91 07947112761
-                </p>
-              </div>
-              <div className="flex  items-center gap-x-4 ">
-                <MdEmail className="text-5xl p-1" />
-                <p className="my-auto">
-                  Email: <br />
-                  punarvasu@gmail.com
-                </p>
-              </div>
+              </a>
+              <a href="mailto:punarvasu@gmail.com">
+                <div className="flex items-center gap-x-4">
+                  <MdEmail className="text-5xl p-1" />
+                  <p className="my-auto">
+                    Email: <br />
+                    punarvasu@gmail.com
+                  </p>
+                </div>
+              </a>
             </div>
             <Link
               to="/contact"

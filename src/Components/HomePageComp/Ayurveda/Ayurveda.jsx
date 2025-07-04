@@ -4,7 +4,7 @@ import leaf from "../../../assets/HomeAssets/leaf.png";
 const Ayurveda = () => {
   return (
     <section className="py-12 relative bg-primary/20 text-textColor">
-      <div className="absolute -bottom-8">
+      <div data-aos="fade-right" data-aos-duration="2000" className="absolute -bottom-8">
         <img
           src={leaf}
           alt=""
@@ -14,14 +14,14 @@ const Ayurveda = () => {
 
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div>
-          <h1 className="text-center lg:text-right text-3xl md:text-4xl lg:text-5xl">
+          <h1 data-aos="fade-left" className="text-center lg:text-right text-3xl md:text-4xl lg:text-5xl">
             Authentic Healing through <br className="hidden lg:block" /> the
             Ancient Science <br className="hidden lg:block" /> of{" "}
             <span className="font-bold">Ayurveda</span>
           </h1>
         </div>
         <div>
-          <h1 className="lg:text-2xl font-medium text-center lg:text-start">
+          <h1 data-aos="fade-right" className="lg:text-2xl font-medium text-center lg:text-start">
             Discover a sanctuary of health and harmony at{" "}
             <span className="font-bold">Punarvasu Ayurved Chikitsalayam</span>,
             where traditional Ayurvedic wisdom meets personalized care. Nestled

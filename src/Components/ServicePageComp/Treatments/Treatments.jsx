@@ -43,27 +43,43 @@ const DataList = [
 const Treatments = () => {
   return (
     <section className="py-12 space-y-12 relative">
-          <img src={left} alt=""  className="absolute z-0 w-24 md:w-36 lg:w-auto pointer-events-none"/>
+      <img
+      data-aos="fade-right"
+      data-aos-duration="2000"
+        src={left}
+        alt=""
+        className="absolute z-0 w-24 md:w-36 lg:w-auto pointer-events-none"
+      />
       {/* Heading Text */}
       <div className="text-center space-y-4 relative z-10">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary">
+        <h1 data-aos="fade-up" className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary">
           Our Core Treatments
         </h1>
-        <p className="lg:text-2xl text-textColor font-medium">
+        <p data-aos="fade-up" className="lg:text-2xl text-textColor font-medium">
           Discover our comprehensive range of traditional Ayurvedic therapies
         </p>
       </div>
       {/* Card  */}
       <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 z-10">
         {DataList.map((item) => (
-          <div key={item.id} className="text-center  space-y-4">
-            <img src={item.img} alt={item.title} className="w-full p-5 object-cover rounded-lg" />
+          <div data-aos="zoom-in" key={item.id} className="text-center  space-y-4">
+            <img
+              src={item.img}
+              alt={item.title}
+              className="w-full p-5 object-cover rounded-lg"
+            />
             <h3 className="lg:text-2xl font-bold text-primary">{item.title}</h3>
             <p className="text-textColor text-base">{item.Dec}</p>
           </div>
         ))}
       </div>
-      <img src={right} alt="" className="absolute right-12 bottom-4 sm:bottom-12 lg:bottom-52 z-0 w-24 md:w-56 lg:w-auto pointer-events-none" />
+      <img
+       data-aos="fade-up"
+      data-aos-duration="3000"
+        src={right}
+        alt=""
+        className="absolute right-12 bottom-4 sm:bottom-12 lg:bottom-52 z-0 w-24 md:w-56 lg:w-auto pointer-events-none"
+      />
     </section>
   );
 };

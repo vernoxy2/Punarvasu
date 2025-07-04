@@ -49,16 +49,17 @@ const ChooseData = [
 
 const WhyChoose = () => {
   return (
-    <section className="py-12 space-y-12 relative">
-      <img src={Bg1} alt="" className="absolute top-1/3 pointer-events-none" />
+    <section  className="py-12 space-y-12 relative overflow-hidden">
+      <img data-aos="fade-right" data-aos-duration="2000" src={Bg1} alt="" className="absolute top-1/3 pointer-events-none" />
       <img
+      data-aos="fade-left" data-aos-duration="2000"
         src={Bg2}
         alt=""
         className="absolute right-0 bottom-0 z-0 pointer-events-none"
       />
       
       {/* Title Section */}
-      <div className="w-full md:w-3/4 lg:w-1/2 relative z-10">
+      <div data-aos="fade-up" className="w-full md:w-3/4 lg:w-1/2 relative z-10">
         <div className="bg-primary py-3 pr-6 sm:pr-10 flex items-center justify-center md:justify-end gap-4 sm:gap-6">
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-white text-center lg:text-right">
             Why Choose Punavasu?
@@ -72,6 +73,7 @@ const WhyChoose = () => {
       <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {ChooseData.map(({ id, img, icon, text }) => (
           <div
+          data-aos="zoom-in"
             key={id}
             className="border rounded-lg overflow-hidden shadow p-5 relative bg-white"
           >

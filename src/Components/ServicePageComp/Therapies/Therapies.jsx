@@ -4,7 +4,7 @@ import Check from "../../../assets/ServiceAssets/Check.svg";
 
 const Therapies = () => {
   return (
-    <section className="py-14 bg-white">
+    <section data-aos="fade" className="py-14 bg-white">
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20">
         <div>
           <img src={TherapiesImg} />

@@ -66,14 +66,16 @@ const Procedures = () => {
     <section className="py-14 space-y-14 relative overflow-hidden">
       {/* Background Image */}
       <img
+      data-aos="fade-up"
+      data-aos-duration="2000"
         src={Bg}
         alt="Decorative Background"
         className="absolute top-1/2 left-0 w-full z-0 pointer-events-none -translate-y-1/3"
       />
 
       {/* Title Section */}
-      <div className="w-full md:w-3/4 lg:w-1/2 relative z-10">
-        <div className="bg-primary py-3 pr-6 sm:pr-10 flex items-center justify-end gap-4 sm:gap-6">
+      <div data-aos="fade-right" className="w-full md:w-3/4 lg:w-1/2 relative z-10">
+        <div  className="bg-primary py-3 pr-6 sm:pr-10 flex items-center justify-end gap-4 sm:gap-6">
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-white text-right">
             Other Therapeutic Procedures
           </h1>
@@ -86,6 +88,7 @@ const Procedures = () => {
       <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 relative z-10">
         {DataList.map((item) => (
           <div
+          data-aos="fade-up"
             key={item.id}
             className="bg-white shadow-xl rounded-2xl p-5 space-y-3 hover:shadow-2xl transition duration-300"
           >

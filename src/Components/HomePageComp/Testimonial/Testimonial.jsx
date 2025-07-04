@@ -32,16 +32,17 @@ const Testimonial = () => {
   return (
     <section className="py-12 space-y-12 relative">
       <img
+      data-aos="fade-right" data-aos-duration="2000"
         src={TestBg}
         alt=""
         className="absolute bottom-0 pointer-events-none"
       />
-      <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-secondary">
+      <h1 data-aos="fade-up" className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-secondary">
         Testimonial
       </h1>
       <div className="container pt-12 lg:pt-28 pb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 gap-y-20">
         {TestData.map(({ id, img, name, text, rate }) => (
-          <div key={id} className=" relative felx items-start">
+          <div data-aos="zoom-in" key={id} className=" relative felx items-start">
             <div className="bg-white p-5 space-y-4 shadow-lg">
               <div className="flex flex-col gap-y-2 justify-start items-start ">
                 <div className="absolute right-0 p-3 bg-white  rounded-full -mt-20 lg:-mt-28">
