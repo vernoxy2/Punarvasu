@@ -42,12 +42,12 @@ const Doctors = () => {
       {/* Doctor Cards */}
       <div
         data-aos="fade-up"
-        className="container px-8 py-40 grid grid-cols-1 xl:grid-cols-2 w-full gap-10 xl:gap-40 z-0"
+        className="container px-8 py-16 sm:py-40 grid grid-cols-1 xl:grid-cols-2 w-full gap-10 xl:gap-40 z-0"
         id="doctors-cards"
       >
         {/* Doctor: Dr. Anjali */}
         <div
-          className="bg-white sm:py-8 rounded-3xl shadow-xl hover:scale-105 duration-300 transition-all flex flex-col sm:flex-row relative"
+          className="bg-white p-5 sm:px-0 sm:py-8 rounded-3xl shadow-xl hover:scale-105 duration-300 transition-all flex flex-col sm:flex-row relative"
           id="dr-anjali-card"
         >
           <img
@@ -59,7 +59,7 @@ const Doctors = () => {
           <img
             src={drAnjali}
             alt=""
-            className="sm:-translate-x-7 flex items-start mb-auto h-40 sm:h-auto"
+            className="-translate-x-24 sm:-translate-x-7 flex items-start mb-auto h-[110px] sm:h-auto"
           />
           <div className="space-y-3 text-textColor">
             <p className="text-primary text-2xl font-black">
@@ -85,7 +85,7 @@ const Doctors = () => {
 
         {/* Doctor: Dr. Rajeev */}
         <div
-          className="bg-white py-8 rounded-3xl shadow-xl hover:scale-105 duration-300 transition-all flex relative"
+          className="bg-white p-5 sm:px-0 sm:py-8 rounded-3xl shadow-xl hover:scale-105 duration-300 transition-all flex flex-col sm:flex-row relative"
           id="dr-rajeev-card"
         >
           <img
@@ -96,7 +96,7 @@ const Doctors = () => {
           <img
             src={drRajeev}
             alt=""
-            className="-translate-x-7 flex items-start mb-auto"
+            className="-translate-x-24 sm:-translate-x-7 flex items-start mb-auto h-[110px] sm:h-auto"
           />
           <div className="space-y-3 text-textColor">
             <p className="text-primary text-2xl font-black">Dr. Rajeev Patil</p>

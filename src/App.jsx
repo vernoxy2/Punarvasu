@@ -52,6 +52,7 @@ const App = () => {
       delay: 100, // 👈 Delay added here
       once: false,
       easing: "ease-in-out",
+      offset: 100,
     });
     AOS.refresh();
   }, []);
