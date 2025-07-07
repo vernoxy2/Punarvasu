@@ -13,7 +13,7 @@ const ContactUs = () => {
     >
       <div
         data-aos-duration="2000"
-        className="container bg-white/40 rounded-2xl border border-white py-12 w-11/12 lg:w-7/12 mx-auto text-center text-white space-y-8"
+        className="container bg-white/40 rounded-2xl border border-white py-12 w-11/12 xl:w-7/12 mx-auto text-center text-white space-y-8"
       >
         <h1 data-aos="fade-down" className="text-3xl lg:text-4xl font-bold">
           Contact Us
@@ -25,10 +25,10 @@ const ContactUs = () => {
           "Discover Natural Healing — Request Your Ayurvedic Treatment Estimate
           Today."
         </h1>
-        <p data-aos="fade-down">
+        <p data-aos="fade-down" className="text-sm md:text-base 2xl:w-2/3 mx-auto">
           Get a personalized quote for your Ayurvedic treatment at Punarvasu.
-          Share <br /> your health concerns, and our team will provide a
-          tailored plan with transparent <br /> pricing—so you can begin your
+          Share your health concerns, and our team will provide a
+          tailored plan with transparent pricing—so you can begin your
           healing journey with confidence.
         </p>
         <PrimaryBtn
@@ -46,7 +46,7 @@ const ContactUs = () => {
           data-aos-duration="2500"
           src={ContImg}
           alt=""
-          className="w-1/2 lg:w-auto absolute bottom-0 -right-16 lg:right-60 pointer-events-none"
+          className="w-1/2 md:w-1/3 2xl:w-auto absolute bottom-0 -right-14 lg:-right-0 2xl:right-60 pointer-events-none"
         />
       </div>
     </section>

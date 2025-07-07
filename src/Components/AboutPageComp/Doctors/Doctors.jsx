@@ -20,7 +20,7 @@ const Doctors = () => {
         data-aos-duration="3000"
         src={DoctorsImg}
         alt=""
-        className="absolute bottom-0 z-0"
+        className="absolute bottom-0 z-0 pointer-events-none"
       />
       {/* Section Heading */}
       <h1
@@ -47,7 +47,7 @@ const Doctors = () => {
       >
         {/* Doctor: Dr. Anjali */}
         <div
-          className="bg-white p-5 sm:px-0 sm:py-8 rounded-3xl shadow-xl hover:scale-105 duration-300 transition-all flex flex-col sm:flex-row relative"
+          className="bg-white p-5 sm:px-0 sm:py-8 rounded-3xl shadow-xl hover:scale-105 duration-300 transition-all flex flex-col sm:flex-row relative pointer-events-none"
           id="dr-anjali-card"
         >
           <img
@@ -59,7 +59,7 @@ const Doctors = () => {
           <img
             src={drAnjali}
             alt=""
-            className="-translate-x-24 sm:-translate-x-7 flex items-start mb-auto h-[110px] sm:h-auto"
+            className="-translate-x-24 md:-translate-x-7 flex items-start mb-auto h-[110px] sm:h-auto"
           />
           <div className="space-y-3 text-textColor">
             <p className="text-primary text-2xl font-black">
@@ -85,7 +85,7 @@ const Doctors = () => {
 
         {/* Doctor: Dr. Rajeev */}
         <div
-          className="bg-white p-5 sm:px-0 sm:py-8 rounded-3xl shadow-xl hover:scale-105 duration-300 transition-all flex flex-col sm:flex-row relative"
+          className="bg-white p-5 sm:px-0 sm:py-8 rounded-3xl shadow-xl hover:scale-105 duration-300 transition-all flex flex-col sm:flex-row relative pointer-events-none"
           id="dr-rajeev-card"
         >
           <img
@@ -96,7 +96,7 @@ const Doctors = () => {
           <img
             src={drRajeev}
             alt=""
-            className="-translate-x-24 sm:-translate-x-7 flex items-start mb-auto h-[110px] sm:h-auto"
+            className="-translate-x-24 sm:-translate-x-7 flex items-start mb-auto h-[110px] sm:h-auto pointer-events-none"
           />
           <div className="space-y-3 text-textColor">
             <p className="text-primary text-2xl font-black">Dr. Rajeev Patil</p>
@@ -134,7 +134,7 @@ const Doctors = () => {
             <img
               src={vision}
               alt="Vision Icon"
-              className="w-40 sm:w-auto mx-auto"
+              className="w-40 sm:w-auto mx-auto pointer-events-none"
             />
           </div>
 
@@ -143,12 +143,12 @@ const Doctors = () => {
             <img
               src={ShadowLight}
               alt="Light Shadow"
-              className="group-hover:hidden duration-200 w-1/2 sm:w-auto mx-auto"
+              className="group-hover:hidden duration-100 w-1/2 sm:w-auto mx-auto pointer-events-none"
             />
             <img
               src={ShadowDark}
               alt="Dark Shadow"
-              className="hidden group-hover:block duration-200 w-1/2 sm:w-auto mx-auto"
+              className="hidden group-hover:block duration-100 w-1/2 sm:w-auto mx-auto pointer-events-none"
             />
           </div>
 
@@ -175,21 +175,21 @@ const Doctors = () => {
             <img
               src={mission}
               alt="Mission Icon"
-              className="w-44 sm:w-auto mx-auto"
+              className="w-44 sm:w-auto mx-auto pointer-events-none"
             />
           </div>
 
           {/* Background swap */}
-          <div className="mb-6"> `    `
+          <div className="mb-6">
             <img
               src={ShadowLight}
               alt="Light Shadow"
-              className="group-hover:hidden duration-200 w-1/2 sm:w-auto mx-auto"
+              className="group-hover:hidden duration-100 w-1/2 sm:w-auto mx-auto pointer-events-none"
             />
             <img
               src={ShadowDark}
               alt="Dark Shadow"
-              className="hidden group-hover:block duration-200  w-1/2 sm:w-auto mx-auto"
+              className="hidden group-hover:block duration-100  w-1/2 sm:w-auto mx-auto pointer-events-none"
             />
           </div>
 

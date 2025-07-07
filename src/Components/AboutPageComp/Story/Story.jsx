@@ -4,7 +4,7 @@ import StoryBg from "../../../assets/AboutUsAssets/StoryBg.svg";
 
 const Story = () => {
   return (
-    <section className="py-14 hidden md:block relative overflow-hidden">
+    <section className="py-14 spayce-y-10 hidden md:block relative overflow-hidden">
       <img data-aos="fade-left" data-aos-duration="2000" src={StoryBg} alt="" className="absolute right-0 z-0" />
       <h1 data-aos="fade-up" className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-secondary leading-tight z-10">
         Our Story
