@@ -3,7 +3,7 @@ import PrimaryBtn from "../../../ShareIngComp/PrimaryBtn/PrimaryBtn";
 import Expert1 from "../../../assets/HomeAssets/Experts/doctor1.png";
 import Expert2 from "../../../assets/HomeAssets/Experts/doctor2.png";
 import ExpertBg from "../../../assets/HomeAssets/Experts/ExpertBg.png";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const style = {
   backgroundImage: `url(${ExpertBg})`,
@@ -25,56 +25,54 @@ const Experts = () => {
 
       {/* Content Wrapper */}
       <div className="bg-primary/20 border-y border-black/30 shadow-xl">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-10">
+        <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-center gap-y-8 xl:gap-x-2 py-5">
           {/* Expert 1 */}
           <div
             data-aos="zoom-in"
             style={style}
-            className="w-full lg:w-5/12 relative "
+            className="relative w-full max-w-md xl:w-5/12 h-[400px] md:h-[500px] "
           >
             <img
               src={Expert1}
               alt="Dr. Rajeev Patil"
-              className="h-[500px] mx-auto object-contain pointer-events-none"
+              className="h-full w-full object-contain pointer-events-none"
             />
             <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-white/80 text-center w-11/12 sm:w-3/4 md:w-3/5 p-4 rounded shadow">
               <h2 className="text-xl md:text-2xl font-semibold text-primary">
                 Dr. Rajeev Patil
               </h2>
-              <p className="text-sm md:text-base text-gray-700 ">
+              <p className="text-sm md:text-base text-gray-700">
                 Pediatric & Preventive Ayurveda Expert <br />
-                <span className="italic">
-                  “Early care leads to lifelong health.”
-                </span>
+                <span className="italic">“Early care leads to lifelong health.”</span>
               </p>
             </div>
           </div>
+
           {/* CTA Button */}
           <div className="my-auto">
             <Link to="/about#doctors-heading">
               <PrimaryBtn className="text-white">Learn More</PrimaryBtn>
             </Link>
           </div>
+
           {/* Expert 2 */}
           <div
             data-aos="zoom-in"
             style={style}
-            className="w-full lg:w-5/12 relative "
+            className="relative w-full max-w-md xl:w-5/12 h-[400px] md:h-[500px]"
           >
             <img
               src={Expert2}
               alt="Dr. Sneha Joshi"
-              className="h-[500px] mx-auto object-contain pointer-events-none"
+              className="h-full w-full object-contain pointer-events-none"
             />
             <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-white/80 text-center w-11/12 sm:w-3/4 md:w-3/5 p-4 rounded shadow">
               <h2 className="text-xl md:text-2xl font-semibold text-primary">
                 Dr. Sneha Joshi
               </h2>
-              <p className="text-sm md:text-base text-gray-700 ">
+              <p className="text-sm md:text-base text-gray-700">
                 Women's Wellness & Panchakarma Specialist <br />
-                <span className="italic">
-                  “Harmony through healing and balance.”
-                </span>
+                <span className="italic">“Harmony through healing and balance.”</span>
               </p>
             </div>
           </div>

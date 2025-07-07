@@ -40,7 +40,7 @@ const Testimonial = () => {
       <h1 data-aos="fade-up" className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-secondary">
         Testimonial
       </h1>
-      <div className="container pt-12 lg:pt-28 pb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 gap-y-20">
+      <div className="container pt-12 lg:pt-28 pb-12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 gap-y-24">
         {TestData.map(({ id, img, name, text, rate }) => (
           <div data-aos="zoom-in" key={id} className=" relative felx items-start">
             <div className="bg-white p-5 space-y-4 shadow-lg">

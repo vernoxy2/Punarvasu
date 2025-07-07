@@ -71,7 +71,7 @@ const CoreServices = () => {
 
   {/* Button */}
   <div className="relative z-10 mt-4">
-    <PrimaryBtn className="text-white">Explore All Services</PrimaryBtn>
+    <PrimaryBtn className="text-white mx-auto">Explore All Services</PrimaryBtn>
   </div>
 </section>
 

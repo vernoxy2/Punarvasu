@@ -50,6 +50,7 @@ const Help = () => {
       {/* Cards */}
       <div className="container mx-auto px-4 grid gap-10 sm:grid-cols-2 xl:grid-cols-3">
         {ContactData.map((item) => (
+          <a href={item.link} target="_blank" rel="noopener noreferrer">
           <div
             data-aos="fade-left"
             key={item.id}
@@ -67,11 +68,10 @@ const Help = () => {
               <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary">
                 {item.title}
               </h3>
-              <a href={item.link} target="_blank" rel="noopener noreferrer">
                 <p className="text-textColor text-base">{item.dec}</p>
-              </a>
             </div>
           </div>
+              </a>
         ))}
       </div>
     </section>

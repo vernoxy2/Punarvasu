@@ -36,7 +36,7 @@ const ContactUs = () => {
             window.scrollTo({ top: 0, behavior: "instant" });
             navigate("/contact");
           }}
-          className="rounded-lg bg-white hover:text-white duration-300 text-primary text-base"
+          className="rounded-lg bg-white hover:text-white duration-300 text-primary text-basem mx-auto"
         >
           Get a Quote
         </PrimaryBtn>

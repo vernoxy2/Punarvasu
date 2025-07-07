@@ -85,11 +85,11 @@ const WhyChoose = () => {
             />
 
             {/* Icon box (positioned on image) */}
-            <div className="absolute bottom-[80px] left-0 bg-white p-6 rounded-full ">
+            <div className="absolute bottom-[92px] xl:bottom-[80px] left-0 bg-white p-6 rounded-full ">
               <img
                 src={icon}
                 alt={`Icon ${id}`}
-                className="w-16 h-16 pointer-events-none"
+                className="w-12  h-12 xl:w-16 xl:h-16 pointer-events-none"
               />
             </div>
 

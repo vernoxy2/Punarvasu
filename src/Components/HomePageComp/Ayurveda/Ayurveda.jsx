@@ -8,7 +8,7 @@ const Ayurveda = () => {
         <img
           src={leaf}
           alt=""
-          className=" pointer-events-none h-52"
+          className="pointer-events-none h-72"
         />
       </div>
 
