@@ -42,7 +42,7 @@ const Doctors = () => {
       {/* Doctor Cards */}
       <div
         data-aos="fade-up"
-        className="container px-8 py-16 sm:py-40 grid grid-cols-1 xl:grid-cols-2 w-full gap-10 xl:gap-40 z-0"
+        className="container px-8 py-16 lg:py-40 grid grid-cols-1 xl:grid-cols-2 w-full gap-10 xl:gap-40 z-0"
         id="doctors-cards"
       >
         {/* Doctor: Dr. Anjali */}
@@ -122,7 +122,7 @@ const Doctors = () => {
       <div
         data-aos="fade-up"
         id="vision-mission-cards"
-        className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 gap-y-20 px-4 md:px-8 lg:px-16 py-16 md:py-28 z-10"
+        className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 gap-y-36 px-4 md:px-8 lg:px-16 py-16 md:py-28 z-10"
       >
         {/* Vision Card */}
         <div

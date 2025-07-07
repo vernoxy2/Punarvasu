@@ -50,7 +50,7 @@ const App = () => {
     AOS.init({
       duration: 700,
       delay: 100, // 👈 Delay added here
-      once: false,
+      once: true,
       easing: "ease-in-out",
       offset: 100,
     });
