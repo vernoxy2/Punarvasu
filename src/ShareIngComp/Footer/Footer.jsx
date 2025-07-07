@@ -146,7 +146,7 @@ const Footer = () => {
       <img
         src={leaf}
         alt=""
-        className="h-64 lg:h-72 2xl:h-auto ms-auto absolute right-0 bottom-0 z-0 pointer-events-none"
+        className="h-60 lg:h-72 2xl:h-auto ms-auto absolute right-0 bottom-0 z-0 pointer-events-none"
       />
     </footer>
   );
