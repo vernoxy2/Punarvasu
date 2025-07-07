@@ -7,7 +7,7 @@ import BgImg from "../../../assets/AboutUsAssets/Philosophy/BgImg.svg";
 import ShadowLight from "../../../assets/AboutUsAssets/Doctors/ShadowLight.svg";
 import ShadowDark from "../../../assets/AboutUsAssets/Doctors/shadowDark.svg";
 import vision from "../../../assets/AboutUsAssets/Doctors/Vision.svg";
-import mission from "../../../assets/AboutUsAssets/Doctors/Mission.svg";
+import mission from "../../../assets/AboutUsAssets/Doctors/Mis.svg";
 
 const Doctors = () => {
   return (
