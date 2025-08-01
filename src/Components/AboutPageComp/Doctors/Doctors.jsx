@@ -134,7 +134,7 @@ const Doctors = () => {
           </div>
 
           {/* Background swap */}
-          {/* <div className="mb-6">
+          <div className="mb-6">
             <img
               src={ShadowLight}
               alt="Light Shadow"
@@ -145,10 +145,8 @@ const Doctors = () => {
               alt="Dark Shadow"
               className="hidden group-hover:block duration-100 w-1/2 sm:w-auto mx-auto pointer-events-none"
             />
-          </div> */}
-          <div className="mb-20">
-
           </div>
+          <div className="mb-20"></div>
 
           {/* Heading */}
           <h1 className="text-primary group-hover:text-white text-3xl sm:text-4xl font-black mb-4">
@@ -178,19 +176,18 @@ const Doctors = () => {
           </div>
 
           {/* Background swap */}
-{/* <div className="mb-6 relative w-full flex justify-center">
-  <img
-    src={ShadowLight}
-    alt="Light Shadow"
-    className="group-hover:hidden transition-opacity duration-200 w-1/2 sm:w-auto pointer-events-none"
-  />
-  <img
-    src={ShadowDark}
-    alt="Dark Shadow"
-    className="hidden group-hover:block transition-opacity duration-200 w-1/2 sm:w-auto pointer-events-none"
-  />
-</div> */}
-
+          <div className="mb-6 relative w-full flex justify-center">
+            <img
+              src={ShadowLight}
+              alt="Light Shadow"
+              className="group-hover:opacity-0 transition-opacity duration-200 w-1/2 sm:w-auto pointer-events-none"
+            />
+            <img
+              src={ShadowDark}
+              alt="Dark Shadow"
+              className="hidden group-hover:block transition-opacity duration-200 w-1/2 sm:w-auto pointer-events-none"
+            />
+          </div>
 
           {/* Heading */}
           <h1 className="text-primary group-hover:text-white text-3xl sm:text-4xl font-black mb-4">

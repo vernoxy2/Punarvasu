@@ -43,17 +43,28 @@ const ChooseData = [
 
 const WhyChoose = () => {
   return (
-    <section  className="py-12 space-y-12 relative overflow-hidden">
-      <img data-aos="fade-right" data-aos-duration="2000" src={Bg1} alt="" className="absolute top-1/3 pointer-events-none" />
+    <section className="py-12 space-y-12 relative overflow-hidden">
       <img
-      data-aos="fade-left" data-aos-duration="2000"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+        src={Bg1}
+        alt=""
+        className="absolute top-1/3 pointer-events-none"
+      />
+      <img
+        data-aos="fade-left"
+        data-aos-duration="2000"
         src={Bg2}
         alt=""
         className="absolute right-0 bottom-0 z-0 pointer-events-none"
       />
-      
+
       {/* Title Section */}
-      <div data-aos="fade-up" className="w-full md:w-3/4 lg:w-1/2 relative z-10">
+
+      <div
+        data-aos="fade-up"
+        className="w-full md:w-3/4 lg:w-1/2 relative z-10"
+      >
         <div className="bg-primary py-3 pr-6 sm:pr-10 flex items-center justify-center md:justify-end gap-4 sm:gap-6">
           <h1 className="text-xl sm:text-2xl md:text-3xl 2xl:text-5xl font-bold text-white text-center lg:text-right">
             Why Choose Punavasu?
@@ -62,21 +73,56 @@ const WhyChoose = () => {
         </div>
         <div className="bg-secondary py-1 ml-4 sm:ml-0 mr-4"></div>
       </div>
-       
+
       {/* Cards Grid */}
+      {/* <div className="container xl:px-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+        {ChooseData.map(({ id, img, icon, text }) => (
+          <div
+            key={id}
+            data-aos="zoom-in"
+            className="relative bg-white border rounded-lg shadow group overflow-hidden p-4"
+          >
+            Image Section
+            <div className="relative w-full h-[305px] rounded-md overflow-hidden mb-8">
+              <img
+                src={img}
+                alt={`Choose ${id}`}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+
+              Icon Positioned on Image
+              <div className="absolute -bottom-10 left-4 bg-white p-4 md:p-6 rounded-full shadow-md">
+                <img
+                  src={icon}
+                  alt={`Icon ${id}`}
+                  className="w-12 h-12 2xl:w-16 2xl:h-16 object-contain"
+                />
+              </div>
+            </div>
+
+            Text Content
+            <p className="text-primary text-center text-base font-medium px-2">
+              {text}
+            </p>
+          </div>
+        ))}
+      </div> */}
+
       <div className="container  xl:px-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
         {ChooseData.map(({ id, img, icon, text }) => (
           <div
-          data-aos="zoom-in"
+            data-aos="zoom-in"
             key={id}
-            className="border rounded-lg overflow-hidden shadow p-3 md:p-4  relative bg-white"
+            className="border rounded-lg overflow-hidden shadow p-3 md:p-4  relative bg-white group "
           >
             {/* Image */}
-            <img
-              src={img}
-              alt={`Choose ${id}`}
-              className="w-full h-[305px] object-cover rounded-md mb-8 pointer-events-none"
-            />
+            <div>
+              <img
+                src={img}
+                alt={`Choose ${id}`}
+                className="w-full h-[305px] object-cover  pointer-events-none"
+              />
+            </div>
 
             {/* Icon box (positioned on image) */}
             <div className="absolute bottom-[71px] md:bottom-[78px] 2xl:bottom-[80px] left-0 bg-white p-6 rounded-full ">

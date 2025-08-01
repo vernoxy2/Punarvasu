@@ -39,7 +39,10 @@ const Help = () => {
         >
           Need Any Help?
         </h1>
-        <p data-aos="fade-up" className="lg:text-2xl text-textColor font-medium">
+        <p
+          data-aos="fade-up"
+          className="lg:text-2xl text-textColor font-medium"
+        >
           We’re Just a Message Away – Let’s Talk!
         </p>
       </div>
@@ -62,13 +65,13 @@ const Help = () => {
               <img
                 src={item.Icon}
                 alt={`${item.title} icon`}
-                className="mx-auto h-16 w-16 sm:h-20 sm:w-20"
+                className="mx-auto h-16 w-16 sm:h-20 sm:w-20 group-hover:scale-110 duration-300 transition-transform"
               />
               <div className="mt-8 space-y-3">
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary group-hover:text-white transition">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary transition">
                   {item.title}
                 </h3>
-                <p className="text-textColor group-hover:text-white text-base transition max-w-xs mx-auto">
+                <p className="text-textColor text-base transition max-w-xs mx-auto">
                   {item.dec}
                 </p>
               </div>

@@ -5,6 +5,7 @@ import Cosmetic from "../../../assets/HomeAssets/CoreServices/cosmetic.png";
 import GarbhSanskar from "../../../assets/HomeAssets/CoreServices/GarbhSanskar.png";
 import PrimaryBtn from "../../../ShareIngComp/PrimaryBtn/PrimaryBtn";
 import SerBg from "../../../assets/HomeAssets/CoreServices/ServicesBg.png";
+import { Link } from "react-router";
 
 const Services = [
   {
@@ -71,7 +72,9 @@ const CoreServices = () => {
 
   {/* Button */}
   <div className="relative z-10 mt-4">
-    <PrimaryBtn className="text-white mx-auto">Explore All Services</PrimaryBtn>
+    <Link to="/services" >
+    <PrimaryBtn onClick={() => window.scrollTo(0, 0)} className="text-white mx-auto">Explore All Services</PrimaryBtn>
+    </Link>
   </div>
 </section>
 

@@ -25,9 +25,9 @@ const Navbar = () => {
       <p className="text-center xl:text-end md:text-lg md:-mb-8 container xl:text-primary bg-primary lg:bg-transparent text-white text-xs p-2 lg:p-0">
         India's Most Trusted Ayurveda Healthcare Brand Since 2015
       </p>
-      <div className="mx-auto flex justify-between items-center sm:h-32 px-4">
+      <div className=" mx-auto flex justify-between items-center sm:h-32 px-4">
         {/* Left Accent Bar (optional) */}
-        <div className="hidden lg:block w-full max-w-[160px] h-12 bg-gradient-to-l from-[#F29014] to-white ml-6 mr-6" />
+        <div className="hidden lg:block w-[10%] h-12 bg-gradient-to-l from-[#F29014] to-white ml-6 mr-6" />
 
         {/* Logo Section */}
         <div className="flex items-center space-x-4">
