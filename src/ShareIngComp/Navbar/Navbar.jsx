@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom"; 
+import { Link, useLocation } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import Logo from "../../assets/NavbarAssets/Punarvasu_logo.png";
 
@@ -12,13 +12,19 @@ const navItems = [
 ];
 
 const Navbar = () => {
-  const location = useLocation(); 
+  const location = useLocation();
   const currentPath = location.pathname;
 
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav data-aos="fade" className="w-full bg-transparent lg:bg-white shadow-sm top-0 z-50">
+    <nav
+      data-aos="fade"
+      className="w-full bg-transparent lg:bg-white shadow-sm top-0 z-50"
+    >
+      <p className="text-center xl:text-end md:text-lg md:-mb-8 container xl:text-primary bg-primary lg:bg-transparent text-white text-xs p-2 lg:p-0">
+        India's Most Trusted Ayurveda Healthcare Brand Since 2015
+      </p>
       <div className="mx-auto flex justify-between items-center sm:h-32 px-4">
         {/* Left Accent Bar (optional) */}
         <div className="hidden lg:block w-full max-w-[160px] h-12 bg-gradient-to-l from-[#F29014] to-white ml-6 mr-6" />
@@ -26,12 +32,15 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className="flex items-center space-x-4">
           <Link to={"/"} className="">
-          <img
-            src={Logo}
-            alt="Punarvasu Logo"
-            className="h-16 p-3 lg:h-full  w-auto object-contain pointer-events-none"
-          />
+            <img
+              src={Logo}
+              alt="Punarvasu Logo"
+              className="h-16 p-3 lg:h-full  w-auto object-contain pointer-events-none"
+            />
           </Link>
+        </div>
+        <div className="text-3xl font-bold lg:hidden text-primary">
+          Punarvasu
         </div>
 
         {/* Desktop Menu */}

@@ -51,7 +51,7 @@ const Founders = () => {
             <img src={anjali} alt="" className="pointer-events-none" />
             <div className=" text-center">
               <h1 className="text-2xl font-black text-primary">
-                Dr. Anjali Sharma
+               Dr. Yogesh H. Desai
               </h1>
               <p className="font-medium text-textColor">Co-Founder</p>
             </div>
@@ -60,7 +60,7 @@ const Founders = () => {
             <img src={Rajveer} alt="" className="pointer-events-none" />
             <div className=" text-center">
               <h1 className="text-2xl font-black text-primary">
-                Dr. Rajeev Patil
+               Dr. Priyanka V. Dodia
               </h1>
               <p className="font-medium text-textColor">Co-Founder</p>
             </div>

@@ -91,6 +91,7 @@ const App = () => {
               <Accreditations />
               <Founders />
               <ContactUs />
+
             </MainLayout>
           }
         />
@@ -104,7 +105,8 @@ const App = () => {
               <Treatments />
               <Procedures />
               <Therapies />
-              <Shlok />
+              <ContactUs />
+
             </MainLayout>
           }
         />
@@ -116,8 +118,11 @@ const App = () => {
             <MainLayout>
               <ConHeader />
               <Help />
-              <ContForm />
               <ContMap />
+               <Help />
+              <ContMap />
+              <ContForm />
+              
             </MainLayout>
           }
         />

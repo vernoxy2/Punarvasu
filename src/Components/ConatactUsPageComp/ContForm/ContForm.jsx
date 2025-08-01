@@ -5,18 +5,18 @@ import left from "../../../assets/ContactUsAssets/Conatform/Left.webp";
 
 const ContForm = () => {
   return (
-    <section className="py-12 space-y-12 relative overflow-hidden">
+    <section className="py-12 space-y-24 relative overflow-hidden">
       {/* Background Image */}
       <img
-      data-aos="fade-right"
-      data-aos-duration="2000"
+        data-aos="fade-right"
+        data-aos-duration="2000"
         src={right}
         alt=""
         className="absolute top-1/3 left-0 z-0 hidden md:block pointer-events-none  h-1/3 lg:h-auto"
       />
       <img
-      data-aos="fade-down"
-      data-aos-duration="2000"
+        data-aos="fade-down"
+        data-aos-duration="2000"
         src={left}
         alt=""
         className="absolute top-1/3 right-0 z-0 hidden md:block pointer-events-none w-1/2 lg:w-auto"
@@ -24,8 +24,16 @@ const ContForm = () => {
 
       {/* Heading */}
       <div className="text-center space-y-6 relative z-10">
-        <h1 data-aos="fade-up" className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary">Contact With Us</h1>
-        <p data-aos="fade-up" className="lg:text-2xl text-textColor font-medium">
+        <h1
+          data-aos="fade-up"
+          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary"
+        >
+          Contact With Us
+        </h1>
+        <p
+          data-aos="fade-up"
+          className="lg:text-2xl text-textColor font-medium"
+        >
           Here to Help, Anytime You Need Us!
         </p>
       </div>
@@ -65,13 +73,26 @@ const ContForm = () => {
             />
           </div>
 
-          {/* Subject */}
-          <input
-            type="text"
-            aria-label="Subject"
-            placeholder="Subject"
-            className="w-full p-4 lg:p-5 rounded-lg md:text-xl lg:text-2xl text-primary placeholder:text-primary font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-primary"
-          />
+          <div className="relative">
+            <select
+              required
+              aria-label="Subject"
+              className="w-full appearance-none p-4 lg:p-5 pr-14 rounded-lg md:text-xl lg:text-2xl text-primary placeholder:text-primary font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-primary"
+            >
+              <option value="" disabled selected>
+                Select Your Doctor
+              </option>
+              <option value="Dr. Yogesh H. Desai">Dr. Yogesh H. Desai</option>
+              <option value="Dr. Priyanka V. Dodia">
+                Dr. Priyanka V. Dodia
+              </option>
+            </select>
+
+            {/* Dropdown Icon */}
+            <div className="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-primary text-3xl font-bold">
+              ▼
+            </div>
+          </div>
 
           {/* Message */}
           <textarea

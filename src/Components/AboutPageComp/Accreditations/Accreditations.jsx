@@ -11,32 +11,18 @@ import BgImg from "../../../assets/AboutUsAssets/leaf.svg";
 
 const data = [
   {
-    id: 1,
     icon: <MdOutlineBrightnessLow />,
     text: "Government-registered BAMS & MD",
   },
   {
-    id: 2,
-    icon: <FaShieldAlt />,
-    text: "Licensed under the Ministry of AYUSH",
-  },
-  {
-    id: 3,
-    icon: <SiCodefresh />,
-    text: "100% Ayurvedic medicines & therapies",
-  },
-  {
-    id: 4,
-    icon: <FaBook />,
-    text: "Classical Panchkarma protocols as per Charak Samhita",
-  },
-  {
-    id: 5,
     icon: <MdOutlineAccessTimeFilled />,
     text: "15+ years of clinical experience",
   },
   {
-    id: 6,
+    icon: <SiCodefresh />,
+    text: "100% Ayurvedic medicines & therapies",
+  },
+  {
     icon: <TiGroup />,
     text: "Over 5,000+ patients served",
   },
@@ -59,13 +45,13 @@ const Accreditations = () => {
       >
         Certifications & Accreditations
       </h1>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 z-10">
         {data.map((item) => (
           <div
             data-aos="fade"
             data-aos-duration="800"
             key={item.id}
-            className="group flex flex-col gap-4 items-center text-center text-primary hover:text-white bg-white hover:bg-primary transition-all duration-500 px-6 py-8 rounded-md shadow-md"
+            className="group flex flex-col gap-4 items-center text-center text-primary hover:text-white bg-white hover:bg-primary transition-all duration-500 px-4 py-8 rounded-md shadow-md"
           >
             <div className="text-4xl sm:text-5xl group-hover:scale-110 transition-transform duration-300 pointer-events-none">
               {item.icon}

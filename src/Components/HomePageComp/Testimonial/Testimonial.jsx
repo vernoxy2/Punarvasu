@@ -45,14 +45,14 @@ const Testimonial = () => {
           <div data-aos="zoom-in" key={id} className=" relative felx items-start">
             <div className="bg-white p-5 space-y-4 shadow-lg">
               <div className="flex flex-col gap-y-2 justify-start items-start ">
-                <div className="absolute right-0 p-3 bg-white  rounded-full -mt-20 lg:-mt-28">
+                <div className="absolute right-0 p-3 bg-white  rounded-full -mt-20 2xl:-mt-28">
                   <img
                     src={img}
                     alt={name}
-                    className="h-[120px]  lg:h-36 rounded-full object-cover mx-auto pointer-events-none"
+                    className="h-[120px]  2xl:h-36 rounded-full object-cover mx-auto pointer-events-none"
                   />
                 </div>
-                <h3 className="text-lg md:text-xl lg:text-2xl text-center font-bold text-primary">
+                <h3 className="text-lg md:text-xl 2xl:text-2xl text-center font-bold text-primary">
                   {name}
                 </h3>
                 <div className="flex justify-center gap-1">
@@ -61,7 +61,7 @@ const Testimonial = () => {
                   ))}
                 </div>
               </div>
-              <p className=" text-gray-700 leading-tight">{text}</p>
+              <p className=" text-gray-700 leading-tight xl:text-sm 2xl:text-base">{text}</p>
             </div>
           </div>
         ))}

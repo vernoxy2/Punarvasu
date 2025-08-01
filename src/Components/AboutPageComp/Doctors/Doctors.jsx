@@ -1,8 +1,8 @@
 import React from "react";
 import { IoMdCheckmark } from "react-icons/io";
 import DoctorsImg from "../../../assets/AboutUsAssets/Doctors/DocBg.svg";
-import drAnjali from "../../../assets/AboutUsAssets/Doctors/DrAnjali.svg";
-import drRajeev from "../../../assets/AboutUsAssets/Doctors/DrRajeev.svg";
+import Priyanka from "../../../assets/AboutUsAssets/Doctors/DrAnjali.svg";
+import drYogesh from "../../../assets/AboutUsAssets/Doctors/DrRajeev.svg";
 import BgImg from "../../../assets/AboutUsAssets/Philosophy/BgImg.svg";
 import ShadowLight from "../../../assets/AboutUsAssets/Doctors/ShadowLight.svg";
 import ShadowDark from "../../../assets/AboutUsAssets/Doctors/shadowDark.svg";
@@ -12,7 +12,7 @@ import mission from "../../../assets/AboutUsAssets/Doctors/Mis.svg";
 const Doctors = () => {
   return (
     <section
-      className="py-28 space-y-10 relative z-10 overflow-hidden"
+      className="py-20 space-y-10 relative z-10 overflow-hidden"
       id="doctors-section"
     >
       <img
@@ -42,13 +42,13 @@ const Doctors = () => {
       {/* Doctor Cards */}
       <div
         data-aos="fade-up"
-        className="container px-8 py-16 lg:py-40 grid grid-cols-1 xl:grid-cols-2 w-full gap-10 xl:gap-40 z-0"
+        className="container px-8 py-16 lg:py-10 grid grid-cols-1 xl:grid-cols-2 w-full gap-10 xl:gap-40 z-0"
         id="doctors-cards"
       >
-        {/* Doctor: Dr. Anjali */}
+        {/* Doctor: Dr. Yogesh */}
         <div
           className="bg-white p-5 sm:px-0 sm:py-8 rounded-3xl shadow-xl hover:scale-105 duration-300 transition-all flex flex-col sm:flex-row relative pointer-events-none"
-          id="dr-anjali-card"
+          id="dr-Yogesh-card"
         >
           <img
             src={BgImg}
@@ -57,36 +57,31 @@ const Doctors = () => {
           />
 
           <img
-            src={drAnjali}
+            src={drYogesh}
             alt=""
             className="-translate-x-24 md:-translate-x-7 flex items-start mb-auto h-[110px] sm:h-auto"
           />
-          <div className="space-y-3 text-textColor">
+          <div className="space-y-3 text-textColor pr-8">
             <p className="text-primary text-2xl font-black">
-              Dr. Anjali Sharma
+              Dr. Yogesh H. Desai
             </p>
-            <p>BAMS, MD – Ayurveda</p>
+            <p>B.A.M.S, M.D(Ayu), PhD(Ayu)</p>
             <p>
-              Chief Consultant | Panchkarma & Women's{" "}
-              <br className="hidden lg:block" /> Health Specialist
+              Chief Ayurveda Consultant <br className="hidden lg:block" />{" "}
+              "Healing is a journey that begins from within."
             </p>
+
             <p>
-              With over 15 years of clinical expertise, Dr. Anjali{" "}
-              <br className="hidden lg:block" /> focuses on Panchkarma
-              therapies, hormonal <br className="hidden lg:block" /> health, and
-              Garbh Sanskar.
-            </p>
-            <p>
-              "Healing is a collaboration — between nature, the doctor, and the
-              patient's own awareness."
+              Dr. Yogesh H. Desai guides holistic healing through Ayurveda,
+              inspiring wellness that starts from within naturally.
             </p>
           </div>
         </div>
 
-        {/* Doctor: Dr. Rajeev */}
+        {/* Doctor: Dr. Priyanka */}
         <div
           className="bg-white p-5 sm:px-0 sm:py-8 rounded-3xl shadow-xl hover:scale-105 duration-300 transition-all flex flex-col sm:flex-row relative pointer-events-none"
-          id="dr-rajeev-card"
+          id="dr-Priyanka-card"
         >
           <img
             src={BgImg}
@@ -94,31 +89,31 @@ const Doctors = () => {
             className="absolute bottom-0 left-5 h-32  pointer-events-none z-0"
           />
           <img
-            src={drRajeev}
+            src={Priyanka}
             alt=""
             className="-translate-x-24 sm:-translate-x-7 flex items-start mb-auto h-[110px] sm:h-auto pointer-events-none"
           />
-          <div className="space-y-3 text-textColor">
-            <p className="text-primary text-2xl font-black">Dr. Rajeev Patil</p>
-            <p>BAMS</p>
+          <div className="space-y-3 text-textColor pr-8">
+            <p className="text-primary text-2xl font-black">
+              Dr. Priyanka V. Dodia
+            </p>
+            <p>B.A.M.S</p>
             <p>
-              Chief Consultant | Panchkarma & Women's{" "}
+              Senior Ayurveda Consultant
               <br className="hidden lg:block" />
-              Pediatric & Preventive Ayurveda Specialist
+              “Early care leads to lifelong health.”
             </p>
+
             <p>
-              Dr. Rajeev leads Suvarnaprashan and child{" "}
-              <br className="hidden lg:block" /> wellness, offering natural
-              immunity care and <br className="hidden lg:block" /> developmental
-              guidance for children.
-            </p>
-            <p>
-              "A healthy childhood lays the foundation for a healthy nation."
+              "A healthy childhood lays the foundation for a healthy nation."Dr.
+              Priyanka V. Dodia offers expert Ayurvedic care, blending tradition
+              with modern holistic healing solutions.
             </p>
           </div>
         </div>
       </div>
       {/* Vision and Mission Cards */}
+
       <div
         data-aos="fade-up"
         id="vision-mission-cards"
@@ -139,7 +134,7 @@ const Doctors = () => {
           </div>
 
           {/* Background swap */}
-          <div className="mb-6">
+          {/* <div className="mb-6">
             <img
               src={ShadowLight}
               alt="Light Shadow"
@@ -150,6 +145,9 @@ const Doctors = () => {
               alt="Dark Shadow"
               className="hidden group-hover:block duration-100 w-1/2 sm:w-auto mx-auto pointer-events-none"
             />
+          </div> */}
+          <div className="mb-20">
+
           </div>
 
           {/* Heading */}
@@ -168,7 +166,7 @@ const Doctors = () => {
         {/* Mission Card */}
         <div
           id="mission-card"
-          className="relative bg-white hover:bg-primary duration-300 group rounded-3xl shadow-md flex flex-col items-center text-center px-6 pt-28 pb-12 sm:px-10 sm:pt-28 sm:pb-1 "
+          className="relative bg-white hover:bg-primary duration-300 group rounded-3xl shadow-md flex flex-col items-center text-center px-6 pt-28 pb-12 sm:px-10 sm:pt-28 sm:pb-16"
         >
           {/* Mission Icon */}
           <div className="absolute -top-16 sm:-top-40">
@@ -180,18 +178,19 @@ const Doctors = () => {
           </div>
 
           {/* Background swap */}
-          <div className="mb-6">
-            <img
-              src={ShadowLight}
-              alt="Light Shadow"
-              className="group-hover:hidden duration-100 w-1/2 sm:w-auto mx-auto pointer-events-none"
-            />
-            <img
-              src={ShadowDark}
-              alt="Dark Shadow"
-              className="hidden group-hover:block duration-100  w-1/2 sm:w-auto mx-auto pointer-events-none"
-            />
-          </div>
+{/* <div className="mb-6 relative w-full flex justify-center">
+  <img
+    src={ShadowLight}
+    alt="Light Shadow"
+    className="group-hover:hidden transition-opacity duration-200 w-1/2 sm:w-auto pointer-events-none"
+  />
+  <img
+    src={ShadowDark}
+    alt="Dark Shadow"
+    className="hidden group-hover:block transition-opacity duration-200 w-1/2 sm:w-auto pointer-events-none"
+  />
+</div> */}
+
 
           {/* Heading */}
           <h1 className="text-primary group-hover:text-white text-3xl sm:text-4xl font-black mb-4">
@@ -208,7 +207,7 @@ const Doctors = () => {
             ].map((item, index) => (
               <li
                 key={index}
-                className="text-textColor group-hover:text-white flex items-start gap-1 text-sm sm:text-base"
+                className="text-textColor group-hover:text-white flex items-start gap-2 text-sm sm:text-base"
               >
                 <IoMdCheckmark className="text-primary group-hover:text-white mt-1 flex-shrink-0" />
                 <span>{item}</span>

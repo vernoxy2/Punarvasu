@@ -1,6 +1,10 @@
 import React from "react";
 import HeroBg from "../../../assets/HomeAssets/HeadingBg.png";
+import HeroText from "../../../assets/HomeAssets/HeadingText.png";
 import Coener from "../../../assets/HomeAssets/corner.png";
+import PrimaryBtn from "../../../ShareIngComp/PrimaryBtn/PrimaryBtn";
+import { MdAddCall } from "react-icons/md";
+import { FaCalendarPlus } from "react-icons/fa";
 
 const style = {
   backgroundImage: `url(${HeroBg})`,
@@ -12,7 +16,7 @@ const style = {
 const Heading = () => {
   return (
     <section
-    data-aos="fade"
+      data-aos="fade"
       style={style}
       className="relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px] lg:rounded-br-[400px]"
     >
@@ -24,19 +28,23 @@ const Heading = () => {
       />
 
       {/* Text content */}
-      <div className="container mx-auto h-full flex justify-end text-center items-center lg:text-end text-white px-4">
-        <div className="w-full lg:w-1/2 space-y-4 lg:space-y-12 lg:pb-28">
-          <h1 data-aos="fade-left" className="text-3xl md:text-6xl font-bold ">
-            Ancient Remedies, Timeless Wellness.
-          </h1>
-          <p data-aos="fade-left" className="text-base md:text-2xl px-2 font-medium leading-relaxed">
-            Discover the power of Ayurveda with natural herbs, oils,{" "}
-            <br className="hidden lg:block" /> and powders crafted for holistic
-            healing. Embrace traditional <br className="hidden lg:block" />{" "}
-            remedies that romote wellness, balance, and a healthier{" "}
-            <br className="hidden lg:block" /> lifestyle—rooted in ancient
-            Indian wisdom.
-          </p>
+      <div className="container mx-auto h-full flex justify-end text-center items-center lg:text-end text-white ">
+        <div className="w-full xl:w-7/12 space-y-14 lg:space-y-20 lg:pb-28">
+          <img src={HeroText} alt="" className=" ml-auto pointer-events-none" />
+          <div className="md:flex justify-center xl:justify-start md:gap-8 space-y-5 md:space-y-0">
+            <PrimaryBtn className="bg-white text-primary rounded-xl gap-2 md:gap-3 mx-auto md:mx-0 hover:text-white duration-300">
+              <span>
+                <FaCalendarPlus className="text-xl sm:text-4xl" />
+              </span>
+              Book Consultation
+            </PrimaryBtn>
+            <PrimaryBtn className="bg-white text-primary rounded-xl gap-2 md:gap-3 mx-auto md:mx-0 hover:text-white duration-300">
+              <span>
+                <MdAddCall className="text-xl sm:text-4xl" />
+              </span>
+              Call Now
+            </PrimaryBtn>
+          </div>
         </div>
       </div>
     </section>

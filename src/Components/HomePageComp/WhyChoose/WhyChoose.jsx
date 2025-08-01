@@ -34,12 +34,6 @@ const ChooseData = [
     text: "Experienced doctors and trained therapists",
   },
   {
-    id: 4,
-    img: Img4,
-    icon: Icon4,
-    text: "Clean, calm, and hygienic treatment environment environment",
-  },
-  {
     id: 5,
     img: Img5,
     icon: Icon5,
@@ -61,7 +55,7 @@ const WhyChoose = () => {
       {/* Title Section */}
       <div data-aos="fade-up" className="w-full md:w-3/4 lg:w-1/2 relative z-10">
         <div className="bg-primary py-3 pr-6 sm:pr-10 flex items-center justify-center md:justify-end gap-4 sm:gap-6">
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-white text-center lg:text-right">
+          <h1 className="text-xl sm:text-2xl md:text-3xl 2xl:text-5xl font-bold text-white text-center lg:text-right">
             Why Choose Punavasu?
           </h1>
           <img src={leaf} alt="Leaf Icon" className="w-10 h-10" />
@@ -70,12 +64,12 @@ const WhyChoose = () => {
       </div>
        
       {/* Cards Grid */}
-      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="container  xl:px-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
         {ChooseData.map(({ id, img, icon, text }) => (
           <div
           data-aos="zoom-in"
             key={id}
-            className="border rounded-lg overflow-hidden shadow p-5 relative bg-white"
+            className="border rounded-lg overflow-hidden shadow p-3 md:p-4  relative bg-white"
           >
             {/* Image */}
             <img
@@ -85,16 +79,16 @@ const WhyChoose = () => {
             />
 
             {/* Icon box (positioned on image) */}
-            <div className="absolute bottom-[92px] xl:bottom-[80px] left-0 bg-white p-6 rounded-full ">
+            <div className="absolute bottom-[71px] md:bottom-[78px] 2xl:bottom-[80px] left-0 bg-white p-6 rounded-full ">
               <img
                 src={icon}
                 alt={`Icon ${id}`}
-                className="w-12  h-12 xl:w-16 xl:h-16 pointer-events-none"
+                className="w-12 h-12 2xl:w-16 2xl:h-16 pointer-events-none"
               />
             </div>
 
             {/* Text */}
-            <p className="text-primary mt-4 p-2">{text}</p>
+            <p className="text-primary mt-4 p-2 text-center">{text}</p>
           </div>
         ))}
       </div>
