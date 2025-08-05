@@ -36,6 +36,7 @@ import ConHeader from "./Components/ConatactUsPageComp/ConHeader/ConHeader";
 import Help from "./Components/ConatactUsPageComp/Help/Help";
 import ContForm from "./Components/ConatactUsPageComp/ContForm/ContForm";
 import ContMap from "./Components/ConatactUsPageComp/ContMap/ContMap";
+import Diseases from "./Components/ServicePageComp/Diseases/Diseases";
 
 const MainLayout = ({ children }) => (
   <>
@@ -104,6 +105,7 @@ const App = () => {
               <SerHeader />
               <Treatments />
               <Procedures />
+              <Diseases/>
               <Therapies />
               <ContactUs />
 

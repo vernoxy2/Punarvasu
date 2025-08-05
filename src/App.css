@@ -33,6 +33,10 @@
   }
 }
 
+.slick-row {
+  margin-bottom: 24px; /* Adjust as needed for your desired spacing */
+}
+
 .card {
   padding: 2em;
 }
