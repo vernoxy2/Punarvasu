@@ -13,7 +13,7 @@ const Founders = () => {
         data-aos-duration="3000"
         src={BgImg}
         alt=""
-        className="absolute -bottom-10 pointer-none"
+        className="absolute -bottom-10 pointer-none "
       />
       <div className="flex flex-col gap-y-12 items-center">
         <img
@@ -33,13 +33,13 @@ const Founders = () => {
         data-aos="fade-up"
         className="container w-10/12 bg-primary/10 py-14 pb-24 space-y-14 rounded-3xl relative"
       >
-        <img src={comma} alt="" className="absolute top-10 left-10 pointer-events-none" />
+        <img src={comma} alt="" className="absolute top-10 left-10 pointer-events-none h-10 md:h-auto" />
         <img
           src={comma}
           alt=""
-          className="absolute bottom-10 right-10 scale-x-[-1] scale-y-[-1] pointer-events-none"
+          className="absolute bottom-10 right-10 scale-x-[-1] scale-y-[-1] pointer-events-none h-10 md:h-auto"
         />
-        <p className="text-textColor text-2xl font-medium text-center">
+        <p className="text-textColor text-lg md:text-2xl font-medium text-center">
           "Punarvasu is more than a center — it is a return to natural living, a
           journey toward self- <br className="hidden 2xl:block" /> awareness and
           long-lasting health. Whether you seek relief, balance, or prevention,{" "}
@@ -50,7 +50,7 @@ const Founders = () => {
           <div className="space-y-3 flex flex-col items-center">
             <img src={anjali} alt="" className="pointer-events-none" />
             <div className=" text-center">
-              <h1 className="text-2xl font-black text-primary">
+              <h1 className="md:text-2xl font-black text-primary">
                Dr. Yogesh H. Desai
               </h1>
               <p className="font-medium text-textColor">Co-Founder</p>
@@ -59,7 +59,7 @@ const Founders = () => {
           <div className="space-y-3 flex flex-col items-center">
             <img src={Rajveer} alt="" className="pointer-events-none" />
             <div className=" text-center">
-              <h1 className="text-2xl font-black text-primary">
+              <h1 className="md:text-2xl font-black text-primary">
                Dr. Priyanka V. Dodia
               </h1>
               <p className="font-medium text-textColor">Co-Founder</p>

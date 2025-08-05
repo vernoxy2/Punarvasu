@@ -18,10 +18,10 @@ const Story = () => {
       >
         Our Story
       </h1>
-      <div className=" grid grid-cols-1 lg:grid-cols-2 gap-20 z-10">
+      <div className="container xl:px-0 grid grid-cols-1 xl:grid-cols-2 gap-0 z-10">
         <div
           data-aos="fade-right"
-          className="flex flex-col justify-center items-end relative me-28 z-10"
+          className="flex flex-col justify-center items-end relative xl:me-28 z-10"
         >
           {/* Docters Image */}
           <img
@@ -37,7 +37,7 @@ const Story = () => {
           <div className="bg-primary rounded-e-3xl shadow-inner w-full py-52 -mt-48 relative z-0" />
         </div>
 
-        <div className="space-y-5 py-16 text-center lg:text-start p-9 lg:p-0 flex flex-col mt-32 justify-center z-10">
+        <div className="space-y-5 py-16 text-center xl:text-start p-9 lg:p-0 flex flex-col mt-32 justify-center z-10">
           <h1
             data-aos="fade-down"
             className="sm:text-3xl md:text-4xl lg:text-5xl font-black text-primary"
@@ -63,7 +63,7 @@ const Story = () => {
           </p>
           <div
             data-aos="fade-down"
-            className="flex gap-12 justify-center lg:justify-start"
+            className="flex gap-12 justify-center xl:justify-start"
           >
             <div className="bg-primary text-white w-[240px] py-3 text-center space-y-1">
               <h1 className="font-medium text-3xl md:text-4xl lg:text-5xl">
