@@ -9,21 +9,21 @@ const ContactData = [
     id: 1,
     Icon: Location,
     title: "Location",
-    description: "Shop No 1, BDCA Building, BHIDBHANJAN MAHADEV MANDIR, KAPADIA CHAL, Abrama-396002",
+    description: "B-5, Pramukh Sannidhya Complex, Abrama Villlage, Valsad.",
     link: "https://www.google.com/maps?q=PUNARVASU+AYURVEDA+CHIKITSALAYAM,+Shop+No+1,+BDCA+Building,+BHIDBHANJAN+MAHADEV+MANDIR,+KAPADIA+CHAL,+Abrama-396002",
   },
   {
     id: 2,
     Icon: Call,
     title: "Call Us",
-    description: "Phone No:. +91 96016 63669",
-    link: "tel:9601663669",
+    description: "Phone No:. +91 07947112761",
+    link: "tel:07947112761",
   },
   {
     id: 3,
     Icon: Email,
     title: "Email",
-    description: "Mail Now : vd.yogu@gmail.com",
+    description: "Mail Now : punarvasu@gmail.com",
     link: "mailto:punarvasu@gmail.com",
   },
 ];
@@ -37,13 +37,13 @@ const Help = () => {
           data-aos="fade-up"
           className="text-3xl sm:text-4xl lg:text-5xl font-bold text-textColor"
         >
-          Dr. Yogesh H. Desai
+          Dr. Priyanka V. Dodia
         </h1>
         <p
           data-aos="fade-up"
           className="lg:text-2xl text-textColor font-medium"
         >
-         B.A.M.S., M.D. (Ayu)
+         B.A.M.S.
         </p>
       </div>
 

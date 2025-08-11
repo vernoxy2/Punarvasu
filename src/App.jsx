@@ -34,6 +34,7 @@ import Shlok from "./Components/ServicePageComp/Shlok/Shlok";
 
 import ConHeader from "./Components/ConatactUsPageComp/ConHeader/ConHeader";
 import Help from "./Components/ConatactUsPageComp/Help/Help";
+import Help2 from "./Components/ConatactUsPageComp/Help/Help2";
 import ContForm from "./Components/ConatactUsPageComp/ContForm/ContForm";
 import ContMap from "./Components/ConatactUsPageComp/ContMap/ContMap";
 import Diseases from "./Components/ServicePageComp/Diseases/Diseases";
@@ -104,10 +105,9 @@ const App = () => {
               <SerHeader />
               <Treatments />
               <Procedures />
-              <Diseases/>
+              <Diseases />
               <Therapies />
               <ContactUs />
-
             </MainLayout>
           }
         />
@@ -119,11 +119,8 @@ const App = () => {
             <MainLayout>
               <ConHeader />
               <Help />
-              <ContMap />
-               <Help />
-              <ContMap />
+              <Help2 />
               <ContForm />
-              
             </MainLayout>
           }
         />
