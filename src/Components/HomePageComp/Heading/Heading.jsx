@@ -5,6 +5,7 @@ import Coener from "../../../assets/HomeAssets/corner.png";
 import PrimaryBtn from "../../../ShareIngComp/PrimaryBtn/PrimaryBtn";
 import { MdAddCall } from "react-icons/md";
 import { FaCalendarPlus } from "react-icons/fa";
+import { Link } from "react-router";
 
 const style = {
   backgroundImage: `url(${HeroBg})`,
@@ -39,10 +40,12 @@ const Heading = () => {
               Book Consultation
             </PrimaryBtn>
             <PrimaryBtn className="bg-white text-primary rounded-xl gap-2 md:gap-3 mx-auto md:mx-0 hover:text-white duration-300">
-              <span>
-                <MdAddCall className="text-xl sm:text-4xl" />
-              </span>
-              Call Now
+              <Link to="tel:07947112761" className="flex gap-x-2">
+                <span>
+                  <MdAddCall className="text-xl sm:text-4xl" />
+                </span>
+                Call Now
+              </Link>
             </PrimaryBtn>
           </div>
         </div>

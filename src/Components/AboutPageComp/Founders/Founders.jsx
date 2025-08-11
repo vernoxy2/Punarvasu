@@ -48,7 +48,7 @@ const Founders = () => {
         </p>
         <div className="flex items-center justify-center gap-16">
           <div className="space-y-3 flex flex-col items-center">
-            <img src={anjali} alt="" className="pointer-events-none" />
+            <img src={Rajveer} alt="" className="pointer-events-none" />
             <div className=" text-center">
               <h1 className="md:text-2xl font-black text-primary">
                Dr. Yogesh H. Desai
@@ -57,7 +57,7 @@ const Founders = () => {
             </div>
           </div>
           <div className="space-y-3 flex flex-col items-center">
-            <img src={Rajveer} alt="" className="pointer-events-none" />
+            <img src={anjali} alt="" className="pointer-events-none" />
             <div className=" text-center">
               <h1 className="md:text-2xl font-black text-primary">
                Dr. Priyanka V. Dodia

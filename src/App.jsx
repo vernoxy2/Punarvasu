@@ -92,7 +92,6 @@ const App = () => {
               <Accreditations />
               <Founders />
               <ContactUs />
-
             </MainLayout>
           }
         />

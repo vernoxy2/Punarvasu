@@ -39,7 +39,7 @@ const Experts = () => {
             />
             <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-white/80 text-center w-11/12 sm:w-3/4 md:w-3/5 p-4 rounded shadow">
               <h2 className="text-xl md:text-2xl font-semibold text-primary">
-                Dr. Rajeev Patil
+                Dr. Yogesh H. Desai
               </h2>
               <p className="text-sm md:text-base text-gray-700">
                 Pediatric & Preventive Ayurveda Expert <br />
@@ -68,7 +68,7 @@ const Experts = () => {
             />
             <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-white/80 text-center w-11/12 sm:w-3/4 md:w-3/5 p-4 rounded shadow">
               <h2 className="text-xl md:text-2xl font-semibold text-primary">
-                Dr. Sneha Joshi
+                Dr. Priyanka V. Dodia
               </h2>
               <p className="text-sm md:text-base text-gray-700">
                 Women's Wellness & Panchakarma Specialist <br />

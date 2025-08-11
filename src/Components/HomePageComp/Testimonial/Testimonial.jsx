@@ -30,7 +30,7 @@ const TestData = [
 
 const Testimonial = () => {
   return (
-    <section className="py-12 space-y-12 relative">
+    <section id="testimonial" className="py-12 space-y-12 relative">
       <img
       data-aos="fade-right" data-aos-duration="2000"
         src={TestBg}

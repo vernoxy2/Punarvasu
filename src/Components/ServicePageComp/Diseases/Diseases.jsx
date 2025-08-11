@@ -141,7 +141,7 @@ const Diseases = () => {
   };
 
   return (
-    <section className="container py-12 md:py-20 space-y-6 md:space-y-12">
+    <section id="diseases" className="container py-12 md:py-20 space-y-6 md:space-y-12">
       <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-secondary">
         Diseases
       </h1>
