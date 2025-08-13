@@ -167,7 +167,7 @@ const Diseases = () => {
                   <h3 className="text-lg xl:text-xl font-bold text-primary">
                     {item.title}
                   </h3>
-                  <p className="text-textColor text-sm xl:text-base mt-2 leading-tight">
+                  <p className="text-textColor text-sm 2xl:text-base mt-2 leading-tight ">
                     {item.desc}
                   </p>
                 </div>
