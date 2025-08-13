@@ -17,9 +17,9 @@ const ContactUs = () => {
 
       <div
         data-aos-duration="2000"
-        className="container relative z-10 bg-white/40 backdrop-blur-md rounded-2xl border border-white py-12 w-11/12 xl:w-8/12 md:py-24 mx-auto text-center text-white space-y-8"
+        className="container relative z-10 bg-white/40 backdrop-blur-md rounded-2xl border border-white py-8 w-11/12 xl:w-8/12 md:py-12 mx-auto text-center text-white space-y-6"
       >
-        <h1 data-aos="fade-down" className="text-3xl lg:text-4xl font-bold">
+        <h1 data-aos="fade-down" className="text-3xl lg:text-5xl font-bold">
           Contact Us
         </h1>
 

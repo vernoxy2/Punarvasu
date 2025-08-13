@@ -5,7 +5,7 @@ import Corner from "../../../assets/AboutUsAssets/corner.png";
 const AbHeader = () => {
   return (
     <section data-aos="fade"
-      className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px] bg-cover bg-center bg-no-repeat lg:rounded-br-[400px]"
+      className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[640px] bg-cover bg-center bg-no-repeat lg:rounded-br-[320px]"
       style={{ backgroundImage: `url(${AbHeroBg})` }}
     >
       {/* Decorative Corner Image */}
@@ -16,7 +16,7 @@ const AbHeader = () => {
       />
 
       {/* Text Content */}
-      <div className="container mx-auto h-full flex text-center items-center lg:text-start text-white px-4">
+      <div className="container mx-auto h-full flex text-center items-center lg:text-start text-white ">
         <div className="w-full lg::w-1/2 space-y-4 lg:space-y-12  lg:pb-28">
           <h1 className="text-3xl md:text-6xl font-bold ">
             About Punarvasu <br className="hidden lg:block"/> Ayurveda

@@ -38,6 +38,8 @@ import Help2 from "./Components/ConatactUsPageComp/Help/Help2";
 import ContForm from "./Components/ConatactUsPageComp/ContForm/ContForm";
 import ContMap from "./Components/ConatactUsPageComp/ContMap/ContMap";
 import Diseases from "./Components/ServicePageComp/Diseases/Diseases";
+import BookConsultation from "./ShareIngComp/ConsultationPopup/BookConsultation";
+import ConsultationPopup from "./ShareIngComp/ConsultationPopup/BookConsultation";
 
 const MainLayout = ({ children }) => (
   <>
@@ -76,6 +78,7 @@ const App = () => {
               <WhyChoose />
               <Testimonial />
               <ContactUs />
+              <ConsultationPopup />
             </MainLayout>
           }
         />
@@ -118,6 +121,15 @@ const App = () => {
           element={
             <MainLayout>
               <ConHeader />
+              <div
+                data-aos="fade-up"
+                className="text-center container  font-bold text-secondary space-y-4 pt-24"
+              >
+                <h1 className="text text-3xl md:text-4xl xl:text-5xl">Need Any Help?</h1>
+                <p className="md:text-2xl text-textColor">
+                  We’re Just a Massage Away - Let’s Talk!
+                </p>
+              </div>
               <Help />
               <Help2 />
               <ContForm />

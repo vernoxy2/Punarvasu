@@ -10,8 +10,8 @@ const navItems = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
   { name: "Services", path: "/services" },
-  { name: "Testimonial", path: "/#testimonial" }, // homepage section
-  { name: "Diseases", path: "/services#diseases" }, // services page section
+  { name: "Testimonial", path: "/#testimonial" },
+  { name: "Diseases", path: "/services#diseases" },
   { name: "Contact Us", path: "/contact" },
   { name: "FAQ", path: "/faq" },
 ];
@@ -19,106 +19,110 @@ const navItems = [
 const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const currentPath = location.pathname;
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleNavClick = (path) => {
     if (path.startsWith("#")) {
-      // In-page scroll
       const target = document.querySelector(path);
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth" });
-      }
+      if (target) target.scrollIntoView({ behavior: "smooth" });
     } else if (path.includes("#")) {
-      // Path with anchor → navigate first, then scroll
       const [base, hash] = path.split("#");
       navigate(base);
       setTimeout(() => {
         const target = document.getElementById(hash);
-        if (target) {
-          target.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 300); // wait for page load
+        if (target) target.scrollIntoView({ behavior: "smooth" });
+      }, 300);
     } else {
-      // Normal route
       navigate(path);
     }
     setMenuOpen(false);
   };
 
   return (
-    <nav
-      data-aos="fade"
-      className="w-full bg-transparent lg:bg-white shadow-sm top-0 z-50"
-    >
-      <p className="text-center xl:text-end md:text-lg md:-mb-8 container xl:text-primary bg-primary lg:bg-transparent text-white text-xs p-2 lg:p-0">
+    <nav className="w-full bg-transparent lg:bg-white shadow-sm top-0 z-50">
+      {/* Top banner */}
+
+      <p className="text-center xl:text-right text-xs md:text-sm container xl:-mb-5 bg-primary xl:bg-transparent text-white xl:text-primary ">
         India's Most Trusted Ayurveda Healthcare Brand Since 2015
       </p>
-      <div className="mx-auto flex justify-between items-center sm:h-32 px-4">
-        {/* Left Accent Bar */}
-        <div className="hidden lg:block w-[10%] h-12 bg-gradient-to-l from-[#F29014] to-white ml-6 mr-6" />
+      {/* Navbar main */}
+      <div className="mx-auto flex justify-between items-center sm:h-24 px-4 lg:px-8">
+        {/* Left Accent Bar - hide on small */}
+        <div className="hidden xl:block w-[8%] h-12 bg-gradient-to-l from-[#F29014] to-white" />
 
         {/* Logo */}
-        <div className="flex items-center space-x-4">
-          <Link to={"/"}>
-            <img
-              src={Logo}
-              alt="Punarvasu Logo"
-              className="h-16 p-3 lg:h-full w-auto object-contain pointer-events-none"
-            />
-          </Link>
-        </div>
-        <div className="text-3xl font-bold lg:hidden text-primary">
-          Punarvasu
-        </div>
+        <Link to="/" className="flex items-center p-4">
+          <img
+            src={Logo}
+            alt="Punarvasu Logo"
+            className="h-14 lg:h-20 object-contain pointer-events-none"
+          />
+        </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden container lg:flex flex-grow items-center justify-between space-x-12 bg-gradient-to-r from-primary via-primary/95 to-white px-10 ml-6">
-          {navItems.map((item) => (
-            <button
-              key={item.name}
-              onClick={() => handleNavClick(item.path)}
-              className={`text-xl font-bold px-4 py-3 transition-all duration-200 ${
-                currentPath === item.path
-                  ? "text-green-700 bg-white"
-                  : "text-white hover:bg-white/30"
-              }`}
-            >
-              {item.name}
-            </button>
-          ))}
-
-          <div className=" 2xl:pl-28 flex gap-2 text-primary">
-            <div className="p-1 bg-white"><FaFacebookSquare className="text-xl " /></div>
-          <div className="p-1 bg-white"><AiFillInstagram className="text-xl" /></div>
-          <div className="p-1 bg-white"><BsTwitterX className="text-xl" /></div>
-          </div>
-        </div>
-
-        {/* Mobile Menu Button */}
-        <div className="lg:hidden">
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="text-2xl text-gray-800"
-          >
-            {menuOpen ? <FiX /> : <FiMenu />}
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="lg:hidden px-4 pb-4">
-          <div className="flex flex-col space-y-3">
+        <div className="hidden xl:flex flex-grow justify-between items-center bg-gradient-to-r from-primary via-primary/95 to-white px-12 ">
+          <div className="flex space-x-6">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => handleNavClick(item.path)}
-                className="text-base font-medium px-2 py-1 rounded text-gray-800 hover:bg-gray-100"
+                className={`text-lg font-semibold px-3 py-2 transition-all ${
+                  location.pathname === item.path
+                    ? "text-green-700 bg-white"
+                    : "text-white hover:bg-white/20"
+                }`}
               >
                 {item.name}
               </button>
             ))}
+          </div>
+
+          {/* Social Icons */}
+          <div className="flex gap-2">
+            {[FaFacebookSquare, AiFillInstagram, BsTwitterX].map(
+              (Icon, idx) => (
+                <div
+                  key={idx}
+                  className="p-1 bg-white rounded hover:scale-125 duration-300"
+                >
+                  <Icon className="text-primary text-lg" />
+                </div>
+              )
+            )}
+          </div>
+        </div>
+
+        {/* Mobile Toggle */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="xl:hidden text-2xl text-primary"
+        >
+          {menuOpen ? <FiX /> : <FiMenu />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="xl:hidden bg-white shadow-md px-4 py-4">
+          <div className="flex flex-col space-y-2">
+            {navItems.map((item) => (
+              <button
+                key={item.name}
+                onClick={() => handleNavClick(item.path)}
+                className="text-base font-medium px-3 py-2 rounded text-primary hover:bg-primary/10"
+              >
+                {item.name}
+              </button>
+            ))}
+            <div className="flex gap-3 pt-2 justify-center">
+              {[FaFacebookSquare, AiFillInstagram, BsTwitterX].map(
+                (Icon, idx) => (
+                  <div key={idx} className="p-1 text-primary rounded">
+                    <Icon className="bg-white text-2xl" />
+                  </div>
+                )
+              )}
+            </div>
           </div>
         </div>
       )}

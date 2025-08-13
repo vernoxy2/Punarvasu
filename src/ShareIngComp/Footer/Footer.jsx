@@ -14,10 +14,10 @@ const FooterLink = [
 ];
 
 const ServicesLink = [
-  { name: "Panchkarma Centre", path: "/" },
-  { name: "Suvarnaprashan Centre", path: "/about" },
+  { name: "Panchkarma Centre", path: "/services" },
+  { name: "Suvarnaprashan Centre", path: "/services" },
   { name: "Ayurvedic Cosmetic", path: "/services" },
-  { name: "Garbh Sanskar Centre", path: "/faq" },
+  { name: "Garbh Sanskar Centre", path: "/services" },
 ];
 
 const Footer = () => {
