@@ -43,7 +43,7 @@ const Heading = () => {
               onClick={() => setPopupOpen(true)}
               className="bg-white text-primary rounded-xl gap-2 md:gap-3 mx-auto md:mx-0 hover:text-white duration-300"
             >
-              <FaCalendarPlus className="text-xl sm:text-4xl" />
+              <FaCalendarPlus className="text-xl sm:text-3xl" />
               Book Consultation
             </PrimaryBtn>
 
@@ -51,7 +51,7 @@ const Heading = () => {
               className="bg-white text-primary rounded-xl gap-2 md:gap-3 mx-auto md:mx-0 hover:text-white duration-300"
             >
               <Link to="tel:07947112761" className="flex gap-x-2">
-                <MdAddCall className="text-xl sm:text-4xl" />
+                <MdAddCall className="text-xl sm:text-3xl" />
                 Call Now
               </Link>
             </PrimaryBtn>

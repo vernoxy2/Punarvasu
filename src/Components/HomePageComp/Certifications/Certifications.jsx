@@ -49,7 +49,7 @@ const Certifications = () => {
           <div data-aos="fade-left" className="flex px-2 sm:px-0 py-[2px] sm:py-0">
             <div className="bg-primary px-1 md:px-[6px] h-[70px] lg:h-24 rounded-s-xl my-auto"></div>
             <div className="flex w-full items-center  gap-4 py-4 px-6 bg-white shadow-md hover:shadow-xl transition relative">
-              <img src={item.icon} alt="icon" className="h-14 2xl:h-full pointer-events-none" />
+              <img src={item.icon} alt="icon" className="h-14 2xl:h-full -m-1 pointer-events-none" />
               <p className="text-sm text-gray-800">{item.text}</p>
               <img src={Leaf} alt="" className="absolute -right-1 -bottom-2 pointer-events-none" />
             </div>

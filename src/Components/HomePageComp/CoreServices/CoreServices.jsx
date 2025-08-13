@@ -46,8 +46,8 @@ const CoreServices = () => {
   <h1 data-aos="fade-up" className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary relative z-10">Our Core Services</h1>
 
   {/* Cards */}
-  <div className="container xl:px-2 2xl:px-0 mx-auto relative z-10">
-    <div className="my-12 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 px-4">
+  <div className="container  mx-auto relative z-10">
+    <div className="my-12 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 px-4">
       {Services.map((service) => (
         <div
         data-aos="zoom-in"
@@ -61,9 +61,9 @@ const CoreServices = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="p-4  group-hover:bg-primary text-primary group-hover:text-white duration-300 h-full transition-colors w-full space-y-2">
+          <div className="p-3  group-hover:bg-primary text-primary group-hover:text-white duration-300 h-full transition-colors w-full space-y-2">
             <h2 className="text-xl lg:text-2xl font-bold">{service.SerName}</h2>
-            <p className="text-sm leading-tight lg:text-base">{service.dec}</p>
+            <p className="text-sm leading-tight lg:text-base -tracking-normal">{service.dec}</p>
           </div>
         </div>
       ))}

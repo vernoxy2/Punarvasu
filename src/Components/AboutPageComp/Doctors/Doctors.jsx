@@ -138,12 +138,12 @@ const Doctors = () => {
             <img
               src={ShadowLight}
               alt="Light Shadow"
-              className="group-hover:hidden duration-100 w-1/2 sm:w-auto mx-auto pointer-events-none"
+              className="group-hover:hidden duration-100 w-1/2 sm:w-auto mx-auto pointer-events-none flex"
             />
             <img
               src={ShadowDark}
               alt="Dark Shadow"
-              className="hidden group-hover:block duration-100 w-1/2 sm:w-auto mx-auto pointer-events-none"
+              className="hidden group-hover:block duration-100 w-1/2 sm:w-auto mx-auto pointer-events-none flex"
             />
           </div>
           <div className="mb-20"></div>
@@ -180,7 +180,7 @@ const Doctors = () => {
             <img
               src={ShadowLight}
               alt="Light Shadow"
-              className="group-hover:opacity-0 transition-opacity duration-200 w-1/2 sm:w-auto pointer-events-none"
+              className="group-hover:hidden transition-opacity duration-200 w-1/2 sm:w-auto pointer-events-none"
             />
             <img
               src={ShadowDark}

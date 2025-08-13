@@ -1,11 +1,12 @@
 import React from "react";
 import ServiceBg from "../../../assets/ServiceAssets/ServiceBg.webp";
 import Corner from "../../../assets/ServiceAssets/corner.png";
+import HeroText from "../../../assets/ServiceAssets/HeadText.webp";
 
 const SerHeader = () => {
   return (
     <section
-    data-aos="fade"
+      data-aos="fade"
       className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[640px] bg-cover bg-center bg-no-repeat lg:rounded-br-[320px]"
       style={{ backgroundImage: `url(${ServiceBg})` }}
     >
@@ -15,18 +16,13 @@ const SerHeader = () => {
         alt="Decorative Corner"
         className="hidden lg:block absolute bottom-0 right-0 w-20 md:w-40 lg:w-80"
       />
-
-      {/* Text Content */}
-      <div className="container mx-auto h-full flex text-center items-center lg:text-start text-white ">
-        <div className="w-full lg::w-1/2 space-y-4 lg:space-y-12  lg:pb-28">
-          <h1 data-aos="fade-right" className="text-3xl md:text-6xl font-bold ">
-            Healing with the <br className="hidden lg:block" /> Wisdom of Ayurveda
-          </h1>
-          <p data-aos="fade-right" className="text-base md:text-2xl font-medium leading-relaxed">
-            Explore our specialized treatments for <br className="hidden lg:block" /> holistic well-being
-          </p>
+      <div className="container mr-auto h-full flex items-center lg:text-end text-white">
+        <div className="w-full xl:w-6/12 space-y-14 lg:space-y-20 lg:pb-28">
+          <img src={HeroText} alt="" className="ml-auto pointer-events-none" />
         </div>
       </div>
+
+      {/* Text Content */}
     </section>
   );
 };
