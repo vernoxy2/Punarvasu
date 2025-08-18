@@ -1,7 +1,8 @@
-import React, { useEffect, Suspense, lazy } from "react";
+import React, { useEffect, useState, Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { FaWhatsapp } from "react-icons/fa";
 
 // Lazy loaded layout components
 const Navbar = lazy(() => import("./ShareIngComp/Navbar/Navbar"));
@@ -38,7 +39,6 @@ import Help2 from "./Components/ConatactUsPageComp/Help/Help2";
 import ContForm from "./Components/ConatactUsPageComp/ContForm/ContForm";
 import ContMap from "./Components/ConatactUsPageComp/ContMap/ContMap";
 import Diseases from "./Components/ServicePageComp/Diseases/Diseases";
-import BookConsultation from "./ShareIngComp/ConsultationPopup/BookConsultation";
 import ConsultationPopup from "./ShareIngComp/ConsultationPopup/BookConsultation";
 
 const MainLayout = ({ children }) => (
@@ -46,10 +46,23 @@ const MainLayout = ({ children }) => (
     <Navbar />
     <main className="min-h-screen">{children}</main>
     <Footer />
+    {/* Floating WhatsApp Button */}
+    <a
+      href="https://wa.me/917947112761?text=Hello%20I%20would%20like%20to%20know%20more"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
+      className="fixed right-4 bottom-4 sm:right-6 sm:bottom-6 z-50"
+    >
+      <div className="h-14 w-14 md:h-16 md:w-16 rounded-full bg-[#14c755] shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
+        <FaWhatsapp className="text-white" size={28} />
+      </div>
+    </a>
   </>
 );
 
 const App = () => {
+  const [isConsultOpen, setIsConsultOpen] = useState(true);
   useEffect(() => {
     AOS.init({
       duration: 700,
@@ -78,7 +91,6 @@ const App = () => {
               <WhyChoose />
               <Testimonial />
               <ContactUs />
-              <ConsultationPopup />
             </MainLayout>
           }
         />
@@ -149,6 +161,10 @@ const App = () => {
           }
         />
       </Routes>
+      <ConsultationPopup
+        isOpen={isConsultOpen}
+        onClose={() => setIsConsultOpen(false)}
+      />
     </div>
   );
 };

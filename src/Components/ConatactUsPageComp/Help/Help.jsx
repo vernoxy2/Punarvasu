@@ -9,7 +9,7 @@ const ContactData = [
     id: 1,
     Icon: Location,
     title: "Location",
-    description: "Shop No 1, BDCA Building, BHIDBHANJAN MAHADEV MANDIR, KAPADIA CHAL, Abrama-396002",
+    description: "3, Mezzanine Floor, Govardhan Complex, Opp. White House, Bechar Road, Valsad.",
     link: "https://www.google.com/maps?q=PUNARVASU+AYURVEDA+CHIKITSALAYAM,+Shop+No+1,+BDCA+Building,+BHIDBHANJAN+MAHADEV+MANDIR,+KAPADIA+CHAL,+Abrama-396002",
   },
   {

@@ -9,14 +9,14 @@ const ContactData = [
     id: 1,
     Icon: Location,
     title: "Location",
-    description: "B-5, Pramukh Sannidhya Complex, Abrama Villlage, Valsad.",
+    description: "Shop No 1, BDCA Building, BHIDBHANJAN MAHADEV MANDIR, Station Road, Valsad.",
     link: "https://www.google.com/maps?q=PUNARVASU+AYURVEDA+CHIKITSALAYAM,+Shop+No+1,+BDCA+Building,+BHIDBHANJAN+MAHADEV+MANDIR,+KAPADIA+CHAL,+Abrama-396002",
   },
   {
     id: 2,
     Icon: Call,
     title: "Call Us",
-    description: "Phone No:. +91 07947112761",
+    description: "Phone No:. 096016 64092",
     link: "tel:07947112761",
   },
   {

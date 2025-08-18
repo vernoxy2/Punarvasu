@@ -79,16 +79,27 @@ const Navbar = () => {
 
           {/* Social Icons */}
           <div className="flex gap-2">
-            {[FaFacebookSquare, AiFillInstagram, BsTwitterX].map(
-              (Icon, idx) => (
-                <div
-                  key={idx}
-                  className="p-1 bg-white rounded hover:scale-125 duration-300"
-                >
-                  <Icon className="text-primary text-lg" />
-                </div>
-              )
-            )}
+            <a
+              href="https://www.instagram.com/punarvasu_ayurveda07?igsh=MWZuZGxhMzl4b2Y0bQ=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1 bg-white rounded hover:scale-125 duration-300"
+            >
+              <FaFacebookSquare className="text-primary text-lg" />
+            </a>
+
+            <a
+              href="https://www.instagram.com/punarvasu_ayurveda07?igsh=MWZuZGxhMzl4b2Y0bQ=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1 bg-white rounded hover:scale-125 duration-300"
+            >
+              <AiFillInstagram className="text-primary text-lg" />
+            </a>
+
+            <div className="p-1 bg-white rounded hover:scale-125 duration-300">
+              <BsTwitterX className="text-primary text-lg" />
+            </div>
           </div>
         </div>
 
