@@ -2,7 +2,7 @@ import React, { useEffect, useState, Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaArrowUp } from "react-icons/fa";
 
 // Lazy loaded layout components
 const Navbar = lazy(() => import("./ShareIngComp/Navbar/Navbar"));
@@ -54,8 +54,8 @@ const MainLayout = ({ children }) => (
       aria-label="Chat on WhatsApp"
       className="fixed right-4 bottom-4 sm:right-6 sm:bottom-6 z-50"
     >
-      <div className="h-14 w-14 md:h-16 md:w-16 rounded-full bg-[#14c755] shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
-        <FaWhatsapp className="text-white" size={28} />
+      <div className="h-10 w-10 rounded-full bg-[#14c755] shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
+        <FaWhatsapp className="text-white" size={24} />
       </div>
     </a>
   </>
@@ -63,6 +63,7 @@ const MainLayout = ({ children }) => (
 
 const App = () => {
   const [isConsultOpen, setIsConsultOpen] = useState(true);
+  const [showScrollTop, setShowScrollTop] = useState(false);
   useEffect(() => {
     AOS.init({
       duration: 700,
@@ -72,6 +73,15 @@ const App = () => {
       offset: 100,
     });
     AOS.refresh();
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 600);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -137,7 +147,9 @@ const App = () => {
                 data-aos="fade-up"
                 className="text-center container  font-bold text-secondary space-y-4 pt-24"
               >
-                <h1 className="text text-3xl md:text-4xl xl:text-5xl">Need Any Help?</h1>
+                <h1 className="text text-3xl md:text-4xl xl:text-5xl">
+                  Need Any Help?
+                </h1>
                 <p className="md:text-2xl text-textColor">
                   We’re Just a Massage Away - Let’s Talk!
                 </p>
@@ -161,6 +173,15 @@ const App = () => {
           }
         />
       </Routes>
+      {showScrollTop && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          aria-label="Scroll to top"
+          className="fixed right-4 bottom-24 sm:right-1/2 sm:bottom-2 z-50 h-12 w-12 text-black flex items-center justify-center hover:scale-105 transition-transform"
+        >
+          <FaArrowUp size={18} />
+        </button>
+      )}
       <ConsultationPopup
         isOpen={isConsultOpen}
         onClose={() => setIsConsultOpen(false)}
