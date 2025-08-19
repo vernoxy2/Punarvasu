@@ -3,6 +3,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        pulseGlow: {
+          "0%, 100%": { transform: "translateY(0) scale(1)" },
+          "50%": { transform: "translateY(-8px) scale(1.1)" },
+        },
+      },
+      animation: {
+        pulseGlow: "pulseGlow 2s infinite",
+      },
       container: {
         center: true,
         padding: {
@@ -16,7 +25,7 @@ export default {
       colors: {
         primary: "#007E3C", // alias for black
         secondary: "#FFB000",
-        textColor: "#575757"
+        textColor: "#575757",
       },
     },
   },

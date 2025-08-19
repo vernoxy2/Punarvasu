@@ -40,6 +40,8 @@ import ContForm from "./Components/ConatactUsPageComp/ContForm/ContForm";
 import ContMap from "./Components/ConatactUsPageComp/ContMap/ContMap";
 import Diseases from "./Components/ServicePageComp/Diseases/Diseases";
 import ConsultationPopup from "./ShareIngComp/ConsultationPopup/BookConsultation";
+import { GoArrowUp } from "react-icons/go";
+import { HiArrowUp } from "react-icons/hi";
 
 const MainLayout = ({ children }) => (
   <>
@@ -52,10 +54,10 @@ const MainLayout = ({ children }) => (
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
-      className="fixed right-4 bottom-4 sm:right-6 sm:bottom-6 z-50"
+      className="fixed right-4 bottom-4 md:right-8 md:bottom-8 z-50"
     >
-      <div className="h-10 w-10 rounded-full bg-[#14c755] shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
-        <FaWhatsapp className="text-white" size={24} />
+      <div className="h-14 w-14 rounded-full bg-[#14c755] shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
+        <FaWhatsapp className="text-white" size={30} />
       </div>
     </a>
   </>
@@ -177,9 +179,9 @@ const App = () => {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Scroll to top"
-          className="fixed right-4 bottom-24 sm:right-1/2 sm:bottom-2 z-50 h-12 w-12 text-black flex items-center justify-center hover:scale-105 transition-transform"
+          className="fixed left-1/2 bottom-6 transform -translate-x-1/2 z-50 h-12 w-12 text-secondary flex items-center justify-center hover:scale-105 transition-transform "
         >
-          <FaArrowUp size={18} />
+          <FaArrowUp size={24} />
         </button>
       )}
       <ConsultationPopup

@@ -120,21 +120,21 @@ const WhyChoose = () => {
               <img
                 src={img}
                 alt={`Choose ${id}`}
-                className="w-full h-[305px] object-cover  pointer-events-none"
+                className="w-full h-[305px] object-cover  pointer-events-none "
               />
             </div>
 
             {/* Icon box (positioned on image) */}
-            <div className="absolute bottom-[71px] md:bottom-[78px] 2xl:bottom-[80px] left-0 bg-white p-6 rounded-full ">
+            <div className="absolute bottom-[68px] md:bottom-[88px]  2xl:bottom-[80px] left-1 bg-white p-5 rounded-full rounded-bl-none z-0">
               <img
                 src={icon}
                 alt={`Icon ${id}`}
-                className="w-12 h-12 2xl:w-16 2xl:h-16 pointer-events-none"
+                className="w-12 h-12 2xl:w-12 2xl:h-12 pointer-events-none z-0 group-hover:scale-125 transition-transform duration-300"
               />
             </div>
 
             {/* Text */}
-            <p className="text-primary mt-4 p-2 text-center">{text}</p>
+            <p className="text-primary mt-5 p-2 text-center z-10">{text}</p>
           </div>
         ))}
       </div>
