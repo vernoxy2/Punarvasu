@@ -42,7 +42,7 @@ const Navbar = () => {
     <nav className="w-full bg-transparent lg:bg-white shadow-sm top-0 z-50">
       {/* Top banner */}
 
-      <p className="text-center xl:text-right text-xs md:text-sm container xl:-mb-5 bg-primary xl:bg-transparent text-white xl:text-primary ">
+      <p className="text-center xl:text-right text-xs md:text-sm container xl:-mb-5 bg-primary xl:bg-transparent text-white xl:text-primary py-2 xl:py-0">
         India's Most Trusted Ayurveda Healthcare Brand Since 2015
       </p>
       {/* Navbar main */}
@@ -55,7 +55,7 @@ const Navbar = () => {
           <img
             src={Logo}
             alt="Punarvasu Logo"
-            className="h-14 lg:h-20 object-contain pointer-events-none"
+            className="h-10 md:h-14 lg:h-20 object-contain pointer-events-none"
           />
         </Link>
 

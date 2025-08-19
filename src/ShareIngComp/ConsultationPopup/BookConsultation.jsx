@@ -58,12 +58,12 @@ const ConsultationPopup = ({ isOpen, onClose }) => {
       <div className="bg-white rounded-xl w-full max-w-sm shadow-lg relative">
         {/* Header */}
         <div className="bg-green-700 text-white text-center py-3 rounded-t-xl relative">
-          <h2 className="text-lg font-semibold">
+          <h2 className="md:text-lg font-semibold">
             {success ? "Success" : "Book Your Free Consultation Now"}
           </h2>
           <button
             onClick={onClose}
-            className="absolute right-3 top-3 text-white text-2xl"
+            className="absolute right-3 top-3 text-white text-xl md:text-2xl"
           >
             <IoMdClose />
           </button>
