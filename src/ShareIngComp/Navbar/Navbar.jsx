@@ -113,30 +113,52 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="xl:hidden bg-white shadow-md px-4 py-4">
-          <div className="flex flex-col space-y-2">
-            {navItems.map((item) => (
-              <button
-                key={item.name}
-                onClick={() => handleNavClick(item.path)}
-                className="text-base font-medium px-3 py-2 rounded text-primary hover:bg-primary/10"
-              >
-                {item.name}
-              </button>
-            ))}
-            <div className="flex gap-3 pt-2 justify-center">
-              {[FaFacebookSquare, AiFillInstagram, BsTwitterX].map(
-                (Icon, idx) => (
-                  <div key={idx} className="p-1 text-primary rounded">
-                    <Icon className="bg-white text-2xl" />
-                  </div>
-                )
-              )}
-            </div>
-          </div>
-        </div>
-      )}
+{menuOpen && (
+  <div className="xl:hidden bg-white shadow-md px-4 py-4">
+    <div className="flex flex-col space-y-2">
+      {navItems.map((item) => (
+        <button
+          key={item.name}
+          onClick={() => handleNavClick(item.path)}
+          className="text-base font-medium px-3 py-2 rounded text-primary hover:bg-primary/10"
+        >
+          {item.name}
+        </button>
+      ))}
+
+      {/* Social Icons */}
+      <div className="flex gap-3 pt-2 justify-center">
+        <a
+          href="https://www.facebook.com/punarvasu_ayurveda07"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-1 bg-white rounded hover:scale-125 duration-300"
+        >
+          <FaFacebookSquare className="text-primary text-2xl" />
+        </a>
+
+        <a
+          href="https://www.instagram.com/punarvasu_ayurveda07?igsh=MWZuZGxhMzl4b2Y0bQ=="
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-1 bg-white rounded hover:scale-125 duration-300"
+        >
+          <AiFillInstagram className="text-primary text-2xl" />
+        </a>
+
+        <a
+          href="https://twitter.com/punarvasu_ayurveda07"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-1 bg-white rounded hover:scale-125 duration-300"
+        >
+          <BsTwitterX className="text-primary text-2xl" />
+        </a>
+      </div>
+    </div>
+  </div>
+)}
+
     </nav>
   );
 };
