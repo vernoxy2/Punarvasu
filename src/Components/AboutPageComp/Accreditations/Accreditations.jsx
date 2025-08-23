@@ -51,7 +51,7 @@ const Accreditations = () => {
             data-aos="fade"
             data-aos-duration="800"
             key={item.id}
-            className="group flex flex-col gap-4 items-center text-center text-primary hover:text-white bg-white hover:bg-primary transition-all duration-500 px-4 py-8 rounded-md shadow-md"
+            className="group z-10 flex flex-col gap-4 items-center text-center text-primary hover:text-white bg-white hover:bg-primary transition-all duration-500 px-4 py-8 rounded-md shadow-md"
           >
             <div className="text-4xl sm:text-5xl group-hover:scale-110 transition-transform duration-300 pointer-events-none">
               {item.icon}
@@ -68,7 +68,7 @@ const Accreditations = () => {
         data-aos-duration="3000"
         src={BgImg}
         alt=""
-        className="absolute -left-10 bottom-0  scale-x-[-1] z-0"
+        className="absolute  bottom-0  scale-y-[-1] z-0 "
       />
     </section>
   );

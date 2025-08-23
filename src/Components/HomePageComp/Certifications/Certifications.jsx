@@ -38,7 +38,7 @@ const DataList = [
 const Certifications = () => {
   return (
     <section className="py-12 space-y-12 relative overflow-hidden">
-      <img data-aos="fade-left" data-aos-duration="2000" src={BG} alt="" className="absolute right-0 pointer-events-none " />
+      <img data-aos="fade-left" data-aos-duration="2000" src={BG} alt="" className="absolute -mb-28 right-0 bottom-0 mt-auto  pointer-events-none h-[99%]" />
 
       <h1 data-aos="fade-up" className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-secondary">
         Our Credentials & Certifications

@@ -2,7 +2,7 @@ import React from "react";
 import care from "../../../assets/AboutUsAssets/Philosophy/care.svg";
 import Treatment from "../../../assets/AboutUsAssets/Philosophy/Treatment.svg";
 import Balance from "../../../assets/AboutUsAssets/Philosophy/Balance.svg";
-import BgImg from "../../../assets/AboutUsAssets/Philosophy/BgImg.svg";
+import BgImg from "../../../assets/AboutUsAssets/BgImg.svg";
 
 const dataList = [
   {
@@ -31,7 +31,7 @@ const Philosophy = () => {
       <img
         src={BgImg}
         alt="BgLeaf"
-        className="absolute top-2/3 z-0 pointer-events-none"
+        className="absolute bottom-0 left-10 z-0 pointer-events-none"
       />
       {/* Heading */}
       <h1 data-aos="fade-up" className="flex items-center justify-center text-5xl text-center font-bold text-secondary leading-tight relative z-10">

@@ -1,6 +1,7 @@
 import React from "react";
 import Docters from "../../../assets/AboutUsAssets/Docters.webp";
 import StoryBg from "../../../assets/AboutUsAssets/StoryBg.svg";
+import BgImg from "../../../assets/AboutUsAssets/BgImg.svg";
 
 const Story = () => {
   return (
@@ -10,34 +11,28 @@ const Story = () => {
         data-aos-duration="2000"
         src={StoryBg}
         alt=""
-        className="absolute right-0 z-0"
+        className="absolute h-[90%] right-0 z-0"
       />
+      <img src={BgImg} alt="" className="absolute top-0 left-0 z-0 rotate-180" />
       <h1
         data-aos="fade-up"
         className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-secondary leading-tight z-10"
       >
         Our Story
       </h1>
-      <div className="container xl:px-0 grid grid-cols-1 xl:grid-cols-2 gap-0 z-10">
-        <div
-          data-aos="fade-right"
-          className="flex flex-col justify-center items-end relative xl:me-28 z-10"
-        >
-          {/* Docters Image */}
+      <div className="xl:container xl:px-0 grid grid-cols-1 xl:grid-cols-2 gap-0 z-10">
+        <div className="flex items-center justify-center">
           <img
+            data-aos="fade-up"
+            data-aos-duration="2000"
             src={Docters}
-            alt="Docters"
-            className="absolute top-1/2  -translate-y-[290px] z-20 max-h-[590px] object-contain"
+            alt=""
+            className="w-[90%] mt-auto mr-auto h-auto"
           />
-
-          {/* Bottom Layer */}
-          <div className="bg-secondary rounded-e-3xl shadow-inner w-full py-52 border-[10px] border-white translate-y-[200px] -translate-x-5 z-10" />
-
-          {/* Top Layer */}
-          <div className="bg-primary rounded-e-3xl shadow-inner w-full py-52 -mt-48 relative z-0" />
         </div>
+        
 
-        <div className="space-y-5 py-16 text-center xl:text-start p-9 lg:p-0 flex flex-col mt-32 justify-center z-10">
+        <div className=" space-y-5 py-16 text-center xl:text-start p-9 lg:p-0 flex flex-col mt-32 justify-center z-10">
           <h1
             data-aos="fade-down"
             className="sm:text-3xl md:text-4xl lg:text-5xl font-black text-primary"

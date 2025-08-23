@@ -164,7 +164,7 @@ const Diseases = () => {
 
                 {/* Content area */}
                 <div className="w-[70%] p-4 flex flex-col justify-center">
-                  <h3 className="text-lg xl:text-xl font-bold text-primary">
+                  <h3 className="text-lg xl:text-xl leading-none font-bold text-primary">
                     {item.title}
                   </h3>
                   <p className="text-textColor text-sm 2xl:text-base mt-2 leading-tight ">
