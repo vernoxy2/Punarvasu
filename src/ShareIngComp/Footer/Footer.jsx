@@ -154,10 +154,8 @@ const Footer = () => {
                   <div className="h-12 w-12">
                     <FaLocationDot className="text-6xl mx-auto my-auto p-2" />
                   </div>
-                  <p>
-                    Shop No 1, BDCA Building, BHIDBHANJAN MAHADEV MANDIR,
-                    <br />
-                    KAPADIA CHAL, Abrama-396002
+                  <p className="capitalize">
+                    Shop No 1, BDCA Building, Bhidbhanjan Mahadev Mandir, Kapadia Chal, <br className="hidden 2xl:block" /> Abrama-396002
                   </p>
                 </div>
               </a>
@@ -189,7 +187,7 @@ const Footer = () => {
               to="/contact"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
-              <button className="mt-5 bg-white text-primary text-start px-4 py-2 w-full sm:w-9/12 font-bold hover:bg-gray-100 transition duration-300">
+              <button className="mt-5 bg-white text-primary text-start px-4 py-2 w-full sm:w-8/12 font-bold hover:bg-gray-100 transition duration-300">
                 Enquiry Now
               </button>
             </Link>
