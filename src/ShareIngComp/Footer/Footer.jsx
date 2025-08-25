@@ -4,6 +4,9 @@ import Logo from "../../assets/NavbarAssets/Punarvasu_logo.png";
 import { Link } from "react-router";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdAddIcCall, MdEmail } from "react-icons/md";
+import { FaFacebookSquare } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
+import { BsTwitterX } from "react-icons/bs";
 
 const FooterLink = [
   { name: "Home", path: "/" },
@@ -42,8 +45,31 @@ const Footer = () => {
               At <span className="font-black">PUNARVASU</span>, we strike the
               perfect balance between the timeless Ayurvedic Panchakarma
               therapies, perfect diet plan and ideal, healthy lifestyle to bring
-              fascinating transformation in your life. 
+              fascinating transformation in your life.
             </p>
+            <div className="flex gap-4">
+              <a
+                href="https://www.instagram.com/punarvasu_ayurveda07?igsh=MWZuZGxhMzl4b2Y0bQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-white rounded hover:scale-110 duration-300"
+              >
+                <FaFacebookSquare className="text-primary text-3xl" />
+              </a>
+
+              <a
+                href="https://www.instagram.com/punarvasu_ayurveda07?igsh=MWZuZGxhMzl4b2Y0bQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-white rounded hover:scale-110 duration-300"
+              >
+                <AiFillInstagram className="text-primary text-3xl" />
+              </a>
+
+              <div className="p-2 bg-white rounded hover:scale-110 duration-300">
+                <BsTwitterX className="text-primary text-3xl" />
+              </div>
+            </div>
           </div>
 
           {/* Shortcut Links */}
