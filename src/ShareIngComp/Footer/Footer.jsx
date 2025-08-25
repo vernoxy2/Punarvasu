@@ -103,13 +103,22 @@ const Footer = () => {
                     <FaLocationDot className="text-6xl mx-auto my-auto p-2" />
                   </div>
                   <p>
-                    Shop No 1, BDCA Building, BHIDBHANJAN MAHADEV MANDIR,
-                    <br />
-                    KAPADIA CHAL, Abrama-396002
+                    B-5, Pramukh Sannidhya Complex,{" "}
+                    <br className="hidden xl:block" /> Abrama Villlage, Valsad.
                   </p>
                 </div>
               </a>
-
+              <a href="tel:+919601663669">
+                <div className="flex items-center gap-x-4">
+                  <div className="h-12 w-12">
+                    <MdAddIcCall className="text-5xl p-1 mx-auto my-auto" />
+                  </div>
+                  <p className="my-auto">
+                    Call Us: <br />
+                    +91 96016 63669
+                  </p>
+                </div>
+              </a>
               <a
                 href="https://www.google.com/maps?q=PUNARVASU+AYURVEDA+CHIKITSALAYAM,+Shop+No+1,+BDCA+Building,+BHIDBHANJAN+MAHADEV+MANDIR,+KAPADIA+CHAL,+Abrama-396002"
                 target="_blank"
@@ -120,19 +129,21 @@ const Footer = () => {
                     <FaLocationDot className="text-6xl mx-auto my-auto p-2" />
                   </div>
                   <p>
-                    B-5, Pramukh Sannidhya Complex, <br className="hidden xl:block" /> Abrama Villlage, Valsad.
+                    Shop No 1, BDCA Building, BHIDBHANJAN MAHADEV MANDIR,
+                    <br />
+                    KAPADIA CHAL, Abrama-396002
                   </p>
                 </div>
               </a>
 
-              <a href="tel:+917947112761">
+              <a href="tel:+916901664092">
                 <div className="flex items-center gap-x-4">
                   <div className="h-12 w-12">
                     <MdAddIcCall className="text-5xl p-1 mx-auto my-auto" />
                   </div>
                   <p className="my-auto">
                     Call Us: <br />
-                    +91 07947112761
+                    +91 69016 64092
                   </p>
                 </div>
               </a>
