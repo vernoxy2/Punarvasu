@@ -27,7 +27,7 @@ const Suvarnaprashan = () => {
           <img
             src={SuvarnaprashanImg}
             alt="Suvarnaprashan Schedule"
-            className="mx-auto "
+            className="mx-auto pointer-events-none"
           />
         </div>
       </div>

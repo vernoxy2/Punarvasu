@@ -42,8 +42,8 @@ const Experts = () => {
                 Dr. Yogesh H. Desai
               </h2>
               <p className="text-sm md:text-base text-gray-700">
-                Pediatric & Preventive Ayurveda Expert <br />
-                <span className="italic">“Early care leads to lifelong health.”</span>
+               Chief Ayurveda Consultant <br />
+                <span className="italic">"Early care leads to lifelong health."</span>
               </p>
             </div>
           </div>
@@ -71,8 +71,8 @@ const Experts = () => {
                 Dr. Priyanka V. Dodia
               </h2>
               <p className="text-sm md:text-base text-gray-700">
-                Women's Wellness & Panchakarma Specialist <br />
-                <span className="italic">“Harmony through healing and balance.”</span>
+                Senior Ayurveda Consultant<br />
+                <span className="italic">“Healing is a journey that begins from within.”</span>
               </p>
             </div>
           </div>
