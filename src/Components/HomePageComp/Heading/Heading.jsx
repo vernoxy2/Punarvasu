@@ -61,7 +61,7 @@ const Heading = () => {
       <img
         src={Coener}
         alt="Decorative Corner"
-        className="absolute bottom-0 right-0 "
+        className="absolute bottom-0 right-0 hidden lg:block "
       />
       {/* Content */}
       <div className="relative z-10 container mx-auto h-full flex justify-end text-center items-center lg:text-end text-white">
