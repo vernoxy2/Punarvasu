@@ -182,7 +182,7 @@ const App = () => {
           aria-label="Scroll to top"
           className="fixed left-1/2 bottom-6 transform -translate-x-1/2 z-50 h-12 w-12 text-secondary flex items-center justify-center hover:scale-105 transition-transform "
         >
-          <IoIosArrowDropupCircle className="bg-secondary text-primary rounded-full" size={32} />
+          <IoIosArrowDropupCircle className="bg-primary text-white rounded-full" size={32} />
         </button>
       )}
       <ConsultationPopup
