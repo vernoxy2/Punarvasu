@@ -42,8 +42,10 @@ const Navbar = () => {
     <nav className="w-full bg-transparent lg:bg-white shadow-sm top-0 z-50">
       {/* Top banner */}
 
-      <p className="text-center xl:text-right text-xs md:text-sm container xl:-mb-5 bg-primary xl:bg-transparent text-white xl:text-primary py-2 xl:py-0">
-        India's Most Trusted Ayurveda Healthcare Brand Since 2015
+      <p className="text-center xl:text-right text-xs md:text-sm container xl:-mb-5 bg-primary xl:bg-transparent text-white xl:text-primary py-2 xl:py-0 flex flex-col-reverse md:flex-row items-center justify-center xl:justify-end gap-x-4 gap-y-1">
+        <p>Call Us : +91 96016 63669 , 69016 64092</p>
+        <p className="hidden md:block">|</p>
+        <p>India's Most Trusted Ayurveda Healthcare Brand Since 2015</p>
       </p>
       {/* Navbar main */}
       <div className="mx-auto flex justify-between items-center sm:h-24 px-4 lg:px-8">
