@@ -13,12 +13,13 @@ import Heading from "./Components/HomePageComp/Heading/Heading";
 import WelcomeText from "./Components/HomePageComp/WelcomText/WelcomeText";
 import Ayurveda from "./Components/HomePageComp/Ayurveda/Ayurveda";
 import CoreServices from "./Components/HomePageComp/CoreServices/CoreServices";
+import Suvarnaprashan from "./Components/HomePageComp/Suvarnaprashan/Suvarnaprashan";
 import Experts from "./Components/HomePageComp/Experts/Experts";
 import Certifications from "./Components/HomePageComp/Certifications/Certifications";
 import WhyChoose from "./Components/HomePageComp/WhyChoose/WhyChoose";
 import Testimonial from "./Components/HomePageComp/Testimonial/Testimonial";
 import ContactUs from "./Components/HomePageComp/ContactUs/ContactUs";
-
+// About Page
 import AbHeader from "./Components/AboutPageComp/AbHeader/AbHeader";
 import Modern from "./Components/AboutPageComp/Modern/Modern";
 import Philosophy from "./Components/AboutPageComp/Philosophy/Philosophy";
@@ -26,24 +27,19 @@ import Accreditations from "./Components/AboutPageComp/Accreditations/Accreditat
 import Founders from "./Components/AboutPageComp/Founders/Founders";
 import Story from "./Components/AboutPageComp/Story/Story";
 import Doctors from "./Components/AboutPageComp/Doctors/Doctors";
-
+// Service Page
 import SerHeader from "./Components/ServicePageComp/SerHeader/SerHeader";
 import Treatments from "./Components/ServicePageComp/Treatments/Treatments";
 import Procedures from "./Components/ServicePageComp/Procedures/Procedures";
+import Diseases from "./Components/ServicePageComp/Diseases/Diseases";
 import Therapies from "./Components/ServicePageComp/Therapies/Therapies";
-import Shlok from "./Components/ServicePageComp/Shlok/Shlok";
-
+// Contact Us Page
 import ConHeader from "./Components/ConatactUsPageComp/ConHeader/ConHeader";
 import Help from "./Components/ConatactUsPageComp/Help/Help";
 import Help2 from "./Components/ConatactUsPageComp/Help/Help2";
 import ContForm from "./Components/ConatactUsPageComp/ContForm/ContForm";
-import ContMap from "./Components/ConatactUsPageComp/ContMap/ContMap";
-import Diseases from "./Components/ServicePageComp/Diseases/Diseases";
 import ConsultationPopup from "./ShareIngComp/ConsultationPopup/BookConsultation";
-import { GoArrowUp } from "react-icons/go";
-import { HiArrowUp } from "react-icons/hi";
 import { IoIosArrowDropupCircle } from "react-icons/io";
-import Suvarnaprashan from "./Components/HomePageComp/Suvarnaprashan/Suvarnaprashan";
 
 const MainLayout = ({ children }) => (
   <>

@@ -1,13 +1,14 @@
 import React from "react";
 import leaf from "../../assets/FooterAssets/leaf.png";
 import Logo from "../../assets/NavbarAssets/Punarvasu_logo.png";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdAddIcCall, MdEmail } from "react-icons/md";
 import { FaFacebookSquare } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsTwitterX } from "react-icons/bs";
 
+// Footer main links
 const FooterLink = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
@@ -16,14 +17,39 @@ const FooterLink = [
   { name: "FAQ", path: "/faq" },
 ];
 
+// Services links with section ID
 const ServicesLink = [
-  { name: "Panchkarma Centre", path: "/services" },
-  { name: "Suvarnaprashan Centre", path: "/services" },
-  { name: "Ayurvedic Cosmetic", path: "/services" },
-  { name: "Garbh Sanskar Centre", path: "/services" },
+  { name: "Panchkarma Centre", path: "/services#procedures" },
+  { name: "Suvarnaprashan Centre", path: "/services#procedures" },
+  { name: "Ayurvedic Cosmetic", path: "/services#procedures" },
+  { name: "Garbh Sanskar Centre", path: "/services#procedures" },
 ];
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  // Smooth scroll helper
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  // Handle service link clicks
+  const handleServiceClick = (path) => {
+    const [route, hash] = path.split("#");
+
+    navigate(route); // Navigate to page
+    setTimeout(() => {
+      if (hash) {
+        scrollToSection(hash); // Smooth scroll to section
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    }, 200); // delay so DOM is ready
+  };
+
   return (
     <footer className="bg-primary relative z-0">
       <div
@@ -37,7 +63,7 @@ const Footer = () => {
             <div className="w-32 h-32 lg:w-40 lg:h-40 bg-white rounded-full">
               <img
                 src={Logo}
-                alt=""
+                alt="Punarvasu Logo"
                 className="object-cover h-full mx-auto p-6 pointer-events-none"
               />
             </div>
@@ -104,9 +130,12 @@ const Footer = () => {
             <ul className="text-white font-semibold mt-4 space-y-3">
               {ServicesLink.map((item, index) => (
                 <li key={index}>
-                  <Link to={item.path} className="hover:underline">
+                  <button
+                    onClick={() => handleServiceClick(item.path)}
+                    className="hover:underline text-left"
+                  >
                     {item.name}
-                  </Link>
+                  </button>
                 </li>
               ))}
             </ul>
@@ -155,7 +184,9 @@ const Footer = () => {
                     <FaLocationDot className="text-6xl mx-auto my-auto p-2" />
                   </div>
                   <p className="capitalize">
-                    Shop No 1, BDCA Building, Bhidbhanjan Mahadev Mandir, Kapadia Chal, <br className="hidden 2xl:block" /> Abrama-396002
+                    Shop No 1, BDCA Building, Bhidbhanjan Mahadev Mandir,
+                    Kapadia Chal,{" "}
+                    <br className="hidden 2xl:block" /> Abrama-396002
                   </p>
                 </div>
               </a>
@@ -199,8 +230,8 @@ const Footer = () => {
       {/* Background Leaf Image */}
       <img
         src={leaf}
-        alt=""
-        className="h-52 lg:h-72 2xl:h-[40%]  ms-auto absolute right-0 bottom-0 z-0 pointer-events-none"
+        alt="Leaf"
+        className="h-52 lg:h-72 2xl:h-[40%] ms-auto absolute right-0 bottom-0 z-0 pointer-events-none"
       />
     </footer>
   );
