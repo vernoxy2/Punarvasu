@@ -1,6 +1,6 @@
 import React from "react";
 import Namaste from "../../../assets/AboutUsAssets/Founders/Namaste.svg";
-import Priyanka from "../../../assets/AboutUsAssets/Founders/Priyanka.svg";
+import Priyanka from "../../../assets/AboutUsAssets/Founders/anjali.svg";
 import Yogesh from "../../../assets/AboutUsAssets/Founders/Yogesh.svg";
 import comma from "../../../assets/AboutUsAssets/Founders/comaa.svg";
 import BgImg from "../../../assets/AboutUsAssets/Founders/BgImg.svg";
