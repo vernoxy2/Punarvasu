@@ -66,7 +66,7 @@ const Treatments = () => {
             <img
               src={item.img}
               alt={item.title}
-              className="w-full p-5 object-cover rounded-lg"
+              className="w-full p-5 object-cover rounded-lg pointer-events-none"
             />
             <h3 className="lg:text-2xl font-bold text-primary">{item.title}</h3>
             <p className="text-textColor text-base">{item.Dec}</p>

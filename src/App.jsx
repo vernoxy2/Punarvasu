@@ -36,7 +36,6 @@ import Therapies from "./Components/ServicePageComp/Therapies/Therapies";
 // Contact Us Page
 import ConHeader from "./Components/ConatactUsPageComp/ConHeader/ConHeader";
 import Help from "./Components/ConatactUsPageComp/Help/Help";
-import Help2 from "./Components/ConatactUsPageComp/Help/Help2";
 import ContForm from "./Components/ConatactUsPageComp/ContForm/ContForm";
 import ConsultationPopup from "./ShareIngComp/ConsultationPopup/BookConsultation";
 import { IoIosArrowDropupCircle } from "react-icons/io";

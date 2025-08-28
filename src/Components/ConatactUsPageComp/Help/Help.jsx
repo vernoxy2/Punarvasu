@@ -52,6 +52,7 @@ const Help = () => {
         {/* Dr. Yogesh */}
         <div className="flex items-center  gap-4">
           <img
+          data-aos="fade"
             src={Yogesh}
             alt="Dr. Yogesh H. Desai"
             className="w-24 sm:w-28 lg:w-32 h-24 sm:h-28 lg:h-32 border-2 border-primary p-1 rounded-full bg-white shadow-md"
@@ -75,6 +76,7 @@ const Help = () => {
         {/* Dr. Priyanka */}
         <div className="flex items-center  gap-4 xl:flex-row-reverse text-left lg:text-right">
           <img
+          data-aos="fade"
             src={Priyanka}
             alt="Dr. Priyanka V. Dodia"
             className="w-24 sm:w-28 lg:w-32 h-24 sm:h-28 lg:h-32 border-2 border-primary p-1 rounded-full bg-white shadow-md"

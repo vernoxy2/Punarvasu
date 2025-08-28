@@ -95,7 +95,7 @@ const Procedures = () => {
             <img
               src={item.Img}
               alt={item.Title}
-              className="w-full  object-cover rounded-xl"
+              className="w-full  object-cover rounded-xl pointer-events-none"
             />
             <h3 className="text-2xl font-bold text-primary">{item.Title}</h3>
             <p className="text-textColor text-base font-medium">{item.Dec}</p>

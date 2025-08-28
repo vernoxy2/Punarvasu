@@ -7,7 +7,7 @@ const Therapies = () => {
     <section data-aos="fade" className="py-14 bg-white">
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20">
         <div>
-          <img src={TherapiesImg} />
+          <img src={TherapiesImg} className="pointer-events-none" />
         </div>
         <div className="">
           {/* Heading and Paragraph */}
