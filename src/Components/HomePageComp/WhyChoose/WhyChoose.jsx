@@ -113,7 +113,7 @@ const WhyChoose = () => {
           <div
             data-aos="zoom-in"
             key={id}
-            className="border rounded-lg overflow-hidden shadow p-3 md:p-4  relative bg-white group "
+            className="border rounded-lg overflow-hidden shadow p-3 md:p-4  relative bg-white group hover:shadow-2xl duration-300"
           >
             {/* Image */}
             <div>
@@ -125,11 +125,11 @@ const WhyChoose = () => {
             </div>
 
             {/* Icon box (positioned on image) */}
-            <div className="absolute bottom-[68px] md:bottom-[88px]  2xl:bottom-[80px] left-1 bg-white p-5 rounded-full rounded-bl-none z-0">
+            <div className="absolute bottom-[68px] md:bottom-[90px]  2xl:bottom-[80px] left-1 bg-white p-5 rounded-full rounded-bl-none z-0">
               <img
                 src={icon}
                 alt={`Icon ${id}`}
-                className="w-12 h-12 2xl:w-12 2xl:h-12 pointer-events-none z-0 group-hover:scale-125 transition-transform duration-300"
+                className="w-10 h-10 2xl:w-12 2xl:h-12 pointer-events-none z-0 group-hover:scale-110 transition-transform duration-300"
               />
             </div>
 
