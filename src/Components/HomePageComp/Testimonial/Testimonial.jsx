@@ -2,28 +2,30 @@ import React from "react";
 import Nishit from "../../../assets/HomeAssets/Testimonial/NishitShah.png";
 import Manisha from "../../../assets/HomeAssets/Testimonial/ManishaPatel.png";
 import Ayush from "../../../assets/HomeAssets/Testimonial/AyusBhandari.png";
+import Men from "../../../assets/HomeAssets/Testimonial/Men.svg";
+import Women from "../../../assets/HomeAssets/Testimonial/Women.svg";
 import TestBg from "../../../assets/HomeAssets/Testimonial/TestBg.svg";
 
 const TestData = [
   {
     id: 1,
-    img: Nishit,
+    img: Men,
     name: "Nishit Shah",
     text: "Dr. Priyanka Dodia is a true gem in the field of Ayurveda! Her exceptional expertise and personalized approach have helped me achieve optimal health and wellness. I highly recommend her to anyone seeking holistic care!",
     rate: 4,
   },
   {
     id: 2,
-    img: Manisha,
+    img: Women,
     name: "Manisha Patel",
     text: "A Doctor Who Goes Above and Beyond: Gratitude for Dr. Priyanka's Exceptional Care! My mom's recent knee treatment was challenging, but Dr. Priyanka made it so much easier with her exceptional care and unwavering support.",
     rate: 5,
   },
   {
     id: 3,
-    img: Ayush,
-    name: "Ayush Bhandari",
-    text: "A Doctor Who Goes Above and Beyond: Gratitude for Dr. Priyanka's Exceptional Care! My mom's recent knee treatment was challenging, but Dr. Priyanka made it so much easier with her exceptional care and unwavering support.",
+    img: Men,
+    name: "Viren dodia",
+    text: "Very good center with all the facility inhouse for ayurvedik treatment.clean,hygienic and specious procedure room. Experienced doctor nd technician.",
     rate: 3,
   },
 ];
@@ -43,7 +45,7 @@ const Testimonial = () => {
       <div className="container pt-12 lg:pt-28 pb-12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 gap-y-24">
         {TestData.map(({ id, img, name, text, rate }) => (
           <div data-aos="zoom-in" key={id} className=" relative felx items-start">
-            <div className="bg-white p-5 space-y-4 shadow-lg">
+            <div className="bg-white p-5 space-y-4 shadow-lg h-full">
               <div className="flex flex-col gap-y-2 justify-start items-start ">
                 <div className="absolute right-0 p-3 bg-white  rounded-full -mt-20 2xl:-mt-28">
                   <img
