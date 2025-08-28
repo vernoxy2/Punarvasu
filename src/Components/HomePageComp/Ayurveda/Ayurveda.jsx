@@ -28,7 +28,7 @@ const Ayurveda = () => {
             data-aos="fade-right"
             className="lg:text-2xl font-medium text-center lg:text-start"
           >
-            <span className="font-black">Punarvasu Ayurved Chikitsalayam</span> is your trusted Ayurvedic center
+            <span className="font-black">Punarvasu Ayurveda Chikitsalayam</span> is your trusted Ayurvedic center
             offering authentic treatments like <span className="font-black">Panchkarma therapy</span> for detox and
             rejuvenation,  <span className="font-black">Garbh Sanskar</span> for a healthy pregnancy, and
             <span className="font-black"> Suvarnaprashan Sanskar</span> to boost children’s immunity. With expert

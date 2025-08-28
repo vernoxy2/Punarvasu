@@ -43,7 +43,7 @@ const Navbar = () => {
       {/* Top banner */}
 
       <p className="text-center xl:text-right text-xs md:text-sm container xl:-mb-5 bg-primary xl:bg-transparent text-white xl:text-primary py-2 xl:py-0 flex flex-col-reverse md:flex-row items-center justify-center xl:justify-end gap-x-4 gap-y-1">
-        <p>Call Us : +91 96016 63669 , 69016 64092</p>
+        <p>Call Us : +91 96016 64092</p>
         <p className="hidden md:block">|</p>
         <p>India's Most Trusted Ayurveda Healthcare Brand Since 2015</p>
       </p>
@@ -82,7 +82,7 @@ const Navbar = () => {
           {/* Social Icons */}
           <div className="flex gap-2">
             <a
-              href="https://www.instagram.com/punarvasu_ayurveda07?igsh=MWZuZGxhMzl4b2Y0bQ=="
+              href="https://www.facebook.com/people/Punarvasu-Ayurveda/61554988678547/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-1 bg-white rounded hover:scale-125 duration-300"

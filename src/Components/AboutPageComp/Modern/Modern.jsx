@@ -22,14 +22,14 @@ const Modern = () => {
         {/* Right Side with Text */}
         <div data-aos="fade-right" className="text-textColor space-y-10 text-center lg:text-start px-10">
           <h2 className="text-3xl lg:text-5xl font-black leading-snug">
-            At Punarvasu Ayurved <br className="hidden md:block"/> Chikitsalayam
+            At Punarvasu Ayurveda <br className="hidden md:block"/> Chikitsalayam
           </h2>
           <p className="text-lg lg:text-2xl font-medium ">
-            We believe Ayurveda is not merely a system of medicine <br className="hidden lg:block"/> — it is a
-            profound science of life. Founded with the <br className="hidden lg:block"/> vision of bringing 
-            <span className="font-black"> authentic, classical Ayurvedic healing</span> <br className="hidden lg:block"/> into the hands of every
-            individual, our center offers a <br className="hidden lg:block"/> space where tradition, compassion,
-            and science <br className="hidden lg:block"/> come together to restore balance and vitality.
+            We believe Ayurveda is not merely a system of medicine <br className="hidden 2xl:block"/> — it is a
+            profound science of life. Founded with the <br className="hidden 2xl:block"/> vision of bringing 
+            <span className="font-black"> authentic, classical Ayurvedic healing</span> <br className="hidden 2xl:block"/> into the hands of every
+            individual, our center offers a <br className="hidden 2xl:block"/> space where tradition, compassion,
+            and science <br className="hidden 2xl:block"/> come together to restore balance and vitality.
           </p>
         </div>
       </div>

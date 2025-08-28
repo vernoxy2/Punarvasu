@@ -95,7 +95,7 @@ const Heading = () => {
 
               <PrimaryBtn className="bg-white text-primary rounded-xl gap-2 md:gap-3 hover:text-white hover:bg-primary duration-300">
                 <Link
-                  to="tel:07947112761"
+                  to="tel:+919601664092"
                   className="flex items-center gap-x-2"
                 >
                   <MdAddCall className="text-xl sm:text-3xl" />

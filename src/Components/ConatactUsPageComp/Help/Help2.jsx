@@ -23,8 +23,8 @@ const ContactData = [
     id: 3,
     Icon: Email,
     title: "Email",
-    description: "Mail Now : punarvasu@gmail.com",
-    link: "mailto:punarvasu@gmail.com",
+    description: "Mail Now : punarvasuayurveda@gmail.com",
+    link: "mailto:punarvasuayurveda@gmail.com",
   },
 ];
 

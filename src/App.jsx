@@ -77,7 +77,7 @@ const App = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 3000);
+      setShowScrollTop(window.scrollY > 2000);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
@@ -144,19 +144,7 @@ const App = () => {
           element={
             <MainLayout>
               <ConHeader />
-              <div
-                data-aos="fade-up"
-                className="text-center container  font-bold text-secondary space-y-4 pt-24"
-              >
-                <h1 className="text text-3xl md:text-4xl xl:text-5xl">
-                  Need Any Help?
-                </h1>
-                <p className="md:text-2xl text-textColor">
-                  We’re Just a Massage Away - Let’s Talk!
-                </p>
-              </div>
               <Help />
-              <Help2 />
               <ContForm />
             </MainLayout>
           }
@@ -180,7 +168,7 @@ const App = () => {
           aria-label="Scroll to top"
           className="fixed left-1/2 bottom-6 transform -translate-x-1/2 z-50 h-12 w-12 text-secondary flex items-center justify-center hover:scale-105 transition-transform "
         >
-          <IoIosArrowDropupCircle className="bg-primary text-white/60 rounded-full" size={32} />
+          <IoIosArrowDropupCircle className="bg-primary text-white/60 rounded-full" size={34} />
         </button>
       )}
       <ConsultationPopup

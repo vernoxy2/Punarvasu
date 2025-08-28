@@ -1,8 +1,8 @@
 import React from "react";
 import { IoMdCheckmark } from "react-icons/io";
 import DoctorsImg from "../../../assets/AboutUsAssets/Doctors/DocBg.svg";
-import Priyanka from "../../../assets/AboutUsAssets/Doctors/DrAnjali.svg";
-import drYogesh from "../../../assets/AboutUsAssets/Doctors/DrRajeev.svg";
+import Priyanka from "../../../assets/AboutUsAssets/Doctors/DrPriyanka.svg";
+import drYogesh from "../../../assets/AboutUsAssets/Doctors/DrYogesh.svg";
 import BgImg from "../../../assets/AboutUsAssets/Philosophy/BgImg.svg";
 import ShadowLight from "../../../assets/AboutUsAssets/Doctors/ShadowLight.svg";
 import ShadowDark from "../../../assets/AboutUsAssets/Doctors/shadowDark.svg";
@@ -65,7 +65,7 @@ const Doctors = () => {
             <p className="text-primary text-2xl font-black">
               Dr. Yogesh H. Desai
             </p>
-            <p>B.A.M.S, M.D(Ayu), PhD(Ayu)</p>
+            <p>B.A.M.S, M.D(Ayu), PHD(Ayu)</p>
             <p>
               Chief Ayurveda Consultant <br className="hidden lg:block" />{" "}
               "Healing is a journey that begins from within."
@@ -97,7 +97,7 @@ const Doctors = () => {
             <p className="text-primary text-2xl font-black">
               Dr. Priyanka V. Dodia
             </p>
-            <p>B.A.M.S</p>
+            <p>B.A.M.S (Ayu   )</p>
             <p>
               Senior Ayurveda Consultant
               <br className="hidden lg:block" />

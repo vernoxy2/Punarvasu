@@ -131,10 +131,10 @@ const ConsultationPopup = ({ isOpen, onClose }) => {
                     <FaPhoneAlt className="mr-2 text-white" />
                   Call Us
                 </option>
-                <option className="bg-white text-black" value="+919601663669">
+                <option className="bg-white text-black" value="+916355838127">
                   Dr. Yogesh H. Desai
                 </option>
-                <option className="bg-white text-black" value="+9107947112761">
+                <option className="bg-white text-black" value="+919601664092">
                   Dr. Priyanka V. Dodia
                 </option>
               </select>

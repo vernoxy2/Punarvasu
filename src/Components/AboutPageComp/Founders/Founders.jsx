@@ -1,7 +1,7 @@
 import React from "react";
 import Namaste from "../../../assets/AboutUsAssets/Founders/Namaste.svg";
-import anjali from "../../../assets/AboutUsAssets/Founders/anjali.svg";
-import Rajveer from "../../../assets/AboutUsAssets/Founders/Rajveer.svg";
+import Priyanka from "../../../assets/AboutUsAssets/Founders/priyanka.svg";
+import Yogesh from "../../../assets/AboutUsAssets/Founders/Yogesh.svg";
 import comma from "../../../assets/AboutUsAssets/Founders/comaa.svg";
 import BgImg from "../../../assets/AboutUsAssets/Founders/BgImg.svg";
 
@@ -48,7 +48,7 @@ const Founders = () => {
         </p>
         <div className="flex items-center justify-center gap-16">
           <div className="space-y-3 flex flex-col items-center">
-            <img src={Rajveer} alt="" className="pointer-events-none" />
+            <img src={Yogesh} alt="" className="pointer-events-none bg-white rounded-full" />
             <div className=" text-center">
               <h1 className="md:text-2xl font-black text-primary">
                Dr. Yogesh H. Desai
@@ -57,12 +57,13 @@ const Founders = () => {
             </div>
           </div>
           <div className="space-y-3 flex flex-col items-center">
-            <img src={anjali} alt="" className="pointer-events-none" />
+            <img src={Priyanka} alt="" className="pointer-events-none" />
             <div className=" text-center">
               <h1 className="md:text-2xl font-black text-primary">
                Dr. Priyanka V. Dodia
               </h1>
-              <p className="font-medium text-textColor">Co-Founder</p>
+              <p className="font-medium text-textColor">
+                Founder</p>
             </div>
           </div>
         </div>

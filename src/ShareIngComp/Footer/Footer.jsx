@@ -75,7 +75,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://www.instagram.com/punarvasu_ayurveda07?igsh=MWZuZGxhMzl4b2Y0bQ=="
+                href="https://www.facebook.com/people/Punarvasu-Ayurveda/61554988678547/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-white rounded hover:scale-110 duration-300"
@@ -170,7 +170,7 @@ const Footer = () => {
                   </div>
                   <p className="my-auto">
                     Call Us: <br />
-                    +91 96016 63669
+                    +91 63558 38127
                   </p>
                 </div>
               </a>
@@ -186,29 +186,29 @@ const Footer = () => {
                   <p className="capitalize">
                     Shop No 1, BDCA Building, Bhidbhanjan Mahadev Mandir,
                     Kapadia Chal,{" "}
-                    <br className="hidden 2xl:block" /> Abrama-396002
+                    <br className="hidden 2xl:block" /> Valsad-396001
                   </p>
                 </div>
               </a>
 
-              <a href="tel:+916901664092">
+              <a href="tel:+919601664092">
                 <div className="flex items-center gap-x-4">
                   <div className="h-12 w-12">
                     <MdAddIcCall className="text-5xl p-1 mx-auto my-auto" />
                   </div>
                   <p className="my-auto">
                     Call Us: <br />
-                    +91 69016 64092
+                    +91 96016 64092
                   </p>
                 </div>
               </a>
 
-              <a href="mailto:punarvasu@gmail.com">
+              <a href="mailto:punarvasuayurveda@gmail.com">
                 <div className="flex items-center gap-x-4">
                   <MdEmail className="text-5xl p-1" />
                   <p className="my-auto">
                     Email: <br />
-                    punarvasu@gmail.com
+                    punarvasuayurveda@gmail.com
                   </p>
                 </div>
               </a>

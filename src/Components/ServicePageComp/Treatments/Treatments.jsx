@@ -29,8 +29,8 @@ const DataList = [
   {
     id: 4,
     img: Img4,
-    title: "Nasya is nasal therap",
-    Dec: "Nasya is nasal therapy using herbal oils or powders, effective for sinusitis, migraines, stress, insomnia, and head-related disorders.",
+    title: "Nasya therap",
+    Dec: "Nasya therapy using herbal oils or powders, effective for sinusitis, migraines, stress, insomnia, and head-related disorders.",
   },
   {
     id: 5,
