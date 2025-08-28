@@ -89,7 +89,7 @@ const Story = () => {
             data-aos-duration="2000"
             src={Docters}
             alt=""
-            className="w-[90%] mt-auto mr-auto h-auto"
+            className="w-[90%] mt-auto mr-auto h-auto pointer-events-none"
           />
         </div>
 

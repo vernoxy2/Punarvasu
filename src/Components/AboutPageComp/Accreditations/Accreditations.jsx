@@ -16,7 +16,7 @@ const data = [
   },
   {
     icon: <MdOutlineAccessTimeFilled />,
-    text: "15+ years of clinical experience",
+    text: "10+ years of clinical experience",
   },
   {
     icon: <SiCodefresh />,
@@ -68,7 +68,7 @@ const Accreditations = () => {
         data-aos-duration="3000"
         src={BgImg}
         alt=""
-        className="absolute  bottom-0  scale-y-[-1] z-0 "
+        className="absolute  bottom-0  scale-y-[-1] z-0 pointer-events-none"
       />
     </section>
   );

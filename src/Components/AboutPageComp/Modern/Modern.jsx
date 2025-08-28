@@ -15,7 +15,7 @@ const Modern = () => {
           data-aos='zoom-out'
             src={ModernImg}
             alt="Modern Ayurveda"
-            className="lg:me-14"
+            className="lg:me-14 pointer-events-none"
           />
         </div>
 

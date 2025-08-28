@@ -58,7 +58,7 @@ const CoreServices = () => {
             <img
               src={service.img}
               alt={service.SerName}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover pointer-events-none"
             />
           </div>
           <div className="p-3  group-hover:bg-primary text-primary group-hover:text-white duration-300 h-full transition-colors w-full space-y-2">
