@@ -117,10 +117,13 @@ const Help = () => {
               >
                 <FaLocationDot className="text-3xl sm:text-4xl flex-shrink-0 my-auto" />
                 <div>
-                  <h1 className="text-4xl">Address</h1>
-                  <p className="text-sm sm:text-base">
-                  B-5, Pramukh Sannidhya Complex, <br /> Abrama Village, Valsad.
-                </p>
+                  <h1 className="text-3xl md:text-4xlxl:text-5xl font-bold">
+                    Address
+                  </h1>
+                  <p className="text-lg sm:text-2xl">
+                    B-5, Pramukh Sannidhya Complex,{" "}
+                    <br className="hidden md:block" /> Abrama Village, Valsad.
+                  </p>
                 </div>
               </a>
 
@@ -131,19 +134,29 @@ const Help = () => {
                 rel="noopener noreferrer"
                 className="flex gap-x-4 items-start"
               >
-                <FaLocationDot className="text-3xl sm:text-4xl flex-shrink-0" />
-                <p className="text-sm sm:text-base">
-                  Shop No 1, BDCA Building, Bhidbhanjan Mahadev Mandir, Kapadia
-                  Chal, Valsad-396001
-                </p>
+                <FaLocationDot className="text-3xl sm:text-4xl flex-shrink-0 my-auto" />
+                <div>
+                  <h1 className="text-3xl md:text-4xlxl:text-5xl font-bold">
+                    Address
+                  </h1>
+
+                  <p className="text-lg sm:text-2xl">
+                    Shop No 1, BDCA Building, Bhidbhanjan Mahadev Mandir,
+                    Kapadia Chal, Valsad-396001
+                  </p>
+                </div>
               </a>
 
               {/* Phone */}
               <a href="tel:+919601664092" className="flex items-start gap-x-4">
-                <MdAddIcCall className="text-3xl sm:text-4xl flex-shrink-0" />
-                <p className="text-sm sm:text-base">
-                  Call Us: <br /> +91 96016 64092
-                </p>
+                <MdAddIcCall className="text-3xl sm:text-4xl flex-shrink-0 my-auto" />
+                <div>
+                  <h1 className="text-3xl md:text-4xlxl:text-5xl font-bold">
+                    Call Us
+                  </h1>
+
+                  <p className="text-lg sm:text-2xl">+91 96016 64092</p>
+                </div>
               </a>
 
               {/* Email */}
@@ -151,10 +164,15 @@ const Help = () => {
                 href="mailto:punarvasuayurveda@gmail.com"
                 className="flex items-start gap-x-4"
               >
-                <MdEmail className="text-3xl sm:text-4xl flex-shrink-0" />
-                <p className="text-sm sm:text-base">
-                  Email: <br /> punarvasuayurveda@gmail.com
-                </p>
+                <MdEmail className="text-3xl sm:text-4xl flex-shrink-0 my-auto" />
+                <div>
+                  <h1 className="text-3xl md:text-4xlxl:text-5xl font-bold">
+                    Address
+                  </h1>
+                  <p className="text-lg sm:text-2xl flex-wrap">
+                    punarvasuayurveda@gmail.com
+                  </p>
+                </div>
               </a>
             </div>
 
@@ -163,7 +181,7 @@ const Help = () => {
               <iframe
                 data-aos="fade"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1026.1510910643985!2d72.92953194045963!3d20.612237118456523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0e8278e326ecd%3A0xe242834ab094f701!2sPUNARVASU%20AYURVEDA%20CHIKITSALAYAM%20-%20Best%20Panchakarma%20%7C%20Suvarnaprashan%20%7C%20Cosmetic%20%7C%20Garbh%20Sanskar%20Center%20in%20Valsad!5e0!3m2!1sen!2sin!4v1751258891306!5m2!1sen!2sin"
-                className="w-full h-[300px] sm:h-[350px] lg:h-[430px] "
+                className="w-full h-[400px] lg:h-full "
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
