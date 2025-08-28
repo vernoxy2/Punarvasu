@@ -3,7 +3,7 @@ import HelpBg from "../../../assets/ContactUsAssets/Help/Help.webp";
 import Location from "../../../assets/ContactUsAssets/Help/Location.svg";
 import Call from "../../../assets/ContactUsAssets/Help/Call.svg";
 import Email from "../../../assets/ContactUsAssets/Help/Email.svg";
-import Priyanka from "../../../assets/AboutUsAssets/Founders/Priyanka.svg";
+import Priyanka from "../../../assets/AboutUsAssets/Founders/anjali.svg";
 import Yogesh from "../../../assets/AboutUsAssets/Founders/Yogesh.svg";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdAddIcCall, MdEmail } from "react-icons/md";
