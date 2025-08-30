@@ -38,7 +38,7 @@ const Help = () => {
     <div className="py-20 space-y-12">
       <div
         data-aos="fade-up"
-        className="text-center container  font-bold text-secondary space-y-4"
+        className="text-center container font-bold text-secondary space-y-4"
       >
         <h1 className="text text-3xl md:text-4xl xl:text-5xl">
           Need Any Help?
@@ -48,7 +48,7 @@ const Help = () => {
         </p>
       </div>
       {/* Heading */}
-      <div className="container pb-10 flex flex-col xl:flex-row items-center xl:items-start justify-between gap-10">
+      <div className="container pb-10 flex flex-col xl:flex-row justify-between gap-10">
         {/* Dr. Yogesh */}
         <div className="flex items-center  gap-4">
           <img
@@ -74,7 +74,7 @@ const Help = () => {
         </div>
 
         {/* Dr. Priyanka */}
-        <div className="flex items-center  gap-4 xl:flex-row-reverse text-left lg:text-right">
+        <div className="flex items-center gap-4 md:flex-row-reverse text-left md:text-right md:ml-auto">
           <img
           data-aos="fade"
             src={Priyanka}

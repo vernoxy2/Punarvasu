@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { IoMdClose } from "react-icons/io";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaCheckCircle } from "react-icons/fa";
+import { FaPhoneAlt, FaCheckCircle } from "react-icons/fa";
 
 const ConsultationPopup = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
@@ -21,7 +20,7 @@ const ConsultationPopup = ({ isOpen, onClose }) => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     let newErrors = {};
@@ -37,19 +36,38 @@ const ConsultationPopup = ({ isOpen, onClose }) => {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      console.log("Form submitted:", formData);
+      // Prepare data for Web3Forms
+      const formDataToSend = {
+        access_key: "90ad7a3f-4759-4ef8-9a44-e67628909841",
+        firstName: formData.firstName,
+        phone: formData.phone,
+      };
 
-      // Clear form
-      setFormData({ firstName: "", phone: "" });
+      try {
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(formDataToSend),
+        }).then((res) => res.json());
 
-      // Show success message
-      setSuccess(true);
+        if (res.success) {
+          console.log("Success:", res);
+          setFormData({ firstName: "", phone: "" });
+          setSuccess(true);
 
-      // Hide popup after 2 seconds
-      setTimeout(() => {
-        setSuccess(false);
-        onClose();
-      }, 2000);
+          setTimeout(() => {
+            setSuccess(false);
+            onClose();
+          }, 2000);
+        } else {
+          console.error("Form submission failed:", res);
+        }
+      } catch (error) {
+        console.error("Error:", error);
+      }
     }
   };
 
@@ -71,7 +89,7 @@ const ConsultationPopup = ({ isOpen, onClose }) => {
 
         {/* Success Message */}
         {success ? (
-          <div className="flex flex-col  items-center justify-center p-6">
+          <div className="flex flex-col items-center justify-center p-6">
             <FaCheckCircle className="text-green-600 text-4xl mb-2" />
             <p className="text-green-700 font-semibold">
               Your consultation is booked!
@@ -128,7 +146,7 @@ const ConsultationPopup = ({ isOpen, onClose }) => {
                   className="bg-white text-black flex items-center"
                   value=""
                 >
-                    <FaPhoneAlt className="mr-2 text-white" />
+                  <FaPhoneAlt className="mr-2 text-white" />
                   Call Us
                 </option>
                 <option className="bg-white text-black" value="+916355838127">

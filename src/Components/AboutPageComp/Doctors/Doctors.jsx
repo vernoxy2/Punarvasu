@@ -65,7 +65,7 @@ const Doctors = () => {
             <p className="text-primary text-2xl font-black">
               Dr. Yogesh H. Desai
             </p>
-            <p>B.A.M.S, M.D(Ayu), PHD(Ayu)</p>
+            <p>B.A.M.S, M.D(Ayu), PhD(Ayu)</p>
             <p>
               Chief Ayurveda Consultant <br className="hidden lg:block" />{" "}
               "Healing is a journey that begins from within."
@@ -97,7 +97,7 @@ const Doctors = () => {
             <p className="text-primary text-2xl font-black">
               Dr. Priyanka V. Dodia
             </p>
-            <p>B.A.M.S (Ayu   )</p>
+            <p>B.A.M.S (Ayu)</p>
             <p>
               Senior Ayurveda Consultant
               <br className="hidden lg:block" />

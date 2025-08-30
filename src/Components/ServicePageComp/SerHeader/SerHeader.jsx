@@ -16,9 +16,10 @@ const SerHeader = () => {
         alt="Decorative Corner"
         className="hidden lg:block absolute bottom-0 right-0 w-20 md:w-40 lg:w-80"
       />
-      <div className="container mr-auto h-full flex items-center lg:text-end text-white">
+      <div className="container mr-auto h-full flex flex-col xl:flex-row justify-center items-center lg:text-end text-white">
+        <div className="w-full xl:w-6/12"></div>
         <div className="w-full xl:w-6/12 space-y-14 lg:space-y-20 lg:pb-28">
-          <img src={HeroText} alt="" className="ml-auto pointer-events-none" />
+          <img src={HeroText} alt="" className=" mx-auto xl:mr-auto pointer-events-none" />
         </div>
       </div>
 

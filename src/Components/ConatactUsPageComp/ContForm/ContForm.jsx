@@ -4,15 +4,43 @@ import right from "../../../assets/ContactUsAssets/Conatform/RightSaid.svg";
 import left from "../../../assets/ContactUsAssets/Conatform/Left.webp";
 
 const ContForm = () => {
+  const [result, setResult] = React.useState(null);
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "90ad7a3f-4759-4ef8-9a44-e67628909841");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      setResult("Your message has been sent successfully ✅");
+      event.target.reset();
+    } else {
+      setResult("Something went wrong ❌ Please try again.");
+    }
+  };
+
   return (
     <section className="py-12 space-y-24 relative overflow-hidden">
-      {/* Background Image */}
+      {/* Background Images */}
       <img
         data-aos="fade-right"
         data-aos-duration="2000"
         src={right}
         alt=""
-        className="absolute top-1/3 left-0 z-0 hidden md:block pointer-events-none  h-1/3 lg:h-auto"
+        className="absolute top-1/3 left-0 z-0 hidden md:block pointer-events-none h-1/3 lg:h-auto"
       />
       <img
         data-aos="fade-down"
@@ -40,20 +68,22 @@ const ContForm = () => {
 
       {/* Contact Form */}
       <div className="container relative z-10">
-        <form data-aos="fade-up" className="space-y-8">
+        <form data-aos="fade-up" className="space-y-8" onSubmit={onSubmit}>
           {/* First and Last Name */}
           <div className="flex flex-col md:flex-row justify-between gap-8">
             <input
               type="text"
-              aria-label="First Name"
+              name="first_name"
               placeholder="First Name"
+              required
               className="w-full p-4 lg:p-5 rounded-lg md:text-xl lg:text-2xl text-primary placeholder:text-primary font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-primary"
             />
             <input
               type="text"
-              aria-label="Last Name"
+              name="last_name"
               placeholder="Last Name"
-              className="w-full  p-4 lg:p-5 rounded-lg md:text-xl lg:text-2xl text-primary placeholder:text-primary font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-primary"
+              required
+              className="w-full p-4 lg:p-5 rounded-lg md:text-xl lg:text-2xl text-primary placeholder:text-primary font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-primary"
             />
           </div>
 
@@ -61,34 +91,33 @@ const ContForm = () => {
           <div className="flex flex-col md:flex-row justify-between gap-8">
             <input
               type="email"
-              aria-label="Email Address"
+              name="email"
               placeholder="Email Address"
-              className="w-full  p-4 lg:p-5 rounded-lg md:text-xl lg:text-2xl text-primary placeholder:text-primary font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-primary"
+              required
+              className="w-full p-4 lg:p-5 rounded-lg md:text-xl lg:text-2xl text-primary placeholder:text-primary font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-primary"
             />
             <input
               type="tel"
-              aria-label="Phone Number"
+              name="phone"
               placeholder="Phone Number"
-              className="w-full  p-4 lg:p-5 rounded-lg md:text-xl lg:text-2xl text-primary placeholder:text-primary font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-primary"
+              required
+              className="w-full p-4 lg:p-5 rounded-lg md:text-xl lg:text-2xl text-primary placeholder:text-primary font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-primary"
             />
           </div>
 
+          {/* Doctor Select */}
           <div className="relative">
             <select
+              name="doctor"
               required
-              aria-label="Subject"
-              className="w-full appearance-none p-4 lg:p-5 pr-14 rounded-lg md:text-xl lg:text-2xl text-primary placeholder:text-primary font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-primary"
+              className="w-full appearance-none p-4 lg:p-5 pr-14 rounded-lg md:text-xl lg:text-2xl text-primary font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-primary"
             >
               <option value="" disabled selected>
                 Select Your Doctor
               </option>
               <option value="Dr. Yogesh H. Desai">Dr. Yogesh H. Desai</option>
-              <option value="Dr. Priyanka V. Dodia">
-                Dr. Priyanka V. Dodia
-              </option>
+              <option value="Dr. Priyanka V. Dodia">Dr. Priyanka V. Dodia</option>
             </select>
-
-            {/* Dropdown Icon */}
             <div className="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-primary text-3xl font-bold">
               ▼
             </div>
@@ -96,10 +125,11 @@ const ContForm = () => {
 
           {/* Message */}
           <textarea
+            name="message"
             rows="6"
-            aria-label="Message"
             placeholder="Your Message Here"
-            className="w-full  p-4 lg:p-5 rounded-lg md:text-xl lg:text-2xl text-primary placeholder:text-primary font-medium shadow-md resize-none focus:outline-none focus:ring-2 focus:ring-primary"
+            required
+            className="w-full p-4 lg:p-5 rounded-lg md:text-xl lg:text-2xl text-primary placeholder:text-primary font-medium shadow-md resize-none focus:outline-none focus:ring-2 focus:ring-primary"
           ></textarea>
 
           {/* Submit Button */}
@@ -109,9 +139,17 @@ const ContForm = () => {
             </PrimaryBtn>
           </div>
         </form>
+
+        {/* ✅ Success/Error Message */}
+        {result && (
+          <p className="mt-6 text-center text-lg font-medium text-green-600">
+            {result}
+          </p>
+        )}
       </div>
     </section>
   );
 };
 
 export default ContForm;
+ 

@@ -39,6 +39,8 @@ import Help from "./Components/ConatactUsPageComp/Help/Help";
 import ContForm from "./Components/ConatactUsPageComp/ContForm/ContForm";
 import ConsultationPopup from "./ShareIngComp/ConsultationPopup/BookConsultation";
 import { IoIosArrowDropupCircle } from "react-icons/io";
+import FAQHeader from "./Components/FAQPageComp/FAQHeader/FAQHeader";
+import Questions from "./Components/FAQPageComp/Questions/Questions.JSX";
 
 const MainLayout = ({ children }) => (
   <>
@@ -132,6 +134,18 @@ const App = () => {
               <Procedures />
               <Diseases />
               <Therapies />
+              <ContactUs />
+            </MainLayout>
+          }
+        />
+
+        {/* Faq Page */}
+        <Route
+          path="/faq"
+          element={
+            <MainLayout>
+              <FAQHeader />
+              <Questions />
               <ContactUs />
             </MainLayout>
           }
