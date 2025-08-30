@@ -96,7 +96,7 @@ const Questions = () => {
             get back to you as soon as possible!
           </p>
           <a
-            href="mailto:drashishgamit9@gmail.com"
+            href="mailto:punarvasuayurveda@gmail.com"
             className="bg-primary text-white font-bold px-6 py-2 rounded-lg hover:bg-primary/80 transition"
           >
             Send Email
