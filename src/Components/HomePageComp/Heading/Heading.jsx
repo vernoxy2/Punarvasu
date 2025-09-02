@@ -38,8 +38,8 @@ const Heading = () => {
     setCurrentIndex((prev) => (prev + 1) % slides.length);
   };
 
-  return (
-    <>
+return (
+  <>
     <div data-aos="fade" className="relative">
       <section className="relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-[640px] lg:rounded-br-[410px] overflow-hidden">
         {/* Background Slides */}
@@ -58,7 +58,6 @@ const Heading = () => {
           ></div>
         ))}
 
-        
         {/* Content */}
         <div className="relative z-10 container mx-auto h-full flex justify-end text-center items-center lg:text-end text-white">
           <div className="w-full xl:w-7/12 space-y-14 lg:space-y-20 lg:pb-28">
@@ -107,7 +106,7 @@ const Heading = () => {
           onClick={prevSlide}
           className="absolute left-5 top-1/2 -translate-y-1/2 bg-black/30 text-white p-3 rounded-full hover:bg-black/70 group transition z-20 hidden md:block"
         >
-          <FaChevronLeft className="group-hover:scale-125 transition duration-300"/>
+          <FaChevronLeft className="group-hover:scale-125 transition duration-300" />
         </button>
         <button
           onClick={nextSlide}
@@ -128,22 +127,23 @@ const Heading = () => {
             ></button>
           ))}
         </div>
-
-        {/* Popup */}
-        <ConsultationPopup
-          isOpen={popupOpen}
-          onClose={() => setPopupOpen(false)}
-        />
       </section>
+
       {/* Corner Decoration */}
-        <img
-          src={Coener}
-          alt="Decorative Corner"
-          className="absolute bottom-0 right-0 hidden lg:block "
-        />
-      </div>
-    </>
-  );
+      <img
+        src={Coener}
+        alt="Decorative Corner"
+        className="absolute bottom-0 right-0 hidden lg:block"
+      />
+    </div>
+
+    {/* ✅ Popup outside so it overlays full screen */}
+    <ConsultationPopup
+      isOpen={popupOpen}
+      onClose={() => setPopupOpen(false)}
+    />
+  </>
+);
 };
 
 export default Heading;
