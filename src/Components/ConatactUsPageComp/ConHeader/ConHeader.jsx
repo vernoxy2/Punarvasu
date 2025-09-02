@@ -6,7 +6,7 @@ const ConHeader = () => {
   return (
     <section
       data-aos="fade"
-      className="relative w-full h-[500px] sm:h-[500px] md:h-[600px] lg:h-[640px] bg-cover bg-center bg-no-repeat lg:rounded-br-[320px]"
+      className="relative w-full h-[500px] sm:h-[500px] md:h-[600px] lg:h-[640px] bg-cover bg-center bg-no-repeat lg:rounded-br-[410px]"
       style={{ backgroundImage: `url(${BgHeader})` }}
     >
       {/* Decorative Corner Image */}

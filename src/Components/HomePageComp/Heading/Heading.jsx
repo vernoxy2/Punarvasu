@@ -41,7 +41,7 @@ const Heading = () => {
   return (
     <>
     <div data-aos="fade" className="relative">
-      <section className="relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-[640px] lg:rounded-br-[320px] overflow-hidden">
+      <section className="relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-[640px] lg:rounded-br-[410px] overflow-hidden">
         {/* Background Slides */}
         {slides.map((slide, i) => (
           <div

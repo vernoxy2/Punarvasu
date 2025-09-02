@@ -8,7 +8,7 @@ const AbHeader = () => {
     <div className="relative">
     <section
       data-aos="fade"
-      className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[640px] overflow-hidden lg:rounded-br-[320px]"
+      className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[640px] overflow-hidden lg:rounded-br-[410px]"
     >
       {/* Background Images */}
       <img

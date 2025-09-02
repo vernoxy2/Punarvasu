@@ -7,7 +7,7 @@ const SerHeader = () => {
   return (
     <section
       data-aos="fade"
-      className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[640px] bg-cover bg-center bg-no-repeat lg:rounded-br-[320px]"
+      className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[640px] bg-cover bg-center bg-no-repeat lg:rounded-br-[410px]"
       style={{ backgroundImage: `url(${ServiceBg})` }}
     >
       {/* Decorative Corner Image */}
