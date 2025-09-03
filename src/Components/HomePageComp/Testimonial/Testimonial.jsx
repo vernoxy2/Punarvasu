@@ -17,7 +17,7 @@ const TestData = [
   {
     id: 2,
     img: Men,
-    name: "Yogesh Desasi",
+    name: "Yogesh Desai",
     text: "Very good center with all the facility inhouse for ayurvedik treatment.clean,hygienic and specious procedure room. Experienced doctor nd technician.",
     rate: 4,
   },
