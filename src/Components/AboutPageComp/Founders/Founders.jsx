@@ -53,7 +53,7 @@ const Founders = () => {
               <h1 className="md:text-2xl font-black text-primary">
                Dr. Yogesh H. Desai
               </h1>
-              <p className="font-medium text-textColor">Co-Founder</p>
+              <p className="font-medium text-textColor">Founder</p>
             </div>
           </div>
           <div className="space-y-3 flex flex-col items-center">
@@ -63,7 +63,7 @@ const Founders = () => {
                Dr. Priyanka V. Dodia
               </h1>
               <p className="font-medium text-textColor">
-                Founder</p>
+                Co-Founder</p>
             </div>
           </div>
         </div>

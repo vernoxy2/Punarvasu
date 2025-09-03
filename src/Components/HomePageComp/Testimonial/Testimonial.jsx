@@ -12,21 +12,21 @@ const TestData = [
     img: Men,
     name: "Nishit Shah",
     text: "Dr. Priyanka Dodia is a true gem in the field of Ayurveda! Her exceptional expertise and personalized approach have helped me achieve optimal health and wellness. I highly recommend her to anyone seeking holistic care!",
-    rate: 4,
+    rate: 5,
   },
   {
     id: 2,
+    img: Men,
+    name: "Yogesh Desasi",
+    text: "Very good center with all the facility inhouse for ayurvedik treatment.clean,hygienic and specious procedure room. Experienced doctor nd technician.",
+    rate: 4,
+  },
+  {
+    id: 3,
     img: Women,
     name: "Manisha Patel",
     text: "A Doctor Who Goes Above and Beyond: Gratitude for Dr. Priyanka's Exceptional Care! My mom's recent knee treatment was challenging, but Dr. Priyanka made it so much easier with her exceptional care and unwavering support.",
     rate: 5,
-  },
-  {
-    id: 3,
-    img: Men,
-    name: "Viren dodia",
-    text: "Very good center with all the facility inhouse for ayurvedik treatment.clean,hygienic and specious procedure room. Experienced doctor nd technician.",
-    rate: 3,
   },
 ];
 

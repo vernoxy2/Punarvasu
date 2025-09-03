@@ -50,7 +50,7 @@ const MainLayout = ({ children }) => (
     <Footer />
     {/* Floating WhatsApp Button */}
     <a
-      href="https://wa.me/917947112761?text=Hello%20I%20would%20like%20to%20know%20more"
+      href="https://wa.me/919601664092?text=Hello%20I%20would%20like%20to%20know%20more"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
@@ -98,7 +98,7 @@ const App = () => {
               <WelcomeText />
               <Ayurveda />
               <CoreServices />
-              <Suvarnaprashan/>
+              <Suvarnaprashan />
               <Experts />
               <Certifications />
               <WhyChoose />
@@ -182,7 +182,10 @@ const App = () => {
           aria-label="Scroll to top"
           className="fixed left-1/2 bottom-6 transform -translate-x-1/2 z-50 h-12 w-12 text-secondary flex items-center justify-center hover:scale-105 transition-transform "
         >
-          <IoIosArrowDropupCircle className="bg-primary text-white/60 rounded-full" size={34} />
+          <IoIosArrowDropupCircle
+            className="bg-primary text-white/60 rounded-full"
+            size={34}
+          />
         </button>
       )}
       <ConsultationPopup
