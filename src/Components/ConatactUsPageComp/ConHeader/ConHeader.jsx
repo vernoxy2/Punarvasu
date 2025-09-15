@@ -6,14 +6,14 @@ const ConHeader = () => {
   return (
     <section
       data-aos="fade"
-      className="relative w-full h-[500px] sm:h-[500px] md:h-[600px] lg:h-[640px] bg-cover bg-center bg-no-repeat lg:rounded-br-[410px]"
+      className="relative w-full h-[500px] sm:h-[500px] md:h-[600px] lg:h-[640px] bg-cover bg-center bg-no-repeat xl:rounded-br-[410px]"
       style={{ backgroundImage: `url(${BgHeader})` }}
     >
       {/* Decorative Corner Image */}
       <img
         src={Corner}
         alt="Decorative Corner"
-        className="hidden lg:block absolute bottom-0 right-0 w-20 md:w-40 lg:w-80"
+        className="hidden xl:block absolute bottom-0 right-0 w-20 md:w-40 lg:w-80"
       />
 
       {/* Text Content */}

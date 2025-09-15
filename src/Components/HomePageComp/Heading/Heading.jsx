@@ -41,7 +41,7 @@ const Heading = () => {
 return (
   <>
     <div data-aos="fade" className="relative">
-      <section className="relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-[640px] lg:rounded-br-[410px] overflow-hidden">
+      <section className="relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-[640px] xl:rounded-br-[410px] overflow-hidden">
         {/* Background Slides */}
         {slides.map((slide, i) => (
           <div
@@ -62,7 +62,7 @@ return (
         <div className="relative z-10 container mx-auto h-full flex justify-end text-center items-center lg:text-end text-white">
           <div className="w-full xl:w-7/12 space-y-14 lg:space-y-20 lg:pb-28">
             {/* Slide Text */}
-            <div className="relative h-32 flex items-center justify-center lg:justify-start">
+            <div className="relative h-32 flex items-center justify-center xl:justify-start">
               {slides.map((slide, i) => (
                 <img
                   key={i}
@@ -133,7 +133,7 @@ return (
       <img
         src={Coener}
         alt="Decorative Corner"
-        className="absolute bottom-0 right-0 hidden lg:block"
+        className="absolute bottom-0 right-0 hidden xl:block"
       />
     </div>
 

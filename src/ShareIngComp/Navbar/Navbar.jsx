@@ -53,11 +53,11 @@ const Navbar = () => {
         <div className="hidden xl:block w-[8%] h-12 bg-gradient-to-l from-[#F29014] to-white" />
 
         {/* Logo */}
-        <Link to="/" className="flex items-center p-4">
+        <Link to="/" className="flex items-center p-2 md:p-4">
           <img
             src={Logo}
             alt="Punarvasu Logo"
-            className="h-10 md:h-14 lg:h-20 object-contain pointer-events-none"
+            className="h-14 md:h-14 lg:h-20 object-contain pointer-events-none"
           />
         </Link>
 

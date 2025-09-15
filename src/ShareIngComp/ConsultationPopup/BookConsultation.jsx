@@ -143,7 +143,7 @@ const ConsultationPopup = ({ isOpen, onClose }) => {
                 className="w-full bg-secondary flex items-center justify-center text-center text-white font-semibold py-2 rounded-lg shadow-md px-3 appearance-none cursor-pointer"
               >
                 <option
-                  className="bg-white text-black flex items-center"
+                  className="bg-white text-black flex items-center "
                   value=""
                 >
                   <FaPhoneAlt className="mr-2 text-white" />

@@ -7,14 +7,14 @@ const SerHeader = () => {
   return (
     <section
       data-aos="fade"
-      className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[640px] bg-cover bg-center bg-no-repeat lg:rounded-br-[410px]"
+      className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[640px] bg-cover bg-center bg-no-repeat xl:rounded-br-[410px]"
       style={{ backgroundImage: `url(${ServiceBg})` }}
     >
       {/* Decorative Corner Image */}
       <img
         src={Corner}
         alt="Decorative Corner"
-        className="hidden lg:block absolute bottom-0 right-0 w-20 md:w-40 lg:w-80"
+        className="hidden xl:block absolute bottom-0 right-0 w-20 md:w-40 lg:w-80"
       />
       <div className="container mr-auto h-full flex flex-col xl:flex-row justify-center items-center lg:text-end text-white">
         <div className="w-full xl:w-6/12"></div>

@@ -46,7 +46,7 @@ import Questions from "./Components/FAQPageComp/Questions/Questions.jsx";
 const MainLayout = ({ children }) => (
   <>
     <Navbar />
-    <main className="min-h-screen">{children}</main>
+    <main className="min-h-2xl">{children}</main>
     <Footer />
     {/* Floating WhatsApp Button */}
     <a
@@ -87,7 +87,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="font-sans bg-[#F3F3F3] overflow-hidden">
+    <div className="font-sans bg-[#F3F3F3] overflow-hidden"  >
       <Routes>
         {/* Home Page */}
         <Route

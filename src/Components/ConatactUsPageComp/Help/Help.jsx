@@ -105,7 +105,7 @@ const Help = () => {
           {/* Grid inside white box */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
             {/* Left content (Contact box) */}
-            <div className="bg-primary rounded-3xl lg:-ml-32 flex flex-col gap-y-6 justify-start p-6 sm:p-8 lg:p-12 text-white shadow-lg">
+            <div className="bg-primary rounded-3xl lg:-ml-32 flex flex-col gap-y-6 justify-start px-4 p-6 sm:p-8 lg:p-12 text-white shadow-lg">
               <h1 className="text-2xl sm:text-3xl font-bold text-center">
                 Contact Us
               </h1>
@@ -115,14 +115,14 @@ const Help = () => {
                 href="https://www.google.com/maps?q=PUNARVASU+AYURVEDA+CHIKITSALAYAM,+Shop+No+1,+BDCA+Building,+BHIDBHANJAN+MAHADEV+MANDIR,+KAPADIA+CHAL,+Abrama-396002"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex gap-x-4 items-start "
+                className="flex gap-x-3 items-start "
               >
                 <FaLocationDot className="text-3xl sm:text-4xl flex-shrink-0 my-auto" />
                 <div>
                   <h1 className="text-3xl md:text-4xlxl:text-5xl font-bold">
                     Address
                   </h1>
-                  <p className="text-lg sm:text-2xl">
+                  <p className=" sm:text-2xl">
                     B-5, Pramukh Sannidhya Complex,{" "}
                     <br className="hidden md:block" /> Abrama Village, Valsad.
                   </p>
@@ -134,7 +134,7 @@ const Help = () => {
                 href="https://www.google.com/maps?q=PUNARVASU+AYURVEDA+CHIKITSALAYAM,+Shop+No+1,+BDCA+Building,+BHIDBHANJAN+MAHADEV+MANDIR,+KAPADIA+CHAL,+Abrama-396002"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex gap-x-4 items-start"
+                className="flex gap-x-3 items-start"
               >
                 <FaLocationDot className="text-3xl sm:text-4xl flex-shrink-0 my-auto" />
                 <div>
@@ -142,7 +142,7 @@ const Help = () => {
                     Address
                   </h1>
 
-                  <p className="text-lg sm:text-2xl">
+                  <p className=" sm:text-2xl">
                     Shop No 1, BDCA Building, Bhidbhanjan Mahadev Mandir,
                     Kapadia Chal, Valsad-396001
                   </p>
@@ -150,28 +150,28 @@ const Help = () => {
               </a>
 
               {/* Phone */}
-              <a href="tel:+919601664092" className="flex items-start gap-x-4">
+              <a href="tel:+919601664092" className="flex items-start gap-x-3">
                 <MdAddIcCall className="text-3xl sm:text-4xl flex-shrink-0 my-auto" />
                 <div>
                   <h1 className="text-3xl md:text-4xlxl:text-5xl font-bold">
                     Call Us
                   </h1>
 
-                  <p className="text-lg sm:text-2xl">+91 96016 64092</p>
+                  <p className=" sm:text-2xl">+91 96016 64092</p>
                 </div>
               </a>
 
               {/* Email */}
               <a
                 href="mailto:punarvasuayurveda@gmail.com"
-                className="flex items-start gap-x-4"
+                className="flex items-start gap-x-3"
               >
                 <MdEmail className="text-3xl sm:text-4xl flex-shrink-0 my-auto" />
                 <div>
                   <h1 className="text-3xl md:text-4xlxl:text-5xl font-bold">
-                    Address
+                    Email
                   </h1>
-                  <p className="text-lg sm:text-2xl flex-wrap">
+                  <p className=" sm:text-2xl flex-wrap">
                     punarvasuayurveda@gmail.com
                   </p>
                 </div>
