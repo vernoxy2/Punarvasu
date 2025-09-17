@@ -19,10 +19,11 @@ const FooterLink = [
 
 // Services links with section ID
 const ServicesLink = [
-  { name: "Panchkarma Centre", path: "/services#procedures" },
-  { name: "Suvarnaprashan Centre", path: "/services#procedures" },
-  { name: "Ayurvedic Cosmetic", path: "/services#procedures" },
-  { name: "Garbh Sanskar Centre", path: "/services#procedures" },
+  { name: "Medicated Vomiting", path: "/services#procedures" },
+  { name: "Virechan therapy", path: "/services#procedures" },
+  { name: "Basti therapy", path: "/services#procedures" },
+  { name: "Nasya therapy", path: "/services#procedures" },
+  { name: "Raktamokshana", path: "/services#procedures" },
 ];
 
 const Footer = () => {

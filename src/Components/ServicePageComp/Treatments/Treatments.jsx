@@ -51,7 +51,7 @@ const Treatments = () => {
         className="absolute z-0 w-24 md:w-36 lg:w-auto pointer-events-none"
       />
       {/* Heading Text */}
-      <div className="text-center space-y-4 relative z-10">
+      <div id="procedures" className="text-center space-y-4 relative z-10">
         <h1 data-aos="fade-up" className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary">
           Our Core Treatments
         </h1>
