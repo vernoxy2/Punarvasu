@@ -1,8 +1,11 @@
+// App.jsx
 import React, { useEffect, useState, Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
+import { Helmet } from "react-helmet-async";   // ✅ add this
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaWhatsapp, FaArrowUp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { IoIosArrowDropupCircle } from "react-icons/io";
 
 // Lazy loaded layout components
 const Navbar = lazy(() => import("./ShareIngComp/Navbar/Navbar"));
@@ -38,10 +41,11 @@ import ConHeader from "./Components/ConatactUsPageComp/ConHeader/ConHeader";
 import Help from "./Components/ConatactUsPageComp/Help/Help";
 import ContForm from "./Components/ConatactUsPageComp/ContForm/ContForm";
 import ConsultationPopup from "./ShareIngComp/ConsultationPopup/BookConsultation";
-import { IoIosArrowDropupCircle } from "react-icons/io";
 // FAQ Page
 import FAQHeader from "./Components/FAQPageComp/FAQHeader/FAQHeader";
 import Questions from "./Components/FAQPageComp/Questions/Questions.jsx";
+
+import {  HelmetProvider } from "react-helmet-async";
 
 const MainLayout = ({ children }) => (
   <>
@@ -66,10 +70,11 @@ const MainLayout = ({ children }) => (
 const App = () => {
   const [isConsultOpen, setIsConsultOpen] = useState(true);
   const [showScrollTop, setShowScrollTop] = useState(false);
+
   useEffect(() => {
     AOS.init({
       duration: 700,
-      delay: 100, // 👈 Delay added here
+      delay: 100,
       once: true,
       easing: "ease-in-out",
       offset: 100,
@@ -87,13 +92,38 @@ const App = () => {
   }, []);
 
   return (
-    <div className="font-sans bg-[#F3F3F3] overflow-hidden"  >
+    <HelmetProvider>
+    <div className="font-sans bg-[#F3F3F3] overflow-hidden">
       <Routes>
         {/* Home Page */}
         <Route
           path="/"
           element={
             <MainLayout>
+              {/* ✅ Home SEO */}
+              <Helmet>
+                <title>
+                  Punarvasu Ayurveda Chikitsalayam, Valsad – Holistic Ayurvedic Healing
+                </title>
+                <meta
+                  name="description"
+                  content="Discover holistic health at Punarvasu Ayurveda Chikitsalayam, Valsad. We offer authentic Ayurvedic therapies, Panchakarma, and natural healing to rejuvenate body and mind."
+                />
+                <meta
+                  property="og:title"
+                  content="Punarvasu Ayurveda Chikitsalayam, Valsad – Holistic Ayurvedic Healing"
+                />
+                <meta
+                  property="og:description"
+                  content="Discover holistic health at Punarvasu Ayurveda Chikitsalayam, Valsad. We offer authentic Ayurvedic therapies, Panchakarma, and natural healing to rejuvenate body and mind."
+                />
+                <meta property="og:url" content="https://punarvasuayurveda.co.in/" />
+                <meta
+                  property="og:image"
+                  content="https://punarvasuayurveda.co.in/path-to-your-og-image.jpg"
+                />
+              </Helmet>
+
               <Heading />
               <WelcomeText />
               <Ayurveda />
@@ -113,6 +143,13 @@ const App = () => {
           path="/about"
           element={
             <MainLayout>
+              <Helmet>
+                <title>About Us – Punarvasu Ayurveda Chikitsalayam</title>
+                <meta
+                  name="description"
+                  content="Learn about our philosophy, modern Ayurveda practices, and the founders behind Punarvasu Ayurveda Chikitsalayam."
+                />
+              </Helmet>
               <AbHeader />
               <Modern />
               <Philosophy />
@@ -130,6 +167,13 @@ const App = () => {
           path="/services"
           element={
             <MainLayout>
+              <Helmet>
+                <title>Our Services – Punarvasu Ayurveda Chikitsalayam</title>
+                <meta
+                  name="description"
+                  content="Explore our Ayurvedic treatments, procedures, therapies, and specialized healing services at Punarvasu Ayurveda."
+                />
+              </Helmet>
               <SerHeader />
               <Treatments />
               <Procedures />
@@ -140,11 +184,18 @@ const App = () => {
           }
         />
 
-        {/* Faq Page */}
+        {/* FAQ Page */}
         <Route
           path="/faq"
           element={
             <MainLayout>
+              <Helmet>
+                <title>FAQ – Punarvasu Ayurveda Chikitsalayam</title>
+                <meta
+                  name="description"
+                  content="Frequently asked questions about Ayurveda, treatments, and therapies at Punarvasu Ayurveda Chikitsalayam."
+                />
+              </Helmet>
               <FAQHeader />
               <Questions />
               <ContactUs />
@@ -157,6 +208,13 @@ const App = () => {
           path="/contact"
           element={
             <MainLayout>
+              <Helmet>
+                <title>Contact Us – Punarvasu Ayurveda Chikitsalayam</title>
+                <meta
+                  name="description"
+                  content="Get in touch with Punarvasu Ayurveda Chikitsalayam for consultations, treatments, and wellness programs."
+                />
+              </Helmet>
               <ConHeader />
               <Help />
               <ContForm />
@@ -164,11 +222,14 @@ const App = () => {
           }
         />
 
-        {/* ✅ 404 Page with Navbar & Footer */}
+        {/* 404 Page */}
         <Route
           path="*"
           element={
             <MainLayout>
+              <Helmet>
+                <title>404 – Page Not Found | Punarvasu Ayurveda</title>
+              </Helmet>
               <div className="text-center py-40 text-5xl font-bold ">
                 404 - Page Not Found
               </div>
@@ -176,6 +237,8 @@ const App = () => {
           }
         />
       </Routes>
+
+      {/* Scroll to Top Button */}
       {showScrollTop && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -188,11 +251,14 @@ const App = () => {
           />
         </button>
       )}
+
+      {/* Consultation Popup */}
       <ConsultationPopup
         isOpen={isConsultOpen}
         onClose={() => setIsConsultOpen(false)}
       />
     </div>
+    </HelmetProvider>
   );
 };
 
