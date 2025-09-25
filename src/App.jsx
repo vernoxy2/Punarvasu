@@ -246,7 +246,7 @@ const App = () => {
           className="fixed left-1/2 bottom-6 transform -translate-x-1/2 z-50 h-12 w-12 text-secondary flex items-center justify-center hover:scale-105 transition-transform "
         >
           <IoIosArrowDropupCircle
-            className="bg-primary text-white/60 rounded-full"
+            className="bg-none text-transparent/40 rounded-full"
             size={34}
           />
         </button>
