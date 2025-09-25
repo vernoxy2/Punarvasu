@@ -1,7 +1,6 @@
 {
-  "build": {
-    "env": {},
-    "builder": "npm",
-    "command": "npm install --legacy-peer-deps && npm run build"
+  "buildCommand": "npm install --legacy-peer-deps && npm run build",
+  "env": {
+    "REACT_APP_API_URL": "https://example.com/api"
   }
 }
