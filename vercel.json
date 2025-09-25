@@ -1,5 +1,7 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
+  "build": {
+    "env": {},
+    "builder": "npm",
+    "command": "npm install --legacy-peer-deps && npm run build"
+  }
 }
