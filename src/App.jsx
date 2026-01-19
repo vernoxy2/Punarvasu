@@ -1,7 +1,7 @@
 // App.jsx
 import React, { useEffect, useState, Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
-import { Helmet } from "react-helmet-async";   // ✅ add this
+import { Helmet } from "react-helmet-async"; // ✅ add this
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaWhatsapp } from "react-icons/fa";
@@ -45,7 +45,7 @@ import ConsultationPopup from "./ShareIngComp/ConsultationPopup/BookConsultation
 import FAQHeader from "./Components/FAQPageComp/FAQHeader/FAQHeader";
 import Questions from "./Components/FAQPageComp/Questions/Questions.jsx";
 
-import {  HelmetProvider } from "react-helmet-async";
+import { HelmetProvider } from "react-helmet-async";
 
 const MainLayout = ({ children }) => (
   <>
@@ -93,171 +93,372 @@ const App = () => {
 
   return (
     <HelmetProvider>
-    <div className="font-sans bg-[#F3F3F3] overflow-hidden">
-      <Routes>
-        {/* Home Page */}
-        <Route
-          path="/"
-          element={
-            <MainLayout>
-              {/* ✅ Home SEO */}
-              <Helmet>
-                <title>
-                  Punarvasu Ayurveda Chikitsalayam, Valsad – Holistic Ayurvedic Healing
-                </title>
-                <meta
-                  name="description"
-                  content="Discover holistic health at Punarvasu Ayurveda Chikitsalayam, Valsad. We offer authentic Ayurvedic therapies, Panchakarma, and natural healing to rejuvenate body and mind."
-                />
-                <meta
-                  property="og:title"
-                  content="Punarvasu Ayurveda Chikitsalayam, Valsad – Holistic Ayurvedic Healing"
-                />
-                <meta
-                  property="og:description"
-                  content="Discover holistic health at Punarvasu Ayurveda Chikitsalayam, Valsad. We offer authentic Ayurvedic therapies, Panchakarma, and natural healing to rejuvenate body and mind."
-                />
-                <meta property="og:url" content="https://punarvasuayurveda.co.in/" />
-                <meta
-                  property="og:image"
-                  content="https://punarvasuayurveda.co.in/path-to-your-og-image.jpg"
-                />
-              </Helmet>
+      <div className="font-sans bg-[#F3F3F3] overflow-hidden">
+        <Routes>
+          {/* Home Page */}
+          <Route
+            path="/"
+            element={
+              <MainLayout>
+                {/* ✅ Home SEO */}
+                <Helmet>
+                  <title>
+                    Punarvasu Ayurveda Chikitsalayam, Valsad – Holistic
+                    Ayurvedic Healing
+                  </title>
+                  <meta
+                    name="description"
+                    content="Discover holistic health at Punarvasu Ayurveda Chikitsalayam, Valsad. We offer authentic Ayurvedic therapies, Panchakarma, and natural healing to rejuvenate body and mind."
+                  />
+                  <meta
+                    property="og:title"
+                    content="Punarvasu Ayurveda Chikitsalayam, Valsad – Holistic Ayurvedic Healing"
+                  />
+                  <meta
+                    property="og:description"
+                    content="Discover holistic health at Punarvasu Ayurveda Chikitsalayam, Valsad. We offer authentic Ayurvedic therapies, Panchakarma, and natural healing to rejuvenate body and mind."
+                  />
+                  <meta
+                    property="og:url"
+                    content="https://punarvasuayurveda.co.in/"
+                  />
+                  <meta
+                    property="og:image"
+                    content="https://punarvasuayurveda.co.in/path-to-your-og-image.jpg"
+                  />
+                </Helmet>
 
-              <Heading />
-              <WelcomeText />
-              <Ayurveda />
-              <CoreServices />
-              <Suvarnaprashan />
-              <Experts />
-              <Certifications />
-              <WhyChoose />
-              <Testimonial />
-              <ContactUs />
-            </MainLayout>
-          }
-        />
-
-        {/* About Page */}
-        <Route
-          path="/about"
-          element={
-            <MainLayout>
-              <Helmet>
-                <title>About Us – Punarvasu Ayurveda Chikitsalayam</title>
-                <meta
-                  name="description"
-                  content="Learn about our philosophy, modern Ayurveda practices, and the founders behind Punarvasu Ayurveda Chikitsalayam."
-                />
-              </Helmet>
-              <AbHeader />
-              <Modern />
-              <Philosophy />
-              <Story />
-              <Doctors />
-              <Accreditations />
-              <Founders />
-              <ContactUs />
-            </MainLayout>
-          }
-        />
-
-        {/* Services Page */}
-        <Route
-          path="/services"
-          element={
-            <MainLayout>
-              <Helmet>
-                <title>Our Services – Punarvasu Ayurveda Chikitsalayam</title>
-                <meta
-                  name="description"
-                  content="Explore our Ayurvedic treatments, procedures, therapies, and specialized healing services at Punarvasu Ayurveda."
-                />
-              </Helmet>
-              <SerHeader />
-              <Treatments />
-              <Procedures />
-              <Diseases />
-              <Therapies />
-              <ContactUs />
-            </MainLayout>
-          }
-        />
-
-        {/* FAQ Page */}
-        <Route
-          path="/faq"
-          element={
-            <MainLayout>
-              <Helmet>
-                <title>FAQ – Punarvasu Ayurveda Chikitsalayam</title>
-                <meta
-                  name="description"
-                  content="Frequently asked questions about Ayurveda, treatments, and therapies at Punarvasu Ayurveda Chikitsalayam."
-                />
-              </Helmet>
-              <FAQHeader />
-              <Questions />
-              <ContactUs />
-            </MainLayout>
-          }
-        />
-
-        {/* Contact Page */}
-        <Route
-          path="/contact"
-          element={
-            <MainLayout>
-              <Helmet>
-                <title>Contact Us – Punarvasu Ayurveda Chikitsalayam</title>
-                <meta
-                  name="description"
-                  content="Get in touch with Punarvasu Ayurveda Chikitsalayam for consultations, treatments, and wellness programs."
-                />
-              </Helmet>
-              <ConHeader />
-              <Help />
-              <ContForm />
-            </MainLayout>
-          }
-        />
-
-        {/* 404 Page */}
-        <Route
-          path="*"
-          element={
-            <MainLayout>
-              <Helmet>
-                <title>404 – Page Not Found | Punarvasu Ayurveda</title>
-              </Helmet>
-              <div className="text-center py-40 text-5xl font-bold ">
-                404 - Page Not Found
-              </div>
-            </MainLayout>
-          }
-        />
-      </Routes>
-
-      {/* Scroll to Top Button */}
-      {showScrollTop && (
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          aria-label="Scroll to top"
-          className="fixed left-1/2 bottom-6 transform -translate-x-1/2 z-50 h-12 w-12 text-secondary flex items-center justify-center hover:scale-105 transition-transform "
-        >
-          <IoIosArrowDropupCircle
-            className="bg-none text-transparent/40 rounded-full"
-            size={34}
+                <Heading />
+                <WelcomeText />
+                <Ayurveda />
+                <CoreServices />
+                <Suvarnaprashan />
+                <Experts />
+                <Certifications />
+                <WhyChoose />
+                <Testimonial />
+                <ContactUs />
+              </MainLayout>
+            }
           />
-        </button>
-      )}
 
-      {/* Consultation Popup */}
-      <ConsultationPopup
-        isOpen={isConsultOpen}
-        onClose={() => setIsConsultOpen(false)}
-      />
-    </div>
+          {/* About Page */}
+          <Route
+            path="/about"
+            element={
+              <MainLayout>
+                <Helmet>
+                  {/* Title */}
+                  <title>About Us – Punarvasu Ayurveda Chikitsalayam</title>
+
+                  {/* Meta Tags */}
+                  <meta
+                    name="description"
+                    content="Learn about our philosophy, modern Ayurveda practices, and the founders behind Punarvasu Ayurveda Chikitsalayam."
+                  />
+                  <meta
+                    name="keywords"
+                    content="ayurveda valsad, ayurvedic clinic, panchakarma center, about punarvasu"
+                  />
+
+                  {/* Open Graph */}
+                  <meta
+                    property="og:title"
+                    content="About Us – Punarvasu Ayurveda Chikitsalayam"
+                  />
+                  <meta
+                    property="og:description"
+                    content="Learn about our philosophy, modern Ayurveda practices, and the founders behind Punarvasu Ayurveda Chikitsalayam."
+                  />
+                  <meta
+                    property="og:url"
+                    content="https://punarvasuayurveda.co.in/about"
+                  />
+                  <meta
+                    property="og:image"
+                    content="https://punarvasuayurveda.co.in/images/about-og.jpg"
+                  />
+                  <meta property="og:type" content="website" />
+
+                  {/* Twitter Card */}
+                  <meta name="twitter:card" content="summary_large_image" />
+                  <meta
+                    name="twitter:title"
+                    content="About Us – Punarvasu Ayurveda Chikitsalayam"
+                  />
+                  <meta
+                    name="twitter:description"
+                    content="Learn about our philosophy..."
+                  />
+                  <meta
+                    name="twitter:image"
+                    content="https://punarvasuayurveda.co.in/images/about-og.jpg"
+                  />
+
+                  {/* Canonical */}
+                  <link
+                    rel="canonical"
+                    href="https://punarvasuayurveda.co.in/about"
+                  />
+                </Helmet>
+                <AbHeader />
+                <Modern />
+                <Philosophy />
+                <Story />
+                <Doctors />
+                <Accreditations />
+                <Founders />
+                <ContactUs />
+              </MainLayout>
+            }
+          />
+
+          {/* Services Page */}
+          <Route
+            path="/services"
+            element={
+              <MainLayout>
+                <Helmet>
+                  {/* Title */}
+                  <title>
+                    Ayurvedic Services & Treatments – Punarvasu Ayurveda
+                    Chikitsalayam, Valsad
+                  </title>
+
+                  {/* Meta Tags */}
+                  <meta
+                    name="description"
+                    content="Explore authentic Ayurvedic treatments at Punarvasu Ayurveda Chikitsalayam, Valsad. We offer Panchakarma therapies including Virechan, Basti, Shirodhara, Netra Tarpana, Raktamokshana, Pizhichil, and more for holistic healing."
+                  />
+                  <meta
+                    name="keywords"
+                    content="ayurvedic treatments valsad, panchakarma therapy, virechan therapy, basti therapy, shirodhara, netra tarpana, raktamokshana, medicated vomiting, karnapooran, pizhichil, udvartana, agnikarma, herbal potli sweda, sthanik basti therapy, ayurvedic services valsad"
+                  />
+
+                  {/* Open Graph */}
+                  <meta
+                    property="og:title"
+                    content="Ayurvedic Services & Treatments – Punarvasu Ayurveda Chikitsalayam, Valsad"
+                  />
+                  <meta
+                    property="og:description"
+                    content="Discover authentic Ayurvedic treatments including Panchakarma, Shirodhara, Virechan, Basti therapy, and specialized healing therapies at Punarvasu Ayurveda, Valsad."
+                  />
+                  <meta
+                    property="og:url"
+                    content="https://punarvasuayurveda.co.in/services"
+                  />
+                  <meta
+                    property="og:image"
+                    content="https://punarvasuayurveda.co.in/images/services-og.jpg"
+                  />
+                  <meta property="og:type" content="website" />
+
+                  {/* Twitter Card */}
+                  <meta name="twitter:card" content="summary_large_image" />
+                  <meta
+                    name="twitter:title"
+                    content="Ayurvedic Services & Treatments – Punarvasu Ayurveda Valsad"
+                  />
+                  <meta
+                    name="twitter:description"
+                    content="Authentic Ayurvedic treatments including Panchakarma, Shirodhara, Virechan, Basti therapy, and specialized healing therapies."
+                  />
+                  <meta
+                    name="twitter:image"
+                    content="https://punarvasuayurveda.co.in/images/services-og.jpg"
+                  />
+
+                  {/* Canonical */}
+                  <link
+                    rel="canonical"
+                    href="https://punarvasuayurveda.co.in/services"
+                  />
+                </Helmet>
+                <SerHeader />
+                <Treatments />
+                <Procedures />
+                <Diseases />
+                <Therapies />
+                <ContactUs />
+              </MainLayout>
+            }
+          />
+
+          {/* FAQ Page */}
+          <Route
+            path="/faq"
+            element={
+              <MainLayout>
+                <Helmet>
+                  {/* Title */}
+                  <title>
+                    FAQ – Ayurveda Questions Answered | Punarvasu Ayurveda
+                    Chikitsalayam
+                  </title>
+
+                  {/* Meta Tags */}
+                  <meta
+                    name="description"
+                    content="Get answers to frequently asked questions about Ayurvedic treatments, Panchakarma therapies, consultation process, and wellness programs at Punarvasu Ayurveda Chikitsalayam, Valsad."
+                  />
+                  <meta
+                    name="keywords"
+                    content="ayurveda faq, panchakarma questions, ayurvedic treatment faqs, ayurveda consultation valsad, punarvasu ayurveda questions, ayurvedic therapy faqs"
+                  />
+
+                  {/* Open Graph */}
+                  <meta
+                    property="og:title"
+                    content="FAQ – Ayurveda Questions Answered | Punarvasu Ayurveda Chikitsalayam"
+                  />
+                  <meta
+                    property="og:description"
+                    content="Find answers to common questions about Ayurvedic treatments, Panchakarma, consultations, and wellness programs at Punarvasu Ayurveda, Valsad."
+                  />
+                  <meta
+                    property="og:url"
+                    content="https://punarvasuayurveda.co.in/faq"
+                  />
+                  <meta
+                    property="og:image"
+                    content="https://punarvasuayurveda.co.in/images/faq-og.jpg"
+                  />
+                  <meta property="og:type" content="website" />
+
+                  {/* Twitter Card */}
+                  <meta name="twitter:card" content="summary_large_image" />
+                  <meta
+                    name="twitter:title"
+                    content="FAQ – Ayurveda Questions Answered | Punarvasu Ayurveda"
+                  />
+                  <meta
+                    name="twitter:description"
+                    content="Common questions about Ayurvedic treatments, Panchakarma, and wellness programs answered."
+                  />
+                  <meta
+                    name="twitter:image"
+                    content="https://punarvasuayurveda.co.in/images/faq-og.jpg"
+                  />
+
+                  {/* Canonical */}
+                  <link
+                    rel="canonical"
+                    href="https://punarvasuayurveda.co.in/faq"
+                  />
+                </Helmet>
+                <FAQHeader />
+                <Questions />
+                <ContactUs />
+              </MainLayout>
+            }
+          />
+
+          {/* Contact Page */}
+          <Route
+            path="/contact"
+            element={
+              <MainLayout>
+                <Helmet>
+                  {/* Title */}
+                  <title>
+                    Contact Us – Book Ayurvedic Consultation | Punarvasu
+                    Ayurveda Chikitsalayam, Valsad
+                  </title>
+
+                  {/* Meta Tags */}
+                  <meta
+                    name="description"
+                    content="Get in touch with Punarvasu Ayurveda Chikitsalayam, Valsad for consultations, Ayurvedic treatments, Panchakarma therapies, and wellness programs. Call us or visit our clinic today."
+                  />
+                  <meta
+                    name="keywords"
+                    content="contact ayurveda valsad, ayurvedic consultation valsad, book ayurveda appointment, punarvasu ayurveda contact, ayurveda clinic valsad address, panchakarma consultation"
+                  />
+
+                  {/* Open Graph */}
+                  <meta
+                    property="og:title"
+                    content="Contact Us – Book Ayurvedic Consultation | Punarvasu Ayurveda Valsad"
+                  />
+                  <meta
+                    property="og:description"
+                    content="Book your Ayurvedic consultation at Punarvasu Ayurveda Chikitsalayam, Valsad. Expert Ayurvedic treatments and wellness programs available."
+                  />
+                  <meta
+                    property="og:url"
+                    content="https://punarvasuayurveda.co.in/contact"
+                  />
+                  <meta
+                    property="og:image"
+                    content="https://punarvasuayurveda.co.in/images/contact-og.jpg"
+                  />
+                  <meta property="og:type" content="website" />
+
+                  {/* Twitter Card */}
+                  <meta name="twitter:card" content="summary_large_image" />
+                  <meta
+                    name="twitter:title"
+                    content="Contact Us – Book Ayurvedic Consultation | Punarvasu Ayurveda"
+                  />
+                  <meta
+                    name="twitter:description"
+                    content="Book your Ayurvedic consultation at Punarvasu Ayurveda Chikitsalayam, Valsad."
+                  />
+                  <meta
+                    name="twitter:image"
+                    content="https://punarvasuayurveda.co.in/images/contact-og.jpg"
+                  />
+
+                  {/* Canonical */}
+                  <link
+                    rel="canonical"
+                    href="https://punarvasuayurveda.co.in/contact"
+                  />
+                </Helmet>
+                <ConHeader />
+                <Help />
+                <ContForm />
+              </MainLayout>
+            }
+          />
+
+          {/* 404 Page */}
+          <Route
+            path="*"
+            element={
+              <MainLayout>
+                <Helmet>
+                  <title>404 – Page Not Found | Punarvasu Ayurveda</title>
+                </Helmet>
+                <div className="text-center py-40 text-5xl font-bold ">
+                  404 - Page Not Found
+                </div>
+              </MainLayout>
+            }
+          />
+        </Routes>
+
+        {/* Scroll to Top Button */}
+        {showScrollTop && (
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            aria-label="Scroll to top"
+            className="fixed left-1/2 bottom-6 transform -translate-x-1/2 z-50 h-12 w-12 text-secondary flex items-center justify-center hover:scale-105 transition-transform "
+          >
+            <IoIosArrowDropupCircle
+              className="bg-none text-transparent/40 rounded-full"
+              size={34}
+            />
+          </button>
+        )}
+
+        {/* Consultation Popup */}
+        <ConsultationPopup
+          isOpen={isConsultOpen}
+          onClose={() => setIsConsultOpen(false)}
+        />
+      </div>
     </HelmetProvider>
   );
 };
