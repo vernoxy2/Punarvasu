@@ -1,7 +1,7 @@
 // App.jsx
 import React, { useEffect, useState, Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
-import { Helmet } from "react-helmet-async"; // ✅ add this
+import { Helmet } from "react-helmet"; // ✅ add this
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaWhatsapp } from "react-icons/fa";
@@ -45,7 +45,6 @@ import ConsultationPopup from "./ShareIngComp/ConsultationPopup/BookConsultation
 import FAQHeader from "./Components/FAQPageComp/FAQHeader/FAQHeader";
 import Questions from "./Components/FAQPageComp/Questions/Questions.jsx";
 
-import { HelmetProvider } from "react-helmet-async";
 
 const MainLayout = ({ children }) => (
   <>
@@ -92,7 +91,6 @@ const App = () => {
   }, []);
 
   return (
-    <HelmetProvider>
       <div className="font-sans bg-[#F3F3F3] overflow-hidden">
         <Routes>
           {/* Home Page */}
@@ -459,7 +457,6 @@ const App = () => {
           onClose={() => setIsConsultOpen(false)}
         />
       </div>
-    </HelmetProvider>
   );
 };
 
