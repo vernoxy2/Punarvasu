@@ -67,7 +67,7 @@ const WhyChoose = () => {
       >
         <div className="bg-primary py-3 pr-6 sm:pr-10 flex items-center justify-center md:justify-end gap-4 sm:gap-6">
           <h1 className="text-xl sm:text-2xl md:text-3xl 2xl:text-5xl font-bold text-white text-center lg:text-right">
-            Why Choose Punavasu?
+            Why Choose Punarvasu?
           </h1>
           <img src={leaf} alt="Leaf Icon" className="w-10 h-10" />
         </div>
@@ -113,7 +113,7 @@ const WhyChoose = () => {
           <div
             data-aos="zoom-in"
             key={id}
-            className="border rounded-lg overflow-hidden shadow p-3 md:p-4  relative bg-white group hover:shadow-2xl duration-300"
+            className="border rounded-lg overflow-hidden shadow p-3 md:p-4  relative bg-white group hover:shadow-xl duration-300"
           >
             {/* Image */}
             <div>
