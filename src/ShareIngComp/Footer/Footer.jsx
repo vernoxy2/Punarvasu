@@ -56,9 +56,9 @@ const Footer = () => {
       <div
         data-aos="fade"
         data-aos-duration="1200"
-        className="pt-20 relative z-10"
+        className="pt-10 pb-6 relative z-10"
       >
-        <div className="container lg:flex items-start gap-10 mb-56 space-y-9">
+        <div className="container lg:flex items-start gap-10 mb-20 lg:mb-56 space-y-9">
           {/* Logo and Description */}
           <div className="lg:w-4/12 space-y-10">
             <div className="w-32 h-32 lg:w-40 lg:h-40 bg-white rounded-full">
@@ -68,7 +68,7 @@ const Footer = () => {
                 className="object-cover h-full mx-auto p-6 pointer-events-none"
               />
             </div>
-            <p className="text-white z-10 relative">
+            <p className="text-white z-10 relative text-sm md:text-base">
               At <span className="font-black">PUNARVASU</span>, we strike the
               perfect balance between the timeless Ayurvedic Panchakarma
               therapies, perfect diet plan and ideal, healthy lifestyle to bring
@@ -225,14 +225,17 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="bg-white h-1 w-2/12 mx-auto z-10 relative"></div>
+        <div className="bg-white h-0.5 w-2/12 mx-auto z-10 relative"></div>
+        <p className="text-center pt-4 sm:pt-1 md:pt-2 text-white/90  mt-auto text-sm md:text-base">
+            © {new Date().getFullYear()} Developed by @Vernoxy
+          </p>
       </div>
 
       {/* Background Leaf Image */}
       <img
         src={leaf}
         alt="Leaf"
-        className="h-52 lg:h-72 2xl:h-[40%] ms-auto absolute right-0 bottom-0 z-0 pointer-events-none"
+        className="h-20 md:h-52 lg:h-72 2xl:h-[40%] ms-auto absolute right-0 bottom-0 z-0 pointer-events-none"
       />
     </footer>
   );
