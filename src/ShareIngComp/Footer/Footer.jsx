@@ -227,7 +227,7 @@ const Footer = () => {
         </div>
         <div className="bg-white h-0.5 w-2/12 mx-auto z-10 relative"></div>
         <p className="text-center pt-4 sm:pt-1 md:pt-2 text-white/90  mt-auto text-sm md:text-base">
-            © {new Date().getFullYear()} Developed by @Vernoxy
+            © {new Date().getFullYear()} Developed by <a href="https://www.vernoxy.com/" target="_blank">@Vernoxy</a>
           </p>
       </div>
 
