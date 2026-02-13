@@ -1,6 +1,6 @@
 import React from "react";
 import leaf from "../../assets/FooterAssets/leaf.png";
-import Logo from "../../assets/NavbarAssets/Punarvasu_logo.png";
+import Logo from "../../assets/NavbarAssets/Punarvasu_logo.svg";
 import { Link, useNavigate } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdAddIcCall, MdEmail } from "react-icons/md";

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
-import Logo from "../../assets/NavbarAssets/Punarvasu_logo.png";
+import Logo from "../../assets/NavbarAssets/Punarvasu_logo.svg";
 import { FaFacebookSquare } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsTwitterX } from "react-icons/bs";

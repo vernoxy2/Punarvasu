@@ -6,6 +6,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoIosArrowDropupCircle } from "react-icons/io";
+import Logo from "./assets/NavbarAssets/Punarvasu_logo.svg";
+
 
 /* =========================
    Lazy Layout Components
@@ -166,7 +168,11 @@ const App = () => {
       <Suspense
         fallback={
           <div className="h-screen flex items-center justify-center text-xl font-semibold">
-            Loading...
+            <div className=" space-y-5">
+
+            <img src={Logo} alt="" />
+            <p>Loading...</p>
+            </div>
           </div>
         }
       >
